@@ -16,5 +16,10 @@ module.exports = defineConfig({
   admin: {
     disable: false,
     backendUrl: "http://localhost:9000",
+    vite: () => ({
+      resolve: {
+        dedupe: ["react", "react-dom", "react-router-dom"],
+      },
+    }),
   }
 })
