@@ -1,0 +1,80 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --snoov-primary: #008000;
+  --snoov-primary-hover: #006400;
+  --snoov-primary-light: #EBF6EB;
+  --snoov-primary-subtle: rgba(0, 128, 0, 0.08);
+  --snoov-canvas: #FBF9F5;
+  --snoov-sand: #F5F1E8;
+  --snoov-ecru: #EFE9DD;
+  --snoov-cream: #FAF8F3;
+  --snoov-border: #EAE4D7;
+  --snoov-border-dark: #D8D0BF;
+  --snoov-charcoal: #1A1A1A;
+  --snoov-muted: #66625D;
+  --snoov-light-muted: #8F8A82;
+}
+
+@layer base {
+  body {
+    background-color: var(--snoov-canvas);
+    color: var(--snoov-charcoal);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .tracking-editorial {
+    letter-spacing: 0.15em;
+  }
+
+  .tracking-widest-plus {
+    letter-spacing: 0.25em;
+  }
+}
+
+@layer components {
+  .content-container {
+    @apply max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-12;
+  }
+
+  .editorial-container {
+    @apply max-w-[1200px] w-full mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Primary Brand Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-snoov-green text-white text-xs uppercase font-medium tracking-editorial px-8 py-3.5 rounded-[2px] transition-all duration-300 hover:bg-snoov-green-hover hover:shadow-sm active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  /* Secondary Outline Button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center border border-snoov-border bg-transparent text-snoov-charcoal text-xs uppercase font-medium tracking-editorial px-8 py-3.5 rounded-[2px] transition-all duration-300 hover:border-snoov-charcoal hover:bg-white active:scale-[0.99];
+  }
+
+  /* Editorial Link with Animated Underline */
+  .editorial-link {
+    @apply relative inline-block text-xs uppercase tracking-editorial font-medium text-snoov-charcoal transition-colors hover:text-snoov-green after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-snoov-green after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .editorial-rule {
+    @apply border-b border-snoov-border w-full;
+  }
+}
