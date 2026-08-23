@@ -70,12 +70,12 @@ npm run dev
 ## 🎨 Design System & Palette Studio
 
 <p align="left">
-  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2001-Emerald%20%26%20Ivory-008000&style=flat" alt="Emerald & Ivory" /></a>
-  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2002-Champagne%20Gold-A67C1E&style=flat" alt="Champagne Gold" /></a>
-  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2003-Bordeaux%20Wine-7A1C28&style=flat" alt="Bordeaux Wine" /></a>
-  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2004-Savile%20Midnight-1E2F48&style=flat" alt="Savile Midnight" /></a>
-  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2005-Olive%20Moss-48532B&style=flat" alt="Olive Moss" /></a>
-  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2006-Obsidian%20Noir-141414&style=flat" alt="Obsidian Noir" /></a>
+  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2001-Royal%20Velvet%20Maroon%20%26%20White-3E0B13&style=flat" alt="Royal Velvet Maroon" /></a>
+  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2002-Imperial%20Maroon%20%26%20White-660D1A&style=flat" alt="Imperial Maroon" /></a>
+  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2003-Emerald%20%26%20Ivory-008000&style=flat" alt="Emerald & Ivory" /></a>
+  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2004-Champagne%20Gold-A67C1E&style=flat" alt="Champagne Gold" /></a>
+  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2005-Bordeaux%20Wine-7A1C28&style=flat" alt="Bordeaux Wine" /></a>
+  <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=Palette%2006-Savile%20Midnight-1E2F48&style=flat" alt="Savile Midnight" /></a>
 </p>
 
 * **Typography:** *Cormorant Garamond* (Editorial Headings & Quotes) paired with *Plus Jakarta Sans* (UI & Micro-details).
