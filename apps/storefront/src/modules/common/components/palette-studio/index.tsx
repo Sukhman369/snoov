@@ -94,6 +94,28 @@ export const PALETTES: PaletteOption[] = [
     },
   },
   {
+    id: "emerald-warm-copper",
+    name: "— Deep Emerald & Warm Copper — D",
+    subtitle: "Grounded, Rich & Quietly Luxurious",
+    description: "Deep forest emerald anchors a pale grey and off-white canvas, with warm copper glowing through the accent tints. Grounded, natural and richly sophisticated.",
+    tag: "EMERALD & COPPER",
+    variables: {
+      "--snoov-primary": "#0D5D47",
+      "--snoov-primary-hover": "#094D3A",
+      "--snoov-primary-light": "#E8F4EF",
+      "--snoov-primary-subtle": "rgba(13, 93, 71, 0.08)",
+      "--snoov-canvas": "#FAF9F7",
+      "--snoov-sand": "#F5F3F0",
+      "--snoov-ecru": "#EDEAE5",
+      "--snoov-cream": "#FDFCFB",
+      "--snoov-border": "#E3DFD9",
+      "--snoov-border-dark": "#CFC9C1",
+      "--snoov-charcoal": "#1F1F1F",
+      "--snoov-muted": "#5C6B62",
+      "--snoov-light-muted": "#8A9690",
+    },
+  },
+  {
     id: "royal-maroon-velvet",
     name: "01 — Royal Velvet Maroon & White",
     subtitle: "Regal Velvet & Pure White Contrast",
@@ -325,7 +347,7 @@ export default function PaletteStudio() {
             style={{ backgroundColor: currentPalette.variables["--snoov-primary"] }}
           />
           <span className="text-[11px] font-mono uppercase tracking-widest font-semibold">
-            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (11 THEMES)"}
+            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (12 THEMES)"}
           </span>
         </button>
       </div>
