@@ -160,6 +160,28 @@ export const PALETTES: PaletteOption[] = [
     },
   },
   {
+    id: "editorial-crimson-dominant",
+    name: "— Editorial Crimson Dominant — G",
+    subtitle: "Full Crimson Immersion, Maximum Contrast",
+    description: "The dominant inversion of F. Deep crimson red floods the entire canvas. Warm cream-gold CTAs and pure white typography cut through with razor-sharp contrast. Dark, immersive, uncompromising.",
+    tag: "CRIMSON DOMINANT",
+    variables: {
+      "--snoov-primary": "#F2E4C0",
+      "--snoov-primary-hover": "#E8D4A0",
+      "--snoov-primary-light": "rgba(242, 228, 192, 0.18)",
+      "--snoov-primary-subtle": "rgba(242, 228, 192, 0.08)",
+      "--snoov-canvas": "#B0101E",
+      "--snoov-sand": "#960D18",
+      "--snoov-ecru": "#7E0A13",
+      "--snoov-cream": "#FFFFFF",
+      "--snoov-border": "#CC1828",
+      "--snoov-border-dark": "#E02030",
+      "--snoov-charcoal": "#FFFFFF",
+      "--snoov-muted": "#EBB0B8",
+      "--snoov-light-muted": "#C88890",
+    },
+  },
+  {
     id: "royal-maroon-velvet",
     name: "01 — Royal Velvet Maroon & White",
     subtitle: "Regal Velvet & Pure White Contrast",
@@ -391,7 +413,7 @@ export default function PaletteStudio() {
             style={{ backgroundColor: currentPalette.variables["--snoov-primary"] }}
           />
           <span className="text-[11px] font-mono uppercase tracking-widest font-semibold">
-            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (14 THEMES)"}
+            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (15 THEMES)"}
           </span>
         </button>
       </div>
