@@ -28,6 +28,50 @@ export interface PaletteOption {
 
 export const PALETTES: PaletteOption[] = [
   {
+    id: "hermes-sellier",
+    name: "00 — Hermès Sellier Gold & Orange",
+    subtitle: "Warm, Approachable & Timeless",
+    description: "Inspired by Hermès. Signature gold-tan primary on pristine warm white, with rich burnt orange warmth flowing through every tint. Approachable luxury.",
+    tag: "HERMÈS INSPIRED",
+    variables: {
+      "--snoov-primary": "#C4862A",
+      "--snoov-primary-hover": "#A36B1A",
+      "--snoov-primary-light": "#FFF1DF",
+      "--snoov-primary-subtle": "rgba(196, 134, 42, 0.09)",
+      "--snoov-canvas": "#FDFAF6",
+      "--snoov-sand": "#F7F0E4",
+      "--snoov-ecru": "#EDE3D3",
+      "--snoov-cream": "#FFFFFF",
+      "--snoov-border": "#E8DAC8",
+      "--snoov-border-dark": "#D4C4AA",
+      "--snoov-charcoal": "#1C1510",
+      "--snoov-muted": "#7A6A58",
+      "--snoov-light-muted": "#A09080",
+    },
+  },
+  {
+    id: "rouge-champagne-gold",
+    name: "— Rouge Maroon & Champagne Gold",
+    subtitle: "Deep Maroon, Gold Warmth & Off-White",
+    description: "Bespoke luxury palette. Deep maroon hero paired with champagne gold warmth, soft taupe neutrals and warm off-white canvas. Refined, commanding, effortlessly elegant.",
+    tag: "BESPOKE PALETTE",
+    variables: {
+      "--snoov-primary": "#6B1F3C",
+      "--snoov-primary-hover": "#4E1529",
+      "--snoov-primary-light": "#FAE8EF",
+      "--snoov-primary-subtle": "rgba(107, 31, 60, 0.08)",
+      "--snoov-canvas": "#FAF8F3",
+      "--snoov-sand": "#F2EFE8",
+      "--snoov-ecru": "#EAE5DC",
+      "--snoov-cream": "#FDFCF9",
+      "--snoov-border": "#E4DDD0",
+      "--snoov-border-dark": "#D1C9BB",
+      "--snoov-charcoal": "#2B2B2B",
+      "--snoov-muted": "#7A6B6E",
+      "--snoov-light-muted": "#A49598",
+    },
+  },
+  {
     id: "royal-maroon-velvet",
     name: "01 — Royal Velvet Maroon & White",
     subtitle: "Regal Velvet & Pure White Contrast",
@@ -259,7 +303,7 @@ export default function PaletteStudio() {
             style={{ backgroundColor: currentPalette.variables["--snoov-primary"] }}
           />
           <span className="text-[11px] font-mono uppercase tracking-widest font-semibold">
-            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (6 THEMES)"}
+            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (10 THEMES)"}
           </span>
         </button>
       </div>
