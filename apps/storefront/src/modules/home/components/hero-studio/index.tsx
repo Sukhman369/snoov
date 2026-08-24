@@ -6,6 +6,7 @@ import HeroB from "./variants/hero-b"
 import HeroC from "./variants/hero-c"
 import HeroD from "./variants/hero-d"
 import HeroE from "./variants/hero-e"
+import HeroF from "./variants/hero-f"
 
 const HERO_VARIANTS = [
   {
@@ -33,6 +34,11 @@ const HERO_VARIANTS = [
     label: "E — Lookbook Grid",
     desc: "Asymmetric multi-image · Editorial text card",
   },
+  {
+    id: "hero-f",
+    label: "F — Maroon Bold Showcase",
+    desc: "Full maroon bleed · Massive SNOOV · Category row",
+  },
 ]
 
 const HERO_MAP: Record<string, React.ComponentType> = {
@@ -41,6 +47,7 @@ const HERO_MAP: Record<string, React.ComponentType> = {
   "hero-c": HeroC,
   "hero-d": HeroD,
   "hero-e": HeroE,
+  "hero-f": HeroF,
 }
 
 export default function HeroStudio() {
