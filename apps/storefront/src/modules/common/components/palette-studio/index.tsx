@@ -116,6 +116,28 @@ export const PALETTES: PaletteOption[] = [
     },
   },
   {
+    id: "navy-burnt-sienna",
+    name: "— Deep Navy & Burnt Sienna — E",
+    subtitle: "Corporate-Luxury, Controlled & Bold",
+    description: "Deep maritime navy anchors a warm cream and off-white canvas, with burnt sienna lending earthy warmth through every tint. Authoritative, refined and quietly commanding.",
+    tag: "NAVY & SIENNA",
+    variables: {
+      "--snoov-primary": "#1B3A5C",
+      "--snoov-primary-hover": "#122845",
+      "--snoov-primary-light": "#E8EEF5",
+      "--snoov-primary-subtle": "rgba(27, 58, 92, 0.08)",
+      "--snoov-canvas": "#FFF8F0",
+      "--snoov-sand": "#FAF7F4",
+      "--snoov-ecru": "#F0EBE5",
+      "--snoov-cream": "#FFFEFB",
+      "--snoov-border": "#E5DFD8",
+      "--snoov-border-dark": "#D1C9C0",
+      "--snoov-charcoal": "#2B2B2B",
+      "--snoov-muted": "#5C6878",
+      "--snoov-light-muted": "#8A96A4",
+    },
+  },
+  {
     id: "royal-maroon-velvet",
     name: "01 — Royal Velvet Maroon & White",
     subtitle: "Regal Velvet & Pure White Contrast",
@@ -347,7 +369,7 @@ export default function PaletteStudio() {
             style={{ backgroundColor: currentPalette.variables["--snoov-primary"] }}
           />
           <span className="text-[11px] font-mono uppercase tracking-widest font-semibold">
-            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (12 THEMES)"}
+            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (13 THEMES)"}
           </span>
         </button>
       </div>
