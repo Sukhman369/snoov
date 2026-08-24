@@ -72,6 +72,28 @@ export const PALETTES: PaletteOption[] = [
     },
   },
   {
+    id: "taupe-ivory-terracotta",
+    name: "— Warm Taupe & Soft Ivory — C",
+    subtitle: "Understated, Refined & Earthy",
+    description: "Brunello Cucinelli-inspired. Muted warm taupe on pristine ivory canvas with soft terracotta warmth. Effortlessly understated, deeply refined.",
+    tag: "BRUNELLO INSPIRED",
+    variables: {
+      "--snoov-primary": "#A09485",
+      "--snoov-primary-hover": "#867A6B",
+      "--snoov-primary-light": "#F5EEE8",
+      "--snoov-primary-subtle": "rgba(160, 148, 133, 0.09)",
+      "--snoov-canvas": "#FFFFF0",
+      "--snoov-sand": "#FAF9F7",
+      "--snoov-ecru": "#F0EDE7",
+      "--snoov-cream": "#FFFFFE",
+      "--snoov-border": "#E8E2DA",
+      "--snoov-border-dark": "#D5CEC4",
+      "--snoov-charcoal": "#3D3D3D",
+      "--snoov-muted": "#7A6E65",
+      "--snoov-light-muted": "#A09088",
+    },
+  },
+  {
     id: "royal-maroon-velvet",
     name: "01 — Royal Velvet Maroon & White",
     subtitle: "Regal Velvet & Pure White Contrast",
@@ -303,7 +325,7 @@ export default function PaletteStudio() {
             style={{ backgroundColor: currentPalette.variables["--snoov-primary"] }}
           />
           <span className="text-[11px] font-mono uppercase tracking-widest font-semibold">
-            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (10 THEMES)"}
+            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (11 THEMES)"}
           </span>
         </button>
       </div>
