@@ -182,6 +182,28 @@ export const PALETTES: PaletteOption[] = [
     },
   },
   {
+    id: "urban-stone-pearl",
+    name: "— Urban Stone & Pearl — H",
+    subtitle: "Quiet Luxury Streetwear",
+    description: "Inspired by KANGI. Warm sand-taupe brand tone on a pearl canvas with deep warm charcoal. Tone-on-tone minimalism — hoodie blends into background by design. Deliberately understated.",
+    tag: "STREETWEAR MINIMAL",
+    variables: {
+      "--snoov-primary": "#A89880",
+      "--snoov-primary-hover": "#8E8068",
+      "--snoov-primary-light": "#F2EDE5",
+      "--snoov-primary-subtle": "rgba(168, 152, 128, 0.09)",
+      "--snoov-canvas": "#F5F3EE",
+      "--snoov-sand": "#EDE9E2",
+      "--snoov-ecru": "#E3DDD4",
+      "--snoov-cream": "#FAFAF8",
+      "--snoov-border": "#D8D2C8",
+      "--snoov-border-dark": "#C4BDB0",
+      "--snoov-charcoal": "#1A1814",
+      "--snoov-muted": "#6E6860",
+      "--snoov-light-muted": "#9A948C",
+    },
+  },
+  {
     id: "royal-maroon-velvet",
     name: "01 — Royal Velvet Maroon & White",
     subtitle: "Regal Velvet & Pure White Contrast",
@@ -413,7 +435,7 @@ export default function PaletteStudio() {
             style={{ backgroundColor: currentPalette.variables["--snoov-primary"] }}
           />
           <span className="text-[11px] font-mono uppercase tracking-widest font-semibold">
-            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (15 THEMES)"}
+            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (16 THEMES)"}
           </span>
         </button>
       </div>
@@ -422,7 +444,7 @@ export default function PaletteStudio() {
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm animate-fadeIn">
           <div className="bg-snoov-canvas border border-snoov-border max-w-2xl w-full p-6 sm:p-8 rounded-[2px] shadow-2xl max-h-[90vh] overflow-y-auto relative">
-            
+
             {/* Header */}
             <div className="flex items-center justify-between pb-4 border-b border-snoov-border">
               <div>
