@@ -29,7 +29,7 @@ export interface PaletteOption {
 export const PALETTES: PaletteOption[] = [
   {
     id: "hermes-sellier",
-    name: "00 — Hermès Sellier Gold & Orange",
+    name: "00 — Hermès Sellier Gold & Orange — A",
     subtitle: "Warm, Approachable & Timeless",
     description: "Inspired by Hermès. Signature gold-tan primary on pristine warm white, with rich burnt orange warmth flowing through every tint. Approachable luxury.",
     tag: "HERMÈS INSPIRED",
@@ -51,7 +51,7 @@ export const PALETTES: PaletteOption[] = [
   },
   {
     id: "rouge-champagne-gold",
-    name: "— Rouge Maroon & Champagne Gold",
+    name: "— Rouge Maroon & Champagne Gold — B",
     subtitle: "Deep Maroon, Gold Warmth & Off-White",
     description: "Bespoke luxury palette. Deep maroon hero paired with champagne gold warmth, soft taupe neutrals and warm off-white canvas. Refined, commanding, effortlessly elegant.",
     tag: "BESPOKE PALETTE",
