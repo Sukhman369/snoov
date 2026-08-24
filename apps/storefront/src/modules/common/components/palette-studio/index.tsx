@@ -138,6 +138,28 @@ export const PALETTES: PaletteOption[] = [
     },
   },
   {
+    id: "editorial-crimson-lime",
+    name: "— Editorial Crimson & Acid Lime — F",
+    subtitle: "Bold Fashion, High-Contrast Editorial",
+    description: "Aggressive editorial fashion energy. Deep crimson red hero on a striking acid chartreuse canvas. Jet black typography. Zero compromise — pure visual impact.",
+    tag: "EDITORIAL BOLD",
+    variables: {
+      "--snoov-primary": "#C0182C",
+      "--snoov-primary-hover": "#9A0E20",
+      "--snoov-primary-light": "#FCEDF0",
+      "--snoov-primary-subtle": "rgba(192, 24, 44, 0.08)",
+      "--snoov-canvas": "#D4DF00",
+      "--snoov-sand": "#C9D400",
+      "--snoov-ecru": "#BDC800",
+      "--snoov-cream": "#FFFFFF",
+      "--snoov-border": "#AAB200",
+      "--snoov-border-dark": "#909800",
+      "--snoov-charcoal": "#0D0D0D",
+      "--snoov-muted": "#4A4A00",
+      "--snoov-light-muted": "#737300",
+    },
+  },
+  {
     id: "royal-maroon-velvet",
     name: "01 — Royal Velvet Maroon & White",
     subtitle: "Regal Velvet & Pure White Contrast",
@@ -369,7 +391,7 @@ export default function PaletteStudio() {
             style={{ backgroundColor: currentPalette.variables["--snoov-primary"] }}
           />
           <span className="text-[11px] font-mono uppercase tracking-widest font-semibold">
-            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (13 THEMES)"}
+            {isOpen ? "CLOSE STUDIO" : "PALETTE STUDIO (14 THEMES)"}
           </span>
         </button>
       </div>
