@@ -1493,12 +1493,6 @@
     "ast_hash": "890ee551e5dc3c3de3016ba03404fea1",
     "semantic_hash": "890ee551e5dc3c3de3016ba03404fea1"
   },
-  "skills-lock.json": {
-    "mtime": 1787496409.7397642,
-    "seen": 1787655257.629355,
-    "ast_hash": "f582fb66e1f3a61a225fa47ebb206941",
-    "semantic_hash": "f582fb66e1f3a61a225fa47ebb206941"
-  },
   "turbo.json": {
     "mtime": 1787496021.9981616,
     "seen": 1787655257.629355,

@@ -1,0 +1,71 @@
+# Graphify Ignore Rules for Snoov Workspace
+
+# Graphify & Tool Output
+graphify-out/
+.graphify/
+.agents/
+
+# Dependencies & Lockfiles
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+skills-lock.json
+.yarn/
+.pnp*
+
+# Next.js & Turborepo Builds
+.turbo/
+.vercel/
+**/.next/
+**/out/
+**/build/
+**/dist/
+tsconfig.tsbuildinfo
+
+# Medusa Engine Build & Temp Artifacts
+**/.medusa/
+.medusa/
+
+# Secrets, Credentials & Local Env
+**/.env*
+*.pem
+*.key
+*.cert
+.npmrc
+
+# Static Media & Binaries
+apps/storefront/public/images/
+apps/storefront/public/brand/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.ico
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.eot
+*.mp4
+*.webm
+
+# Logs, Diagnostics & Coverage
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+.nyc_output/
+
+# OS & Editor Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+.vscode/
+.idea/

@@ -811,6 +811,33 @@
       "types_react_instantsearch_dom"
     ],
     "16": [
+      "apps_storefront_src_lib_data_cart_setshippingmethod",
+      "apps_storefront_src_lib_data_fulfillment_calculatepriceforshippingoption",
+      "apps_storefront_src_lib_util_isempty",
+      "apps_storefront_src_lib_util_isempty_isarray",
+      "apps_storefront_src_lib_util_isempty_isempty",
+      "apps_storefront_src_lib_util_isempty_isobject",
+      "apps_storefront_src_lib_util_money",
+      "apps_storefront_src_lib_util_money_converttolocale",
+      "apps_storefront_src_lib_util_money_converttolocaleparams",
+      "apps_storefront_src_modules_account_components_order_card_index",
+      "apps_storefront_src_modules_account_components_order_card_index_ordercard",
+      "apps_storefront_src_modules_account_components_order_card_index_ordercardprops",
+      "apps_storefront_src_modules_checkout_components_shipping_index",
+      "apps_storefront_src_modules_checkout_components_shipping_index_formataddress",
+      "apps_storefront_src_modules_checkout_components_shipping_index_shipping",
+      "apps_storefront_src_modules_checkout_components_shipping_index_shippingprops",
+      "apps_storefront_src_modules_common_components_ui_index_button",
+      "apps_storefront_src_modules_order_components_order_summary_index",
+      "apps_storefront_src_modules_order_components_order_summary_index_ordersummary",
+      "apps_storefront_src_modules_order_components_order_summary_index_ordersummaryprops",
+      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index",
+      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_computetarget",
+      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_freeshippinginline",
+      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_freeshippingpopup",
+      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_shippingpricenudge"
+    ],
+    "17": [
       "apps_storefront_src_app_countrycode_main_cart_loading",
       "apps_storefront_src_app_countrycode_main_cart_loading_loading",
       "apps_storefront_src_app_countrycode_main_order_id_confirmed_loading",
@@ -836,7 +863,7 @@
       "apps_storefront_src_modules_skeletons_templates_skeleton_order_confirmed_index",
       "apps_storefront_src_modules_skeletons_templates_skeleton_order_confirmed_index_skeletonorderconfirmed"
     ],
-    "17": [
+    "18": [
       "apps_storefront_src_app_countrycode_checkout_not_found",
       "apps_storefront_src_app_countrycode_checkout_not_found_metadata",
       "apps_storefront_src_app_countrycode_checkout_not_found_notfound",
@@ -857,28 +884,6 @@
       "apps_storefront_src_modules_home_components_featured_products_index_featuredproducts",
       "apps_storefront_src_modules_home_components_featured_products_product_rail_index",
       "apps_storefront_src_modules_home_components_featured_products_product_rail_index_productrail"
-    ],
-    "18": [
-      "apps_storefront_src_lib_util_repeat",
-      "apps_storefront_src_lib_util_repeat_repeat",
-      "apps_storefront_src_modules_cart_components_item_index_item",
-      "apps_storefront_src_modules_cart_templates_items",
-      "apps_storefront_src_modules_cart_templates_items_itemstemplate",
-      "apps_storefront_src_modules_cart_templates_items_itemstemplateprops",
-      "apps_storefront_src_modules_cart_templates_preview",
-      "apps_storefront_src_modules_cart_templates_preview_itemspreviewtemplate",
-      "apps_storefront_src_modules_cart_templates_preview_itemstemplateprops",
-      "apps_storefront_src_modules_common_components_ui_index_container",
-      "apps_storefront_src_modules_common_components_ui_index_table",
-      "apps_storefront_src_modules_order_components_items_index",
-      "apps_storefront_src_modules_order_components_items_index_items",
-      "apps_storefront_src_modules_order_components_items_index_itemsprops",
-      "apps_storefront_src_modules_skeletons_components_skeleton_line_item_index",
-      "apps_storefront_src_modules_skeletons_components_skeleton_line_item_index_skeletonlineitem",
-      "apps_storefront_src_modules_skeletons_components_skeleton_product_preview_index",
-      "apps_storefront_src_modules_skeletons_components_skeleton_product_preview_index_skeletonproductpreview",
-      "apps_storefront_src_modules_skeletons_templates_skeleton_related_products_index",
-      "apps_storefront_src_modules_skeletons_templates_skeleton_related_products_index_skeletonrelatedproducts"
     ],
     "19": [
       "apps_storefront_src_modules_cart_components_empty_cart_message_index_emptycartmessage",
@@ -946,45 +951,27 @@
       "apps_storefront_src_modules_order_components_item_index_itemprops"
     ],
     "22": [
-      "apps_storefront_src_lib_util_isempty",
-      "apps_storefront_src_lib_util_isempty_isarray",
-      "apps_storefront_src_lib_util_isempty_isempty",
-      "apps_storefront_src_lib_util_isempty_isobject",
-      "apps_storefront_src_lib_util_money",
-      "apps_storefront_src_lib_util_money_converttolocale",
-      "apps_storefront_src_lib_util_money_converttolocaleparams",
-      "apps_storefront_src_modules_account_components_order_card_index",
-      "apps_storefront_src_modules_account_components_order_card_index_ordercard",
-      "apps_storefront_src_modules_account_components_order_card_index_ordercardprops",
-      "apps_storefront_src_modules_order_components_order_summary_index",
-      "apps_storefront_src_modules_order_components_order_summary_index_ordersummary",
-      "apps_storefront_src_modules_order_components_order_summary_index_ordersummaryprops",
-      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index",
-      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_computetarget",
-      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_freeshippinginline",
-      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_freeshippingpopup",
-      "apps_storefront_src_modules_shipping_components_free_shipping_price_nudge_index_shippingpricenudge"
+      "apps_storefront_src_lib_util_repeat",
+      "apps_storefront_src_lib_util_repeat_repeat",
+      "apps_storefront_src_modules_cart_components_item_index_item",
+      "apps_storefront_src_modules_cart_templates_items",
+      "apps_storefront_src_modules_cart_templates_items_itemstemplate",
+      "apps_storefront_src_modules_cart_templates_items_itemstemplateprops",
+      "apps_storefront_src_modules_cart_templates_preview",
+      "apps_storefront_src_modules_cart_templates_preview_itemspreviewtemplate",
+      "apps_storefront_src_modules_cart_templates_preview_itemstemplateprops",
+      "apps_storefront_src_modules_common_components_ui_index_table",
+      "apps_storefront_src_modules_order_components_items_index",
+      "apps_storefront_src_modules_order_components_items_index_items",
+      "apps_storefront_src_modules_order_components_items_index_itemsprops",
+      "apps_storefront_src_modules_skeletons_components_skeleton_line_item_index",
+      "apps_storefront_src_modules_skeletons_components_skeleton_line_item_index_skeletonlineitem",
+      "apps_storefront_src_modules_skeletons_components_skeleton_product_preview_index",
+      "apps_storefront_src_modules_skeletons_components_skeleton_product_preview_index_skeletonproductpreview",
+      "apps_storefront_src_modules_skeletons_templates_skeleton_related_products_index",
+      "apps_storefront_src_modules_skeletons_templates_skeleton_related_products_index_skeletonrelatedproducts"
     ],
     "23": [
-      "apps_storefront_src_app_not_found",
-      "apps_storefront_src_app_not_found_metadata",
-      "apps_storefront_src_app_not_found_notfound",
-      "apps_storefront_src_lib_data_cart_setshippingmethod",
-      "apps_storefront_src_lib_data_fulfillment_calculatepriceforshippingoption",
-      "apps_storefront_src_lib_data_onboarding",
-      "apps_storefront_src_lib_data_onboarding_resetonboardingstate",
-      "apps_storefront_src_modules_checkout_components_shipping_index",
-      "apps_storefront_src_modules_checkout_components_shipping_index_formataddress",
-      "apps_storefront_src_modules_checkout_components_shipping_index_shipping",
-      "apps_storefront_src_modules_checkout_components_shipping_index_shippingprops",
-      "apps_storefront_src_modules_common_components_ui_index_button",
-      "apps_storefront_src_modules_common_components_ui_index_text",
-      "apps_storefront_src_modules_order_components_onboarding_cta_index",
-      "apps_storefront_src_modules_order_components_onboarding_cta_index_onboardingcta",
-      "apps_storefront_src_modules_products_components_product_onboarding_cta_index",
-      "apps_storefront_src_modules_products_components_product_onboarding_cta_index_productonboardingcta"
-    ],
-    "24": [
       "apps_storefront_src_modules_checkout_components_payment_container_index",
       "apps_storefront_src_modules_checkout_components_payment_container_index_paymentcontainerprops",
       "apps_storefront_src_modules_checkout_components_payment_container_index_stripecardcontainer",
@@ -1002,7 +989,7 @@
       "apps_storefront_src_modules_skeletons_components_skeleton_card_details_index",
       "apps_storefront_src_modules_skeletons_components_skeleton_card_details_index_skeletoncarddetails"
     ],
-    "25": [
+    "24": [
       "apps_storefront_src_modules_common_icons_placeholder_image",
       "apps_storefront_src_modules_common_icons_placeholder_image_placeholderimage",
       "apps_storefront_src_modules_products_components_product_preview_index",
@@ -1017,7 +1004,7 @@
       "apps_storefront_src_types_global_storefreeshippingprice",
       "apps_storefront_src_types_global_variantprice"
     ],
-    "26": [
+    "25": [
       "apps_storefront_src_modules_order_components_help_index",
       "apps_storefront_src_modules_order_components_help_index_help",
       "apps_storefront_src_modules_order_components_order_details_index",
@@ -1031,6 +1018,19 @@
       "apps_storefront_src_modules_order_templates_order_completed_template_ordercompletedtemplateprops",
       "apps_storefront_src_modules_order_templates_order_details_template",
       "apps_storefront_src_modules_order_templates_order_details_template_orderdetailstemplateprops"
+    ],
+    "26": [
+      "apps_storefront_src_app_not_found",
+      "apps_storefront_src_app_not_found_metadata",
+      "apps_storefront_src_app_not_found_notfound",
+      "apps_storefront_src_lib_data_onboarding",
+      "apps_storefront_src_lib_data_onboarding_resetonboardingstate",
+      "apps_storefront_src_modules_common_components_ui_index_container",
+      "apps_storefront_src_modules_common_components_ui_index_text",
+      "apps_storefront_src_modules_order_components_onboarding_cta_index",
+      "apps_storefront_src_modules_order_components_onboarding_cta_index_onboardingcta",
+      "apps_storefront_src_modules_products_components_product_onboarding_cta_index",
+      "apps_storefront_src_modules_products_components_product_onboarding_cta_index_productonboardingcta"
     ],
     "27": [
       "apps_backend_package",
@@ -1159,9 +1159,6 @@
     ],
     "48": [
       "apps_storefront_postcss_config"
-    ],
-    "49": [
-      "next_next"
     ]
   },
   "cohesion": {
@@ -1181,17 +1178,17 @@
     "13": 0.07407407407407407,
     "14": 0.07407407407407407,
     "15": 0.08,
-    "16": 0.12318840579710146,
-    "17": 0.13157894736842105,
-    "18": 0.19473684210526315,
+    "16": 0.14333333333333334,
+    "17": 0.12318840579710146,
+    "18": 0.13157894736842105,
     "19": 0.19473684210526315,
     "20": 0.10526315789473684,
     "21": 0.19298245614035087,
-    "22": 0.1895424836601307,
-    "23": 0.16911764705882354,
-    "24": 0.16666666666666666,
-    "25": 0.20512820512820512,
-    "26": 0.2564102564102564,
+    "22": 0.21052631578947367,
+    "23": 0.16666666666666666,
+    "24": 0.20512820512820512,
+    "25": 0.2564102564102564,
+    "26": 0.23636363636363636,
     "27": 0.2222222222222222,
     "28": 0.2222222222222222,
     "29": 0.25,
@@ -1213,8 +1210,7 @@
     "45": 1.0,
     "46": 1.0,
     "47": 1.0,
-    "48": 1.0,
-    "49": 1.0
+    "48": 1.0
   },
   "gods": [
     {
@@ -1258,13 +1254,13 @@
       "degree": 21
     },
     {
-      "id": "apps_backend_tsconfig_compileroptions",
-      "label": "compilerOptions",
+      "id": "apps_storefront_src_types_icon_iconprops",
+      "label": "IconProps",
       "degree": 19
     },
     {
-      "id": "apps_storefront_src_types_icon_iconprops",
-      "label": "IconProps",
+      "id": "apps_backend_tsconfig_compileroptions",
+      "label": "compilerOptions",
       "degree": 19
     }
   ],
@@ -1292,37 +1288,37 @@
       "why": "inferred connection - not explicitly stated in source; bridges separate communities"
     },
     {
-      "source": "exclude",
-      "target": "node_modules",
+      "source": "FashionPDPProps",
+      "target": "FashionProduct",
       "source_files": [
-        "apps/storefront/tsconfig.json",
-        "apps/backend/tsconfig.json"
+        "apps/storefront/src/modules/products/components/fashion-pdp/index.tsx",
+        "apps/storefront/src/lib/data/fashion-mock-products.ts"
       ],
       "confidence": "EXTRACTED",
-      "relation": "extends",
-      "why": "peripheral node `node_modules` unexpectedly reaches hub `exclude`"
+      "relation": "references",
+      "why": "peripheral node `FashionPDPProps` unexpectedly reaches hub `FashionProduct`"
     },
     {
-      "source": "Addresses()",
-      "target": "retrieveCustomer()",
+      "source": "FashionProductCardProps",
+      "target": "FashionProduct",
       "source_files": [
-        "apps/storefront/src/app/[countryCode]/(main)/account/@dashboard/addresses/page.tsx",
-        "apps/storefront/src/lib/data/customer.ts"
+        "apps/storefront/src/modules/products/components/fashion-product-card/index.tsx",
+        "apps/storefront/src/lib/data/fashion-mock-products.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `FashionProductCardProps` unexpectedly reaches hub `FashionProduct`"
+    },
+    {
+      "source": "Profile()",
+      "target": "listRegions()",
+      "source_files": [
+        "apps/storefront/src/app/[countryCode]/(main)/account/@dashboard/profile/page.tsx",
+        "apps/storefront/src/lib/data/regions.ts"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "bridges separate communities"
-    },
-    {
-      "source": "generateMetadata()",
-      "target": "retrieveOrder()",
-      "source_files": [
-        "apps/storefront/src/app/[countryCode]/(main)/account/@dashboard/orders/details/[id]/page.tsx",
-        "apps/storefront/src/lib/data/orders.ts"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "peripheral node `generateMetadata()` unexpectedly reaches hub `retrieveOrder()`"
     }
   ],
   "tokens": {
