@@ -84,7 +84,7 @@ const SideMenu = ({ regions, locales, currentLocale }: SideMenuProps) => {
                   <div data-testid="nav-menu-popup" className="flex flex-col h-full justify-between">
                     <div>
                       <div className="flex items-center justify-between pb-4 border-b border-snoov-border" id="xmark">
-                        <BrandLogo variant="gold" width={120} height={42} />
+                        <BrandLogo width={130} height={46} />
                         <button
                           data-testid="close-menu-button"
                           onClick={close}

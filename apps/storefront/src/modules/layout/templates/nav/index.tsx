@@ -75,13 +75,10 @@ export default async function Nav() {
           <div className="flex items-center justify-center">
             <LocalizedClientLink
               href="/"
-              className="group flex flex-col items-center text-center py-1.5"
+              className="group flex flex-col items-center text-center py-1.5 min-h-[50px] justify-center"
               data-testid="nav-store-link"
             >
-              <BrandLogo variant="gold" width={145} height={52} priority />
-              <span className="text-[8px] tracking-[0.4em] text-snoov-muted uppercase font-sans font-medium -mt-1 group-hover:text-snoov-charcoal transition-colors duration-300">
-                Studio & Atelier
-              </span>
+              <BrandLogo width={155} height={52} priority showSubtitle />
             </LocalizedClientLink>
           </div>
 

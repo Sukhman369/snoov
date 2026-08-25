@@ -2,6 +2,7 @@ import { getBaseURL } from "@lib/util/env"
 import { Metadata } from "next"
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google"
 import PaletteStudio from "@modules/common/components/palette-studio"
+import LogoStudio from "@modules/common/components/logo-studio"
 import "styles/globals.css"
 
 const cormorant = Cormorant_Garamond({
@@ -50,6 +51,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
       >
         <main className="relative min-h-screen flex flex-col">{props.children}</main>
         <PaletteStudio />
+        <LogoStudio />
       </body>
     </html>
   )

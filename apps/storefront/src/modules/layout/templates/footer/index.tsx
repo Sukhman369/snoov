@@ -13,7 +13,7 @@ export default async function Footer() {
           {/* Brand Identity & Mission (4 Columns) */}
           <div className="md:col-span-4 flex flex-col justify-between">
             <div>
-              <BrandLogo variant="gold" width={160} height={58} className="-ml-2" />
+              <BrandLogo width={160} height={58} className="-ml-2" />
               <span className="text-[10px] font-mono tracking-widest text-snoov-green uppercase font-semibold block mt-1">
                 STUDIO & ATELIER · PARIS / PORTO
               </span>
