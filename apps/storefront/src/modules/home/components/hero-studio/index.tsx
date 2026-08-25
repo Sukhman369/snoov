@@ -7,8 +7,14 @@ import HeroC from "./variants/hero-c"
 import HeroD from "./variants/hero-d"
 import HeroE from "./variants/hero-e"
 import HeroF from "./variants/hero-f"
+import HeroG from "./variants/hero-g"
 
 const HERO_VARIANTS = [
+  {
+    id: "hero-g",
+    label: "G — Streetwear Lineup (Tap-to-Explore)",
+    desc: "Interactive model lineup · Layered 3D depth · Tap/glow product popovers",
+  },
   {
     id: "hero-a",
     label: "A — Magazine Editorial",
@@ -42,6 +48,7 @@ const HERO_VARIANTS = [
 ]
 
 const HERO_MAP: Record<string, React.ComponentType> = {
+  "hero-g": HeroG,
   "hero-a": HeroA,
   "hero-b": HeroB,
   "hero-c": HeroC,
@@ -51,7 +58,7 @@ const HERO_MAP: Record<string, React.ComponentType> = {
 }
 
 export default function HeroStudio() {
-  const [activeHero, setActiveHero] = useState("hero-a")
+  const [activeHero, setActiveHero] = useState("hero-g")
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
