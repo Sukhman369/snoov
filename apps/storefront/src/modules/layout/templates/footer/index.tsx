@@ -4,8 +4,8 @@ import BrandLogo from "@modules/common/components/brand-logo"
 
 export default async function Footer() {
   return (
-    <footer className="bg-snoov-canvas border-t border-snoov-border text-snoov-charcoal">
-      <div className="content-container py-16 sm:py-24">
+    <footer className="bg-snoov-canvas border-t border-snoov-border text-snoov-charcoal overflow-hidden select-none">
+      <div className="content-container pt-16 sm:pt-24 pb-8">
         
         {/* Top Editorial Row: Brand Overview + Directory Columns */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16 pb-16 border-b border-snoov-border">
@@ -18,7 +18,7 @@ export default async function Footer() {
                 STUDIO & ATELIER · PARIS / PORTO
               </span>
               <p className="mt-4 text-xs text-snoov-muted leading-relaxed font-sans max-w-sm">
-                A conscious luxury fashion house focused on architectural tailoring, tactile organic textiles, and enduring silhouette design.
+                A conscious luxury streetwear & fashion house focused on architectural tailoring, tactile organic textiles, and enduring silhouette design.
               </p>
             </div>
 
@@ -139,8 +139,29 @@ export default async function Footer() {
 
         </div>
 
+        {/* ── Giant Static Bold SNOOV Brand Typography ── */}
+        <div className="pt-12 sm:pt-16 pb-4 text-center select-none overflow-hidden">
+          <span
+            className="font-sans font-black uppercase text-snoov-charcoal block tracking-tighter transition-all duration-300 hover:opacity-90"
+            style={{
+              fontSize: "clamp(5rem, 20vw, 19rem)",
+              letterSpacing: "-0.045em",
+              lineHeight: "0.82",
+            }}
+          >
+            SNOOV
+          </span>
+          <div className="flex items-center justify-center gap-4 mt-2 text-[10px] sm:text-xs font-mono uppercase tracking-[0.35em] text-snoov-muted">
+            <span>STREETWEAR</span>
+            <span>•</span>
+            <span>REDEFINED</span>
+            <span>•</span>
+            <span>EST. 2026</span>
+          </div>
+        </div>
+
         {/* Bottom Legal & Copyright Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-mono text-snoov-muted uppercase tracking-wider">
+        <div className="pt-8 mt-4 border-t border-snoov-border flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-mono text-snoov-muted uppercase tracking-wider">
           <div>
             © {new Date().getFullYear()} SNOOV STUDIO & ATELIER. ALL RIGHTS RESERVED.
           </div>
