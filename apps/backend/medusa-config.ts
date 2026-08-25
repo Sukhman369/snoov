@@ -32,7 +32,7 @@ module.exports = defineConfig({
                   <link rel="icon" type="image/webp" href="/static/brand/snoov-icon.webp" />
                   <style>
                     /* ── SNOOV Luxury Admin Branding ── */
-                    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
                     :root {
                       --snoov-primary: #1C3F32;
@@ -44,19 +44,35 @@ module.exports = defineConfig({
                       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
                     }
 
-                    /* ── Login Page Customization ── */
-                    /* Hide default Medusa hexagon icon and replace with SNOOV Monogram */
-                    .shadow-buttons-neutral svg.rounded-\\[10px\\] {
+                    /* ── Hide Default Medusa Branding on Login Page ── */
+                    /* Hide the small top avatar icon */
+                    .shadow-buttons-neutral {
                       display: none !important;
                     }
-                    .shadow-buttons-neutral {
-                      background-image: url('/static/brand/snoov-icon.webp') !important;
-                      background-size: 32px 32px !important;
-                      background-repeat: no-repeat !important;
-                      background-position: center !important;
-                      background-color: #18181B !important;
-                      box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+
+                    /* Hide default "Welcome to Medusa" and "Sign in to access the account area" */
+                    .bg-ui-bg-subtle .mb-4.flex.flex-col.items-center,
+                    div.mb-4.flex.flex-col.items-center {
+                      display: none !important;
+                    }
+
+                    /* Refine Login Card Container */
+                    .bg-ui-bg-subtle {
+                      background-color: #0C0C0E !important;
+                    }
+
+                    /* Login Button Styling */
+                    form button[type="submit"] {
+                      background-color: #1C3F32 !important;
+                      color: #FFFFFF !important;
+                      font-weight: 600 !important;
                       border: 1px solid rgba(255,255,255,0.1) !important;
+                      transition: all 0.2s ease !important;
+                    }
+
+                    form button[type="submit"]:hover {
+                      background-color: #245242 !important;
+                      box-shadow: 0 0 15px rgba(28, 63, 50, 0.4) !important;
                     }
 
                     /* Top Header Brand Badge in Sidebar / Navbar */
