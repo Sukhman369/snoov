@@ -2,12 +2,12 @@ import React from "react"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 const CATEGORIES = [
-  { label: "KNITWEAR", href: "/store" },
-  { label: "DRESSES", href: "/store" },
-  { label: "DENIM", href: "/store" },
-  { label: "BOTTOMS", href: "/store" },
-  { label: "TOPS", href: "/store" },
-  { label: "JACKETS", href: "/store" },
+  { label: "TAILORING", href: "/store?category=tailoring", img: "/images/model-portrait.webp" },
+  { label: "KNITWEAR", href: "/store?category=knitwear", img: "/images/model-detail.webp" },
+  { label: "OUTERWEAR", href: "/store?category=outerwear", img: "/images/model-main.webp" },
+  { label: "ESSENTIALS", href: "/store?category=essentials", img: "/images/model-portrait.webp" },
+  { label: "ACCESSORIES", href: "/store?category=accessories", img: "/images/model-detail.webp" },
+  { label: "LOOKBOOK", href: "/store", img: "/images/model-main.webp" },
 ]
 
 export default function HeroF() {
@@ -22,8 +22,17 @@ export default function HeroF() {
           minHeight: "88vh",
         }}
       >
+        {/* Subtle background atmosphere with model silhouette in blend mode */}
+        <div className="absolute right-0 top-0 bottom-0 w-full sm:w-1/2 opacity-25 mix-blend-luminosity pointer-events-none overflow-hidden">
+          <img
+            src="/images/model-main.webp"
+            alt="SNOOV Model"
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+
         {/* Top-left: Small descriptor text */}
-        <div className="px-6 sm:px-10 pt-10 sm:pt-14 max-w-[280px] sm:max-w-xs">
+        <div className="relative z-10 px-6 sm:px-10 pt-10 sm:pt-14 max-w-[280px] sm:max-w-xs">
           <p
             className="text-[13px] sm:text-sm leading-relaxed font-sans"
             style={{ color: "#2D0A10" }}
@@ -35,7 +44,7 @@ export default function HeroF() {
         </div>
 
         {/* Bottom: Massive SNOOV brand name */}
-        <div className="w-full overflow-hidden leading-none">
+        <div className="relative z-10 w-full overflow-hidden leading-none">
           <h1
             className="font-sans font-black uppercase w-full block"
             style={{
@@ -53,19 +62,24 @@ export default function HeroF() {
 
       {/* ── CATEGORY BROWSE — White section ── */}
       <section className="w-full bg-white py-8 sm:py-10 px-6 sm:px-10">
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 sm:gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-5">
           {CATEGORIES.map((cat) => (
             <LocalizedClientLink
               key={cat.label}
               href={cat.href}
               className="flex flex-col items-center gap-2.5 group"
             >
-              {/* Empty product image slot */}
-              <div
-                className="w-full aspect-[3/4] transition-colors duration-200"
-                style={{ backgroundColor: "#F0ECEA" }}
-              />
-              <span className="text-[10px] sm:text-[11px] font-sans font-semibold uppercase tracking-widest text-gray-900 group-hover:text-gray-600 transition-colors">
+              {/* Product image slot */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden rounded-[2px] bg-snoov-sand border border-snoov-border">
+                <img
+                  src={cat.img}
+                  alt={cat.label}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
+              </div>
+              <span className="text-[10px] sm:text-[11px] font-sans font-semibold uppercase tracking-widest text-gray-900 group-hover:text-snoov-green transition-colors">
                 {cat.label}
               </span>
             </LocalizedClientLink>

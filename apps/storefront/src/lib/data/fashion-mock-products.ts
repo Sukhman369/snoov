@@ -31,6 +31,8 @@ export interface FashionProduct {
     aspectRatio: string
     purpose: string
   }
+  image?: string
+  secondaryImage?: string
   isNewArrival?: boolean
   isFeatured?: boolean
   tag?: string

@@ -31,6 +31,9 @@ export default function FashionProductCard({
     ...(product.additionalColors || []),
   ]
 
+  const primaryImg = product.image || "/images/model-portrait.webp"
+  const secondaryImg = product.secondaryImage || "/images/model-detail.webp"
+
   return (
     <div
       className={clx("group flex flex-col relative", className)}
@@ -43,26 +46,16 @@ export default function FashionProductCard({
         className="relative block w-full aspect-[3/4] overflow-hidden bg-snoov-sand border border-snoov-border rounded-[2px]"
       >
         {/* Main vs Secondary Image Slot Toggle */}
-        <div className="w-full h-full transition-opacity duration-500">
-          {!isHovered ? (
-            <ImagePlaceholder
-              name={product.imageSlot.name}
-              desktop={product.imageSlot.desktop}
-              mobile={product.imageSlot.mobile}
-              aspectRatio="3:4"
-              purpose={product.imageSlot.purpose}
-              className="w-full h-full"
-            />
-          ) : (
-            <ImagePlaceholder
-              name={product.secondarySlot.name}
-              desktop={product.secondarySlot.desktop}
-              mobile={product.secondarySlot.mobile}
-              aspectRatio="3:4"
-              purpose={product.secondarySlot.purpose}
-              className="w-full h-full"
-            />
-          )}
+        <div className="w-full h-full relative">
+          <ImagePlaceholder
+            name={product.imageSlot.name}
+            desktop={product.imageSlot.desktop}
+            mobile={product.imageSlot.mobile}
+            aspectRatio="3:4"
+            purpose={product.imageSlot.purpose}
+            src={isHovered ? secondaryImg : primaryImg}
+            className="w-full h-full"
+          />
         </div>
 
         {/* Tag Pill (e.g. LIMITED EDITION / NEW ARRIVAL) */}

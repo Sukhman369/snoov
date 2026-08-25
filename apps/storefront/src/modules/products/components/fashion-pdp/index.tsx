@@ -46,11 +46,13 @@ export default function FashionPDP({ product }: FashionPDPProps) {
       slot: product.imageSlot,
       title: "Front Silhouette",
       spec: "1200 × 1600 px (3:4 Ratio)",
+      src: product.image || "/images/model-portrait.webp",
     },
     {
       slot: product.secondarySlot,
       title: "Craft & Detail",
       spec: "1200 × 1600 px (3:4 Ratio)",
+      src: product.secondaryImage || "/images/model-detail.webp",
     },
     {
       slot: {
@@ -62,6 +64,7 @@ export default function FashionPDP({ product }: FashionPDPProps) {
       },
       title: "Lookbook Angle",
       spec: "1200 × 1600 px (3:4 Ratio)",
+      src: "/images/model-main.webp",
     },
   ]
 
@@ -116,16 +119,18 @@ export default function FashionPDP({ product }: FashionPDPProps) {
                   key={idx}
                   onClick={() => setActiveImageIndex(idx)}
                   className={clx(
-                    "relative w-16 sm:w-20 aspect-[3/4] bg-snoov-sand border overflow-hidden rounded-[2px] flex-shrink-0 transition-all",
+                    "relative w-16 sm:w-20 aspect-[3/4] bg-snoov-sand border overflow-hidden rounded-[2px] flex-shrink-0 transition-all group",
                     activeImageIndex === idx
-                      ? "border-snoov-charcoal ring-1 ring-snoov-charcoal"
+                      ? "border-snoov-charcoal ring-2 ring-snoov-charcoal ring-offset-1"
                       : "border-snoov-border opacity-70 hover:opacity-100"
                   )}
                 >
-                  <div className="w-full h-full p-1 flex flex-col justify-center items-center text-[7px] font-mono text-snoov-muted text-center">
-                    <span>SLOT {idx + 1}</span>
-                    <span className="text-[6px] text-snoov-green font-semibold mt-0.5">3:4</span>
-                  </div>
+                  <img
+                    src={img.src}
+                    alt={img.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
                 </button>
               ))}
             </div>
@@ -138,6 +143,7 @@ export default function FashionPDP({ product }: FashionPDPProps) {
                 mobile={galleryImages[activeImageIndex].slot.mobile}
                 aspectRatio="3:4"
                 purpose={galleryImages[activeImageIndex].slot.purpose}
+                src={galleryImages[activeImageIndex].src}
                 className="w-full h-full"
               />
 
