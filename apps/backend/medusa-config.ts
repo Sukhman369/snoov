@@ -44,25 +44,19 @@ module.exports = defineConfig({
                       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
                     }
 
-                    /* ── Login Screen Transformation ── */
-                    /* Replace Top Medusa Icon on Login Page with SNOOV Brand Logo */
-                    main form svg.text-ui-fg-subtle,
-                    form [data-testid="medusa-logo"],
-                    main svg.w-8.h-8 {
+                    /* ── Login Page Customization ── */
+                    /* Hide default Medusa hexagon icon and replace with SNOOV Monogram */
+                    .shadow-buttons-neutral svg.rounded-\\[10px\\] {
                       display: none !important;
                     }
-
-                    /* Inject SNOOV Logo above login form */
-                    main form::before {
-                      content: '';
-                      display: block;
-                      width: 160px;
-                      height: 55px;
-                      margin: 0 auto 16px auto;
-                      background-image: url('/static/brand/snoov-logo-crimson-script.webp');
-                      background-size: contain;
-                      background-repeat: no-repeat;
-                      background-position: center;
+                    .shadow-buttons-neutral {
+                      background-image: url('/static/brand/snoov-icon.webp') !important;
+                      background-size: 32px 32px !important;
+                      background-repeat: no-repeat !important;
+                      background-position: center !important;
+                      background-color: #18181B !important;
+                      box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+                      border: 1px solid rgba(255,255,255,0.1) !important;
                     }
 
                     /* Top Header Brand Badge in Sidebar / Navbar */
