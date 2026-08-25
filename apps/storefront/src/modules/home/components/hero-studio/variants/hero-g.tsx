@@ -4,84 +4,95 @@ import React, { useState } from "react"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import { clx } from "@medusajs/ui"
 
-interface LineupItem {
+interface TeamModel {
   id: string
   name: string
+  garmentName: string
   category: string
   price: string
-  originalPrice?: string
   fabric: string
   tag: string
   handle: string
+  // Clean transparent PNG/WebP path
   image: string
-  position: string // CSS position classes
-  focalOffsetX: number // Percentage for popover offset
+  // Relative position in the lineup
+  zIndex: number
+  scale?: number
   details: string[]
-  colors: string[]
 }
 
-const LINEUP_PRODUCTS: LineupItem[] = [
+// Configurable Team Models Lineup
+// Note: When you have your final team PNG cutouts, simply replace the 'image' paths below!
+const TEAM_LINEUP: TeamModel[] = [
   {
-    id: "item-1",
-    name: "Heavy Boxy Denim Jacket",
+    id: "model-1",
+    name: "Look 01",
+    garmentName: "Heavy Boxy Denim Chore",
     category: "Outerwear",
-    price: "$280",
-    fabric: "14oz Japanese Selvedge Denim",
-    tag: "ARCHIVE 01",
+    price: "₹2,499",
+    fabric: "14oz Raw Selvedge Denim",
+    tag: "ARCHIVE",
     handle: "oversized-belgian-linen-blazer",
-    image: "/images/model-portrait.webp",
-    position: "left-[5%] sm:left-[8%]",
-    focalOffsetX: 10,
-    details: ["14oz Raw Selvedge", "Custom Matte Hardware", "Drop-Shoulder Cut"],
-    colors: ["#1B263B", "#3D3D3D"],
+    image: "/images/model-cutout-1.webp",
+    zIndex: 10,
+    details: ["14oz Japanese Selvedge", "Custom Matte Hardware", "Drop Shoulder Cut"],
   },
   {
-    id: "item-2",
-    name: "Oversized Graphic Heavyweight Tee",
-    category: "Signature Tee",
-    price: "$75",
-    originalPrice: "$95",
-    fabric: "240 GSM Organic Cotton",
-    tag: "HERO PIECE",
-    handle: "oversized-belgian-linen-blazer",
-    image: "/images/model-main.webp",
-    position: "left-[30%] sm:left-[32%]",
-    focalOffsetX: 35,
-    details: ["240 GSM Combed Cotton", "High-Density Screenprint", "Boxy Streetwear Fit"],
-    colors: ["#5C4033", "#1A1A1A", "#FFFFFF"],
-  },
-  {
-    id: "item-3",
-    name: "Double-Pleated Wide Leg Trousers",
+    id: "model-2",
+    name: "Look 02",
+    garmentName: "Deconstructed Linen Blazer",
     category: "Tailoring",
-    price: "$290",
-    fabric: "Tropical High-Twist Wool",
-    tag: "RESTOCKED",
-    handle: "pleated-wide-leg-trousers",
-    image: "/images/model-detail.webp",
-    position: "left-[55%] sm:left-[56%]",
-    focalOffsetX: 60,
-    details: ["Virgin Wool Blend", "Deep Double Pleats", "Fluid Drape"],
-    colors: ["#D8CFBC", "#1A1A1A", "#3E0B13"],
-  },
-  {
-    id: "item-4",
-    name: "Deconstructed Linen Chore Coat",
-    category: "Outerwear",
-    price: "$340",
+    price: "₹3,499",
     fabric: "100% Belgian Flax Linen",
     tag: "LIMITED RUN",
     handle: "oversized-belgian-linen-blazer",
-    image: "/images/model-portrait.webp",
-    position: "left-[78%] sm:left-[78%]",
-    focalOffsetX: 80,
-    details: ["Unlined Construction", "Horn Buttons", "Breathable Midweight"],
-    colors: ["#E7DFD3", "#008000", "#1C1510"],
+    image: "/images/model-cutout-2.webp",
+    zIndex: 12,
+    details: ["Unlined Construction", "Horn Buttons", "Breathable Structure"],
+  },
+  {
+    id: "model-3",
+    name: "Look 03",
+    garmentName: "Oversized Graphic Heavyweight Tee",
+    category: "Signature Tee",
+    price: "₹1,499",
+    fabric: "240 GSM Organic Combed Cotton",
+    tag: "HERO PIECE",
+    handle: "oversized-belgian-linen-blazer",
+    image: "/images/model-cutout-3.webp",
+    zIndex: 30, // Stands in front of the logo in center
+    details: ["240 GSM Heavy Weight", "High-Density Screenprint", "Unisex Boxy Fit", "Pre-Shrunk"],
+  },
+  {
+    id: "model-4",
+    name: "Look 04",
+    garmentName: "Double-Pleated Wide Leg Pant",
+    category: "Tailoring",
+    price: "₹2,899",
+    fabric: "High-Twist Tropical Wool",
+    tag: "BESTSELLER",
+    handle: "pleated-wide-leg-trousers",
+    image: "/images/model-cutout-1.webp",
+    zIndex: 15,
+    details: ["Virgin Wool Blend", "Deep Double Pleats", "Fluid Architectural Drape"],
+  },
+  {
+    id: "model-5",
+    name: "Look 05",
+    garmentName: "Heavyweight Boxy Hoodie",
+    category: "Streetwear",
+    price: "₹2,199",
+    fabric: "450 GSM French Terry",
+    tag: "RESTOCKED",
+    handle: "oversized-belgian-linen-blazer",
+    image: "/images/model-cutout-2.webp",
+    zIndex: 10,
+    details: ["450 GSM Heavy French Terry", "Double Layer Hood", "Hidden Kangaroo Pocket"],
   },
 ]
 
 export default function HeroG() {
-  const [activeItem, setActiveItem] = useState<LineupItem | null>(LINEUP_PRODUCTS[1]) // Default to center tee
+  const [activeModel, setActiveModel] = useState<TeamModel | null>(null)
   const [quickAdded, setQuickAdded] = useState(false)
 
   const handleQuickAdd = (e: React.MouseEvent) => {
@@ -91,104 +102,134 @@ export default function HeroG() {
     setTimeout(() => setQuickAdded(false), 2200)
   }
 
+  const isModelSelected = activeModel !== null
+
   return (
-    <section className="relative w-full min-h-[92vh] bg-[#0A0A0C] text-white overflow-hidden border-b border-[#222] select-none flex flex-col justify-between">
+    <section className="relative w-full min-h-[92vh] bg-[#0E0E11] text-white overflow-hidden border-b border-[#222] select-none flex flex-col justify-between">
       
-      {/* ── Background Atmosphere & Ambient Lighting ── */}
+      {/* ── Background Atmosphere ── */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Subtle radial center spotlight */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] sm:w-[1000px] h-[500px] bg-gradient-to-b from-white/10 via-white/5 to-transparent rounded-full blur-3xl opacity-60" />
-        {/* Floor shadow and grid baseline */}
-        <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-[#0A0A0C] via-[#0A0A0C]/80 to-transparent z-20" />
-        <div className="absolute bottom-16 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/15 to-transparent z-10" />
+        {/* Dark studio spotlight background gradient */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_40%,rgba(45,45,55,0.45),rgba(14,14,17,0.98))]" />
+        {/* Floor shadow and baseline */}
+        <div className="absolute bottom-0 inset-x-0 h-44 bg-gradient-to-t from-[#0E0E11] via-[#0E0E11]/90 to-transparent z-30" />
       </div>
 
-      {/* ── Top Header Navigation Badge ── */}
-      <div className="relative z-30 content-container pt-8 sm:pt-10 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+      {/* ── Top Status Bar ── */}
+      <div className="relative z-30 content-container pt-6 sm:pt-8 flex items-center justify-between">
+        <div className="flex items-center gap-2.5">
           <span className="w-2 h-2 rounded-full bg-snoov-green animate-pulse" />
-          <span className="text-[10px] font-mono tracking-[0.25em] text-white/70 uppercase font-semibold">
-            INTERACTIVE CAPSULE · TAP ANY MODEL TO EXPLORE
+          <span className="text-[10px] font-mono tracking-[0.2em] text-white/70 uppercase font-semibold">
+            {isModelSelected
+              ? `SELECTED: ${activeModel?.garmentName.toUpperCase()} — CLICK TO VIEW`
+              : "TAP OR HOVER ANY MODEL TO EXPLORE GARMENTS"}
           </span>
         </div>
-        <div className="hidden sm:flex items-center gap-4 text-[10px] font-mono text-white/50">
-          <span>SS26 STREETWEAR ARCHIVE</span>
+
+        <div className="hidden sm:flex items-center gap-4 text-[10px] font-mono text-white/40">
+          <span>STREETWEAR ARCHIVE SS26</span>
           <span>•</span>
-          <span className="text-white/80 font-medium">4 LOOKS LIVE</span>
+          <span className="text-white/80 font-medium">5 LOOKS</span>
         </div>
       </div>
 
-      {/* ── Layered 2.5D Stage: Huge Typography Behind Models ── */}
-      <div className="relative w-full flex-1 flex items-center justify-center min-h-[480px] sm:min-h-[580px] my-auto">
+      {/* ── Main Interactive Stage ── */}
+      <div className="relative w-full flex-1 flex items-center justify-center min-h-[500px] sm:min-h-[620px] my-auto">
         
-        {/* Layer 1 (Midground): Giant SNOOV Brandmark behind models */}
-        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center pointer-events-none z-10 overflow-hidden leading-none select-none">
+        {/* ── Big Bold White SNOOV Wordmark (Exact match to Frame 01 & 02) ── */}
+        <div
+          className={clx(
+            "absolute inset-x-0 top-[38%] -translate-y-1/2 text-center pointer-events-none z-20 transition-all duration-700 select-none",
+            isModelSelected ? "opacity-20 scale-[0.98] blur-[0.5px]" : "opacity-100 scale-100"
+          )}
+        >
+          {/* Main Solid White SNOOV Text */}
           <h1
-            className="font-sans font-black uppercase text-center block tracking-tighter"
+            className="font-sans font-black uppercase text-center tracking-tighter text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)]"
             style={{
-              fontSize: "clamp(6rem, 24vw, 24rem)",
-              lineHeight: "0.82",
-              letterSpacing: "-0.04em",
-              background: "linear-gradient(180deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.06) 65%, rgba(255,255,255,0.01) 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              filter: "drop-shadow(0 2px 20px rgba(0,0,0,0.8))",
+              fontSize: "clamp(5rem, 21vw, 20rem)",
+              lineHeight: "0.85",
+              letterSpacing: "-0.045em",
             }}
           >
             SNOOV
           </h1>
-          <p className="text-[11px] sm:text-xs font-mono tracking-[0.4em] uppercase text-white/30 -mt-2 sm:-mt-6">
-            LIVE DIFFERENT. WEAR SNOOV.
-          </p>
+
+          {/* Subheader and Tagline right below SNOOV */}
+          <div className="mt-2 sm:mt-4 flex flex-col items-center justify-center">
+            <p className="text-xs sm:text-sm font-mono tracking-[0.35em] uppercase text-white/90 font-medium">
+              LIVE DIFFERENT. WEAR SNOOV.
+            </p>
+
+            {/* Explore Collection Button directly below subheader (Frame 01) */}
+            <div className="mt-5 pointer-events-auto">
+              <LocalizedClientLink
+                href="/store"
+                className="inline-block px-7 py-3 border border-white/50 text-white text-xs font-mono uppercase tracking-[0.25em] font-semibold hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-xs shadow-lg"
+              >
+                EXPLORE COLLECTION
+              </LocalizedClientLink>
+            </div>
+          </div>
         </div>
 
-        {/* Layer 2 (Foreground): Interactive Model Lineup */}
-        <div className="relative z-20 w-full max-w-6xl mx-auto px-4 h-[440px] sm:h-[540px] flex items-end justify-center">
-          <div className="relative w-full h-full">
-            {LINEUP_PRODUCTS.map((item, index) => {
-              const isSelected = activeItem?.id === item.id
-              const isAnySelected = activeItem !== null
+        {/* ── Models Crew Lineup (Layered across the stage) ── */}
+        <div className="relative z-25 w-full max-w-6xl mx-auto px-4 h-[440px] sm:h-[560px] flex items-end justify-center">
+          <div className="relative w-full h-full flex items-end justify-center">
+            
+            {TEAM_LINEUP.map((model, index) => {
+              const isSelected = activeModel?.id === model.id
+              const isAnyActive = activeModel !== null
+
+              // Spread models horizontally across the stage
+              const offsets = [
+                "left-[2%] sm:left-[6%]",    // Look 1 (Left flank)
+                "left-[20%] sm:left-[24%]",  // Look 2 (Mid-left)
+                "left-[40%] sm:left-[43%]",  // Look 3 (Center foreground)
+                "left-[60%] sm:left-[62%]",  // Look 4 (Mid-right)
+                "left-[78%] sm:left-[80%]",  // Look 5 (Right flank)
+              ]
 
               return (
                 <div
-                  key={item.id}
-                  onClick={() => setActiveItem(isSelected ? null : item)}
-                  onMouseEnter={() => setActiveItem(item)}
+                  key={model.id}
+                  onClick={() => setActiveModel(isSelected ? null : model)}
+                  onMouseEnter={() => setActiveModel(model)}
                   className={clx(
-                    "absolute bottom-0 w-[42%] sm:w-[28%] md:w-[24%] max-w-[280px] cursor-pointer transition-all duration-500 ease-out transform origin-bottom",
-                    item.position,
+                    "absolute bottom-0 w-[36%] sm:w-[25%] md:w-[22%] max-w-[260px] cursor-pointer transition-all duration-500 ease-out transform origin-bottom",
+                    offsets[index] || "left-1/2",
                     isSelected
-                      ? "z-30 scale-105"
-                      : isAnySelected
-                      ? "z-20 opacity-60 grayscale-[35%] hover:opacity-100 hover:grayscale-0 hover:scale-100 scale-95"
-                      : "z-20 opacity-95 hover:opacity-100 hover:scale-100"
+                      ? "z-40 scale-105"
+                      : isAnyActive
+                      ? "z-10 opacity-35 grayscale-[50%] hover:opacity-90 hover:grayscale-0 scale-95"
+                      : "z-25 opacity-95 hover:opacity-100 hover:scale-100"
                   )}
+                  style={{
+                    zIndex: isSelected ? 40 : model.zIndex,
+                  }}
                 >
-                  {/* Model Image Frame with Glow Highlight on active */}
+                  {/* Model Image with Crisp Glowing Silhouette Contour (Frame 02) */}
                   <div
                     className={clx(
-                      "relative aspect-[3/4] rounded-[2px] overflow-hidden transition-all duration-500",
+                      "relative w-full aspect-[3/4.2] transition-all duration-500",
                       isSelected
-                        ? "ring-2 ring-white/90 shadow-[0_0_35px_rgba(255,255,255,0.4)]"
-                        : "ring-1 ring-white/10 hover:ring-white/40"
+                        ? "filter drop-shadow-[0_0_12px_rgba(255,255,255,1)] drop-shadow-[0_0_30px_rgba(255,255,255,0.7)]"
+                        : "filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]"
                     )}
                   >
                     <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-full h-full object-cover object-top filter brightness-95"
+                      src={model.image}
+                      alt={model.garmentName}
+                      className="w-full h-full object-contain object-bottom select-none pointer-events-none"
                     />
 
-                    {/* Dark gradient base on model feet */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-transparent to-transparent opacity-80" />
-
-                    {/* Interactive Hotspot Target Pill */}
+                    {/* Interactive Cursor Indicator */}
                     <div
                       className={clx(
-                        "absolute top-4 right-4 z-20 flex items-center justify-center transition-all duration-300",
+                        "absolute top-6 right-6 z-30 flex items-center justify-center transition-all duration-300",
                         isSelected
-                          ? "scale-110 bg-white text-black font-bold shadow-lg"
-                          : "bg-black/60 backdrop-blur-md text-white/90 border border-white/20 hover:border-white"
+                          ? "scale-110 bg-white text-black font-bold shadow-xl"
+                          : "bg-black/70 backdrop-blur-md text-white/80 border border-white/30 hover:border-white"
                       )}
                       style={{ width: "26px", height: "26px", borderRadius: "50%" }}
                     >
@@ -196,67 +237,56 @@ export default function HeroG() {
                         {isSelected ? "✓" : "+"}
                       </span>
                     </div>
-
-                    {/* Number Badge */}
-                    <div className="absolute bottom-3 left-3 z-20">
-                      <span className="text-[9px] font-mono uppercase tracking-widest text-white/60 bg-black/60 px-2 py-0.5 rounded-[1px] border border-white/10 backdrop-blur-xs">
-                        LOOK 0{index + 1}
-                      </span>
-                    </div>
                   </div>
                 </div>
               )
             })}
+
           </div>
         </div>
 
-        {/* Layer 3: Floating Interactive Product Card Popover (Frame 02) */}
-        {activeItem && (
-          <div className="absolute bottom-6 right-4 sm:right-10 z-40 max-w-[320px] sm:max-w-xs w-full animate-fadeIn">
-            <div className="bg-[#121216]/95 backdrop-blur-xl border border-white/20 p-5 rounded-[2px] shadow-[0_20px_50px_rgba(0,0,0,0.8)] relative">
+        {/* ── Floating Product HUD Popover (Frame 02) ── */}
+        {activeModel && (
+          <div className="absolute bottom-8 right-4 sm:right-12 z-50 max-w-[320px] sm:max-w-xs w-full animate-fadeIn">
+            <div className="bg-[#141418]/95 backdrop-blur-2xl border border-white/25 p-5 rounded-[2px] shadow-[0_25px_60px_rgba(0,0,0,0.9)] relative">
               
-              {/* Card Top Tag */}
+              {/* Top Tag & Close */}
               <div className="flex items-center justify-between pb-3 border-b border-white/10">
-                <span className="px-2 py-0.5 bg-snoov-green text-white text-[9px] font-mono uppercase tracking-widest font-semibold rounded-[1px]">
-                  {activeItem.tag}
+                <span className="px-2 py-0.5 bg-white text-black text-[9px] font-mono uppercase tracking-widest font-bold rounded-[1px]">
+                  {activeModel.tag}
                 </span>
                 <button
-                  onClick={() => setActiveItem(null)}
-                  className="text-white/40 hover:text-white text-xs font-mono"
+                  onClick={() => setActiveModel(null)}
+                  className="text-white/40 hover:text-white text-xs font-mono p-1"
                 >
                   ✕
                 </button>
               </div>
 
-              {/* Title & Price */}
+              {/* Garment Details */}
               <div className="pt-3">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-white/50">
-                  {activeItem.category}
+                  {activeModel.category}
                 </span>
                 <h3 className="font-serif text-lg text-white font-medium mt-0.5 leading-snug">
-                  {activeItem.name}
+                  {activeModel.garmentName}
                 </h3>
                 
                 <div className="flex items-baseline gap-2 mt-1.5">
-                  <span className="text-base font-mono font-semibold text-white">
-                    {activeItem.price}
+                  <span className="text-base font-mono font-bold text-white">
+                    {activeModel.price}
                   </span>
-                  {activeItem.originalPrice && (
-                    <span className="text-xs font-mono text-white/40 line-through">
-                      {activeItem.originalPrice}
-                    </span>
-                  )}
-                  <span className="text-[10px] font-sans text-white/50 ml-auto">
-                    {activeItem.fabric}
+                  <span className="text-[10px] font-sans text-white/60 ml-auto">
+                    {activeModel.fabric}
                   </span>
                 </div>
               </div>
 
-              {/* Specs Bullet Points */}
-              <div className="mt-3 py-2.5 px-3 bg-white/5 rounded-[2px] border border-white/5 space-y-1">
-                {activeItem.details.map((detail, idx) => (
-                  <div key={idx} className="flex items-center gap-1.5 text-[10px] font-mono text-white/70">
-                    <span className="text-snoov-green text-[8px]">▪</span>
+              {/* Garment Specs */}
+              <div className="mt-3 py-2 px-3 bg-white/5 rounded-[2px] border border-white/5 space-y-1">
+                {activeModel.details.map((detail, idx) => (
+                  <div key={idx} className="flex items-center gap-1.5 text-[10px] font-mono text-white/80">
+                    <span className="text-white text-[8px]">▪</span>
                     <span>{detail}</span>
                   </div>
                 ))}
@@ -265,15 +295,15 @@ export default function HeroG() {
               {/* Action Buttons */}
               <div className="mt-4 flex items-center gap-2">
                 <LocalizedClientLink
-                  href={`/products/${activeItem.handle}`}
-                  className="flex-1 text-center py-2.5 px-3 bg-white text-black text-[10px] font-mono uppercase tracking-widest font-semibold hover:bg-snoov-ecru transition-colors rounded-[1px]"
+                  href={`/products/${activeModel.handle}`}
+                  className="flex-1 text-center py-2.5 px-3 bg-white text-black text-[10px] font-mono uppercase tracking-widest font-bold hover:bg-snoov-ecru transition-colors rounded-[1px]"
                 >
                   VIEW PIECE →
                 </LocalizedClientLink>
 
                 <button
                   onClick={handleQuickAdd}
-                  className="py-2.5 px-3 border border-white/30 text-white hover:border-white text-[10px] font-mono uppercase tracking-wider transition-colors rounded-[1px]"
+                  className="py-2.5 px-3 border border-white/40 text-white hover:border-white text-[10px] font-mono uppercase tracking-wider transition-colors rounded-[1px]"
                 >
                   {quickAdded ? "ADDED ✓" : "QUICK ADD"}
                 </button>
@@ -285,44 +315,33 @@ export default function HeroG() {
 
       </div>
 
-      {/* ── Bottom Navigation & Look Selector Bar ── */}
-      <div className="relative z-30 content-container pb-8 sm:pb-12 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      {/* ── Bottom Selector Strip (Frame 01 / 02) ── */}
+      <div className="relative z-30 content-container pb-6 sm:pb-8 pt-3 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
         
-        {/* Look Switcher Buttons */}
+        {/* Model Tabs */}
         <div className="flex items-center gap-2 overflow-x-auto max-w-full pb-1 sm:pb-0">
           <span className="text-[10px] font-mono uppercase tracking-wider text-white/40 mr-2 hidden md:inline">
-            SELECT LOOK:
+            MODELS:
           </span>
-          {LINEUP_PRODUCTS.map((item, idx) => (
+          {TEAM_LINEUP.map((model, idx) => (
             <button
-              key={item.id}
-              onClick={() => setActiveItem(item)}
+              key={model.id}
+              onClick={() => setActiveModel(activeModel?.id === model.id ? null : model)}
               className={clx(
                 "px-3 py-1.5 text-[10px] font-mono uppercase tracking-wider transition-all rounded-[1px]",
-                activeItem?.id === item.id
-                  ? "bg-white text-black font-semibold shadow-xs"
+                activeModel?.id === model.id
+                  ? "bg-white text-black font-bold shadow-xs"
                   : "bg-white/5 text-white/60 hover:text-white hover:bg-white/10 border border-white/10"
               )}
             >
-              0{idx + 1} · {item.name.split(" ")[0]}
+              0{idx + 1} · {model.name}
             </button>
           ))}
         </div>
 
-        {/* Bottom CTAs */}
-        <div className="flex items-center gap-3">
-          <LocalizedClientLink
-            href="/store"
-            className="px-6 py-2.5 bg-white text-black text-[11px] font-mono uppercase tracking-widest font-semibold hover:bg-snoov-ecru transition-colors"
-          >
-            EXPLORE COLLECTION
-          </LocalizedClientLink>
-          <LocalizedClientLink
-            href="/store?category=tailoring"
-            className="px-6 py-2.5 border border-white/30 text-white text-[11px] font-mono uppercase tracking-widest hover:border-white transition-colors"
-          >
-            VIEW LOOKBOOK
-          </LocalizedClientLink>
+        {/* Brand statement */}
+        <div className="text-[10px] font-mono text-white/50 uppercase tracking-widest">
+          SNOOV STUDIO · CRAFTED FOR STREETWEAR DISRUPTORS
         </div>
 
       </div>
