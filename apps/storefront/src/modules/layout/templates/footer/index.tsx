@@ -112,6 +112,11 @@ export default async function Footer() {
               </span>
               <ul className="space-y-3 text-snoov-muted">
                 <li>
+                  <LocalizedClientLink href="/about" className="hover:text-snoov-green transition-colors">
+                    Our Story & The Pod
+                  </LocalizedClientLink>
+                </li>
+                <li>
                   <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-snoov-green transition-colors flex items-center gap-1.5">
                     <span>Instagram</span>
                     <span className="text-[10px]">↗</span>
