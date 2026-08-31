@@ -107,6 +107,11 @@ export default async function Footer() {
                     Frequently Asked Questions
                   </LocalizedClientLink>
                 </li>
+                <li>
+                  <LocalizedClientLink href="/track-order" className="hover:text-snoov-green transition-colors font-medium">
+                    Track Your Order
+                  </LocalizedClientLink>
+                </li>
               </ul>
             </div>
 
