@@ -117,6 +117,11 @@ export default async function Footer() {
                   </LocalizedClientLink>
                 </li>
                 <li>
+                  <LocalizedClientLink href="/lookbook" className="hover:text-snoov-green transition-colors">
+                    Seasonal Lookbook
+                  </LocalizedClientLink>
+                </li>
+                <li>
                   <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-snoov-green transition-colors flex items-center gap-1.5">
                     <span>Instagram</span>
                     <span className="text-[10px]">↗</span>
