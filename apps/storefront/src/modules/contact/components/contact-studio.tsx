@@ -23,25 +23,6 @@ export default function ContactStudio() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSent, setIsSent] = useState(false)
 
-  // Local Clocks State
-  const [times, setTimes] = useState({
-    tricity: "",
-    local: "",
-  })
-
-  useEffect(() => {
-    const updateTimes = () => {
-      const now = new Date()
-      setTimes({
-        tricity: now.toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit" }),
-        local: now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" }),
-      })
-    }
-    updateTimes()
-    const interval = setInterval(updateTimes, 1000)
-    return () => clearInterval(interval)
-  }, [])
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
@@ -56,30 +37,6 @@ export default function ContactStudio() {
   return (
     <div className="space-y-16 sm:space-y-24">
       
-      {/* ── Live Signal & World Clocks Ticker ── */}
-      <div className="p-4 sm:p-5 bg-snoov-charcoal text-snoov-canvas rounded-base flex flex-col md:flex-row md:items-center justify-between gap-4 font-mono text-xs border border-snoov-charcoal">
-        <div className="flex items-center gap-3">
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-snoov-green opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-snoov-green"></span>
-          </span>
-          <span className="text-[11px] uppercase tracking-widest text-snoov-sand font-semibold">
-            MOHALI ATELIER DESK ONLINE · AVERAGE RESPONSE &lt; 15 MINS
-          </span>
-        </div>
-
-        <div className="flex items-center gap-6 text-[10px] uppercase tracking-wider text-snoov-sand/70">
-          <div>
-            <span className="text-snoov-sand/40 mr-1.5">MOHALI [IST]</span>
-            <span className="text-snoov-canvas font-semibold">{times.tricity || "18:50"}</span>
-          </div>
-          <div>
-            <span className="text-snoov-sand/40 mr-1.5">YOUR TIME</span>
-            <span className="text-snoov-canvas font-semibold">{times.local || "LOCAL"}</span>
-          </div>
-        </div>
-      </div>
-
       {/* ── Main Split Experience ── */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
         
