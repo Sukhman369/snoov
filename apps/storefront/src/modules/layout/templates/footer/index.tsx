@@ -166,7 +166,7 @@ export default async function Footer() {
             © {new Date().getFullYear()} SNOOV STUDIO & ATELIER. ALL RIGHTS RESERVED.
           </div>
           <div className="flex items-center gap-6">
-            <LocalizedClientLink href="/store" className="hover:text-snoov-charcoal transition-colors">
+            <LocalizedClientLink href="/privacy" className="hover:text-snoov-charcoal transition-colors">
               Privacy Policy
             </LocalizedClientLink>
             <LocalizedClientLink href="/store" className="hover:text-snoov-charcoal transition-colors">
