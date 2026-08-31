@@ -102,6 +102,11 @@ export default async function Footer() {
                     Garment Care & Longevity
                   </LocalizedClientLink>
                 </li>
+                <li>
+                  <LocalizedClientLink href="/faq" className="hover:text-snoov-green transition-colors">
+                    Frequently Asked Questions
+                  </LocalizedClientLink>
+                </li>
               </ul>
             </div>
 
