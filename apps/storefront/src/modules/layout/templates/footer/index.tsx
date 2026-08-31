@@ -98,7 +98,7 @@ export default async function Footer() {
                   </LocalizedClientLink>
                 </li>
                 <li>
-                  <LocalizedClientLink href="/store" className="hover:text-snoov-green transition-colors">
+                  <LocalizedClientLink href="/garment-care" className="hover:text-snoov-green transition-colors">
                     Garment Care & Longevity
                   </LocalizedClientLink>
                 </li>
