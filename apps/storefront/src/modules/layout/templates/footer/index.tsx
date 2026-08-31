@@ -6,10 +6,10 @@ export default async function Footer() {
   return (
     <footer className="bg-snoov-canvas border-t border-snoov-border text-snoov-charcoal overflow-hidden select-none">
       <div className="content-container pt-16 sm:pt-24 pb-8">
-        
+
         {/* Top Editorial Row: Brand Overview + Directory Columns */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16 pb-16 border-b border-snoov-border">
-          
+
           {/* Brand Identity & Mission (4 Columns) */}
           <div className="md:col-span-4 flex flex-col justify-between">
             <div>
@@ -31,7 +31,7 @@ export default async function Footer() {
 
           {/* Directory Columns (8 Columns) */}
           <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-8 text-xs">
-            
+
             {/* Column 1: Shop */}
             <div>
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-charcoal font-semibold block mb-4">
@@ -113,7 +113,7 @@ export default async function Footer() {
               <ul className="space-y-3 text-snoov-muted">
                 <li>
                   <LocalizedClientLink href="/about" className="hover:text-snoov-green transition-colors">
-                    Our Story & The Pod
+                    Our Story
                   </LocalizedClientLink>
                 </li>
                 <li>
@@ -183,7 +183,7 @@ export default async function Footer() {
             <LocalizedClientLink href="/accessibility" className="hover:text-snoov-charcoal transition-colors">
               Accessibility
             </LocalizedClientLink>
-            <LocalizedClientLink href="/store" className="hover:text-snoov-charcoal transition-colors">
+            <LocalizedClientLink href="/sustainability" className="hover:text-snoov-charcoal transition-colors">
               Traceability & Audit
             </LocalizedClientLink>
           </div>
