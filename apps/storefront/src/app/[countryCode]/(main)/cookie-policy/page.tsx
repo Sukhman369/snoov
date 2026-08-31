@@ -79,7 +79,7 @@ export default async function CookiePolicyPage() {
               Cookie Policy & Tracking Consent
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              At SNOOV, we respect your digital sanctuary. We do not employ predatory cross-site behavioral tracking. This document transparently breaks down every cookie and local token stored on your device.
+              At SNOOV, we respect your digital privacy. We do not employ third-party cross-site behavioral ad trackers. This document transparently explains our local storage and essential session policies.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -123,14 +123,11 @@ export default async function CookiePolicyPage() {
                   <a href="#classification" className="block hover:text-snoov-green transition-colors">
                     02. Categories of Cookies We Use
                   </a>
-                  <a href="#cookie-table" className="block hover:text-snoov-green transition-colors">
-                    03. Specific Cookie Inventory Table
-                  </a>
                   <a href="#browser-controls" className="block hover:text-snoov-green transition-colors">
-                    04. Managing Browser Preferences
+                    03. Managing Browser Preferences
                   </a>
                   <a href="#privacy-contact" className="block hover:text-snoov-green transition-colors">
-                    05. Privacy Desk & Inquiries
+                    04. Privacy Desk & Inquiries
                   </a>
                 </nav>
               </div>
@@ -169,10 +166,10 @@ export default async function CookiePolicyPage() {
                 1. What Are Cookies & Local Storage?
               </h2>
               <p>
-                Cookies are small encrypted alphanumeric text files stored on your browser or device when you interact with modern web platforms. Similar storage mechanisms include <strong>HTML5 LocalStorage</strong> and <strong>SessionStorage</strong>.
+                Cookies and local browser storage are small encrypted files that enable modern web platforms to function reliably and securely.
               </p>
               <p>
-                These technologies enable our storefront to remember which garments you have placed in your shopping bag, preserve your selected region or currency, and securely maintain authenticated atelier sessions without requesting repetitive logins.
+                At SNOOV, these technologies serve practical purposes: remembering which garments you have placed in your shopping bag, preserving your active regional currency, and ensuring secure checkout transactions without unnecessary logins.
               </p>
             </div>
 
@@ -185,7 +182,7 @@ export default async function CookiePolicyPage() {
                 2. Categories of Cookies We Use
               </h2>
               <p>
-                We classify local storage into three distinct categories:
+                We classify local storage strictly into three functional groups:
               </p>
 
               <div className="space-y-4 pt-2">
@@ -193,14 +190,14 @@ export default async function CookiePolicyPage() {
                 <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-snoov-charcoal uppercase">
-                      A. Strictly Essential Cookies (Mandatory)
+                      A. Strictly Essential (Required)
                     </span>
                     <span className="text-[10px] font-mono bg-snoov-green/10 text-snoov-green px-2 py-0.5 rounded-sm font-semibold">
                       Always Active
                     </span>
                   </div>
                   <p className="text-xs text-snoov-muted">
-                    Essential for the core operational functionality of the e-commerce storefront. They maintain your shopping cart ID, active country code routing, checkout session tokens, and security fraud mitigation. The storefront cannot function without these.
+                    Maintains your shopping bag items, checkout session security, CSRF protection, and fraud screening. The storefront cannot operate without these essential tokens.
                   </p>
                 </div>
 
@@ -208,14 +205,14 @@ export default async function CookiePolicyPage() {
                 <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-snoov-charcoal uppercase">
-                      B. Functional & Preference Storage
+                      B. Functional & Localization Preferences
                     </span>
                     <span className="text-[10px] font-mono bg-snoov-sand text-snoov-charcoal px-2 py-0.5 rounded-sm">
-                      12-Month Persistence
+                      Persistent
                     </span>
                   </div>
                   <p className="text-xs text-snoov-muted">
-                    Remember your aesthetic display choices, preferred measurement units (inches vs. centimeters on the Size Guide), and currency preferences so you do not have to reconfigure them upon return.
+                    Remembers your geographic region, currency choice, and measurement units (Inches vs. CM on the Size Guide) so you experience a consistent view upon returning.
                   </p>
                 </div>
 
@@ -223,105 +220,29 @@ export default async function CookiePolicyPage() {
                 <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-snoov-charcoal uppercase">
-                      C. Anonymized Performance & Telemetry
+                      C. Anonymized Performance Telemetry
                     </span>
                     <span className="text-[10px] font-mono bg-snoov-sand text-snoov-charcoal px-2 py-0.5 rounded-sm">
-                      Aggregated / No PII
+                      Aggregated
                     </span>
                   </div>
                   <p className="text-xs text-snoov-muted">
-                    Measures storefront page speed, Largest Contentful Paint (LCP), and server response times. All metrics are strictly anonymized, aggregated, and contain zero Personally Identifiable Information (PII).
+                    Measures aggregate storefront page speed, Largest Contentful Paint (LCP), and server response times to ensure smooth performance across devices. These records contain zero Personally Identifiable Information (PII).
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* 03. Inventory Table */}
-            <div id="cookie-table" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
-              <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                03 / INVENTORY
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                3. Specific Cookie Inventory Table
-              </h2>
-              <p>
-                Below is a comprehensive manifest of cookies and local tokens utilized across snoov.com:
-              </p>
-
-              {/* Table */}
-              <div className="border border-snoov-border rounded-base overflow-hidden bg-snoov-sand/10">
-                <div className="divide-y divide-snoov-border text-xs">
-                  
-                  {/* Item 1 */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="font-mono text-snoov-charcoal text-[11px] block">
-                        _medusa_cart_id
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">Stores the active shopping bag identifier</span>
-                    </div>
-                    <div className="sm:text-right font-mono text-[11px]">
-                      <span className="text-snoov-green font-semibold block">Strictly Essential</span>
-                      <span className="text-snoov-muted">Duration: 30 Days</span>
-                    </div>
-                  </div>
-
-                  {/* Item 2 */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="font-mono text-snoov-charcoal text-[11px] block">
-                        _medusa_jwt
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">Secure encrypted JWT for logged-in client account authentication</span>
-                    </div>
-                    <div className="sm:text-right font-mono text-[11px]">
-                      <span className="text-snoov-green font-semibold block">Strictly Essential</span>
-                      <span className="text-snoov-muted">Duration: Session / 7 Days</span>
-                    </div>
-                  </div>
-
-                  {/* Item 3 */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="font-mono text-snoov-charcoal text-[11px] block">
-                        _snoov_country
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">Persists the client&apos;s geographic localization prefix (e.g., /in, /us, /fr)</span>
-                    </div>
-                    <div className="sm:text-right font-mono text-[11px]">
-                      <span className="text-snoov-charcoal font-semibold block">Functional</span>
-                      <span className="text-snoov-muted">Duration: 12 Months</span>
-                    </div>
-                  </div>
-
-                  {/* Item 4 */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="font-mono text-snoov-charcoal text-[11px] block">
-                        __stripe_mid / __stripe_sid
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">Fraud screening tokens deployed by Stripe during checkout</span>
-                    </div>
-                    <div className="sm:text-right font-mono text-[11px]">
-                      <span className="text-snoov-green font-semibold block">Security / Essential</span>
-                      <span className="text-snoov-muted">Duration: 1 Year / 30 Mins</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            {/* 04. Browser Controls */}
+            {/* 03. Browser Controls */}
             <div id="browser-controls" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                04 / CLIENT EMPOWERMENT
+                03 / CLIENT CONTROL
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                4. Managing Browser Preferences
+                3. Managing Browser Preferences
               </h2>
               <p>
-                You retain ultimate authority over what files are permitted on your hardware. You can configure your browser to block, quarantine, or alert you upon receiving cookies:
+                You maintain complete control over how cookies are stored on your device. You can configure your browser to block, clear, or alert you upon receiving cookies at any time:
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-mono">
@@ -343,20 +264,20 @@ export default async function CookiePolicyPage() {
                 </div>
               </div>
               <p className="text-xs text-snoov-muted pt-2">
-                *Please note: Disabling strictly essential cookies will prevent items from persisting in your shopping bag and will disable secure checkout completion.
+                *Note: Blocking strictly essential session cookies will prevent garments from remaining in your shopping bag and will disable secure checkout completion.
               </p>
             </div>
 
-            {/* 05. Contact DPO */}
+            {/* 04. Contact DPO */}
             <div id="privacy-contact" className="scroll-mt-28 space-y-4">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                05 / INQUIRIES
+                04 / INQUIRIES
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                5. Privacy Desk & Contact
+                4. Privacy Desk & Inquiries
               </h2>
               <p>
-                If you require clarification on our cookie architecture or wish to request immediate deletion of session tokens, contact our governance desk:
+                If you have questions regarding our digital storage practices or wish to request data deletion, our governance desk is at your disposal:
               </p>
               
               <div className="p-6 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2 font-mono text-xs text-snoov-charcoal">
