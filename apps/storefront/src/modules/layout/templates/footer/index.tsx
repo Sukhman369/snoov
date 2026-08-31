@@ -139,6 +139,11 @@ export default async function Footer() {
                     <span className="text-[10px]">↗</span>
                   </a>
                 </li>
+                <li>
+                  <LocalizedClientLink href="/contact" className="hover:text-snoov-green transition-colors font-medium">
+                    Client Concierge Desk
+                  </LocalizedClientLink>
+                </li>
                 <li className="pt-2 text-[11px] font-mono text-snoov-charcoal">
                   concierge@snoov.com
                 </li>
