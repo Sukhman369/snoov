@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function PrivacyPolicyPage() {
   const lastUpdated = "August 31, 2026"
-  const legalEntity = "SNOOV Studio & Atelier S.A.S."
+  const legalEntity = "SNOOV Studio & Atelier"
   const contactEmail = "privacy@snoov.com"
 
   const breadcrumbSchema = {
@@ -406,9 +406,9 @@ export default async function PrivacyPolicyPage() {
                 </div>
                 <div>
                   <span className="text-snoov-muted block text-[10px] uppercase">ATELIER POSTAL ADDRESS</span>
-                  <span>SNOOV Studio & Atelier SAS — Data Governance Desk</span>
+                  <span>SNOOV Studio & Atelier — Data Governance Desk</span>
                   <br />
-                  <span>14 Rue de Turenne, 75004 Paris, France</span>
+                  <span>Sector 82 JLPL Industrial Area, Mohali, Punjab 140308, India</span>
                 </div>
                 <div>
                   <span className="text-snoov-muted block text-[10px] uppercase">RESPONSE TIMEFRAME</span>

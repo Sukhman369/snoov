@@ -289,9 +289,9 @@ export default async function CookiePolicyPage() {
                 </div>
                 <div>
                   <span className="text-snoov-muted block text-[10px] uppercase">ATELIER PRIVACY DIRECTORATE</span>
-                  <span>SNOOV Studio & Atelier SAS — Data Governance Desk</span>
+                  <span>SNOOV Studio & Atelier — Data Governance Desk</span>
                   <br />
-                  <span>14 Rue de Turenne, 75004 Paris, France</span>
+                  <span>Sector 82 JLPL Industrial Area, Mohali, Punjab 140308, India</span>
                 </div>
               </div>
             </div>

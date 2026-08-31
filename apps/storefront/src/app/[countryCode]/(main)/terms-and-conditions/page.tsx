@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function TermsAndConditionsPage() {
   const lastUpdated = "August 31, 2026"
-  const legalEntity = "SNOOV Studio & Atelier S.A.S."
+  const legalEntity = "SNOOV Studio & Atelier"
   const contactEmail = "concierge@snoov.com"
 
   const breadcrumbSchema = {
@@ -178,7 +178,7 @@ export default async function TermsAndConditionsPage() {
                 1. Scope of Agreement & Acceptance
               </h2>
               <p>
-                These General Terms and Conditions of Sale and Service (the &quot;Terms&quot;) apply exclusively between <strong>{legalEntity}</strong> (operating under the commercial trade name <strong>SNOOV</strong>, registered in Paris, France) and any individual consumer acting in a private capacity (the &quot;Client&quot;).
+                These General Terms and Conditions of Sale and Service (the &quot;Terms&quot;) apply exclusively between <strong>{legalEntity}</strong> (operating under the commercial trade name <strong>SNOOV</strong>, based in Mohali, Punjab, India) and any individual consumer acting in a private capacity (the &quot;Client&quot;).
               </p>
               <p>
                 By placing an order on our storefront (snoov.com) or confirming a bespoke atelier commission, the Client unreservedly acknowledges and accepts these Terms in full.
@@ -270,7 +270,7 @@ export default async function TermsAndConditionsPage() {
                 5. Global Delivery & Customs (DDP)
               </h2>
               <p>
-                Garments are dispatched from our European fulfillment ateliers in Paris and Porto.
+                Garments are dispatched from our flagship atelier hub in Mohali (Tricity), Punjab, India.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 border border-snoov-border rounded-base">
@@ -366,35 +366,24 @@ export default async function TermsAndConditionsPage() {
               </p>
             </div>
 
-            {/* Article 10: Governing Law & Mediation */}
+            {/* Article 10: Governing Law & Jurisdiction */}
             <div id="article-10" className="scroll-mt-28 space-y-4">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
                 ARTICLE 10 / JURISDICTION
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                10. Governing Law, Jurisdiction & Mediation
+                10. Governing Law, Jurisdiction & Dispute Resolution
               </h2>
               <p>
-                These Terms are governed by and construed in accordance with the laws of <strong>France</strong>, without prejudice to any mandatory consumer protections of the Client&apos;s country of habitual residence.
+                These Terms are governed by and construed in accordance with the laws of <strong>India</strong>, under the exclusive jurisdiction of the competent courts of Mohali / Punjab.
               </p>
               
               <div className="p-6 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-3 font-mono text-xs text-snoov-charcoal">
                 <div>
-                  <span className="text-snoov-muted block text-[10px] uppercase">EU ONLINE DISPUTE RESOLUTION</span>
-                  <a
-                    href="https://ec.europa.eu/consumers/odr"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-snoov-green font-semibold hover:underline"
-                  >
-                    https://ec.europa.eu/consumers/odr ↗
-                  </a>
-                </div>
-                <div>
-                  <span className="text-snoov-muted block text-[10px] uppercase">ATELIER MEDIATION DESK</span>
-                  <span>SNOOV Studio & Atelier — Legal Directorate</span>
+                  <span className="text-snoov-muted block text-[10px] uppercase">ATELIER HEADQUARTERS & LEGAL DESK</span>
+                  <span>SNOOV Studio & Atelier</span>
                   <br />
-                  <span>14 Rue de Turenne, 75004 Paris, France</span>
+                  <span>Sector 82 JLPL Industrial Area, Mohali, Punjab 140308, India</span>
                   <br />
                   <span className="text-snoov-muted">Direct: {contactEmail}</span>
                 </div>

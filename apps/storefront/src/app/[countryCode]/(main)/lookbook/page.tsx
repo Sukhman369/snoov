@@ -116,7 +116,7 @@ export default async function LookbookPage() {
             </h1>
 
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              Photographed across the rugged granite coastline of Porto and brutalist architectural monoliths of Paris. High contrast, drop-shoulder silhouettes, and tactile organic weights.
+              High contrast, drop-shoulder silhouettes, and tactile organic weights. Sculpted with architectural discipline for the next generation.
             </p>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default async function LookbookPage() {
               </h3>
             </div>
             <span className="text-xs font-mono text-snoov-muted">
-              PARIS / PORTO ATELIER
+              MOHALI / TRICITY ATELIER
             </span>
           </div>
 
@@ -237,8 +237,8 @@ export default async function LookbookPage() {
               <span className="text-snoov-charcoal font-semibold">GenZ Community Pod</span>
             </div>
             <div>
-              <span className="text-snoov-muted text-[10px] uppercase block mb-1">LOCATION</span>
-              <span className="text-snoov-charcoal font-semibold">Porto Coastline & Paris 4th</span>
+              <span className="text-snoov-muted text-[10px] uppercase block mb-1">ATELIER STUDIO</span>
+              <span className="text-snoov-charcoal font-semibold">Mohali, Punjab</span>
             </div>
           </div>
 

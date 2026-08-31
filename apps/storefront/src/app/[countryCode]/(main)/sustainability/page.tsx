@@ -316,7 +316,7 @@ export default async function SustainabilityPage() {
                       TIER 3 · SPINNING & WEAVING
                     </span>
                     <strong className="text-snoov-charcoal block text-xs">Heritage Ring-Spinning Mills</strong>
-                    <span className="text-snoov-muted text-[11px]">Porto (Portugal) & Coimbatore (India)</span>
+                    <span className="text-snoov-muted text-[11px]">Coimbatore & Ludhiana (India)</span>
                   </div>
                   <div className="sm:text-right font-mono text-[11px] text-snoov-charcoal">
                     ISO 14001 Environmental Standard
@@ -329,7 +329,7 @@ export default async function SustainabilityPage() {
                       TIER 2 · WET PROCESSING & DYEING
                     </span>
                     <strong className="text-snoov-charcoal block text-xs">Closed-Loop Botanical Dyehouses</strong>
-                    <span className="text-snoov-muted text-[11px]">Braga (Portugal) & Ludhiana (India)</span>
+                    <span className="text-snoov-muted text-[11px]">Ludhiana & Ahmedabad (India)</span>
                   </div>
                   <div className="sm:text-right font-mono text-[11px] text-snoov-charcoal">
                     Oeko-Tex Standard 100
@@ -342,7 +342,7 @@ export default async function SustainabilityPage() {
                       TIER 1 · CUT, SEW & ATELIER FINISHING
                     </span>
                     <strong className="text-snoov-charcoal block text-xs">Master Tailoring Studios</strong>
-                    <span className="text-snoov-muted text-[11px]">Paris (France) & Mohali/Punjab (India)</span>
+                    <span className="text-snoov-muted text-[11px]">Flagship Studio — Mohali / Punjab (India)</span>
                   </div>
                   <div className="sm:text-right font-mono text-[11px] text-snoov-charcoal">
                     Fair Wage & Artisan Certified

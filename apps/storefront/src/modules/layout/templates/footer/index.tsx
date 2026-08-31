@@ -15,7 +15,7 @@ export default async function Footer() {
             <div>
               <BrandLogo width={160} height={58} className="-ml-2" />
               <span className="text-[10px] font-mono tracking-widest text-snoov-green uppercase font-semibold block mt-1">
-                STUDIO & ATELIER · PARIS / PORTO
+                STUDIO & ATELIER · MOHALI / TRICITY
               </span>
               <p className="mt-4 text-xs text-snoov-muted leading-relaxed font-sans max-w-sm">
                 A conscious luxury streetwear & fashion house focused on architectural tailoring, tactile organic textiles, and enduring silhouette design.

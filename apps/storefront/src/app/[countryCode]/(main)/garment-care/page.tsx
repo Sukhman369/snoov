@@ -154,7 +154,7 @@ export default async function GarmentCarePage() {
                   Free Seam & Stitch Repair
                 </h4>
                 <p className="text-xs text-snoov-sand/80 leading-relaxed font-sans">
-                  If a seam relaxes or a rivet requires replacement over the life of your garment, our Paris and Punjab ateliers will repair it free of charge.
+                  If a seam relaxes or a rivet requires replacement over the life of your garment, our Mohali master atelier will repair it free of charge.
                 </p>
                 <a
                   href={`mailto:${contactEmail}?subject=Atelier%20Repair%20Request`}

@@ -59,7 +59,7 @@ export default async function ReturnsAndExchangesPage() {
         name: "How long does it take to process my refund?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Once the parcel reaches our Paris or Porto atelier, our artisans perform a quality check within 48 business hours and issue your refund to the original payment method.",
+          text: "Once the parcel reaches our Mohali atelier, our artisans perform a quality check within 48 business hours and issue your refund to the original payment method.",
         },
       },
     ],
@@ -252,7 +252,7 @@ export default async function ReturnsAndExchangesPage() {
                     Atelier Audit & Refund
                   </h3>
                   <p className="text-xs text-snoov-muted">
-                    Upon delivery to our Paris or Porto studio, our team verifies condition within 48 hours and automatically credits your account.
+                    Upon delivery to our Mohali studio, our team verifies condition within 48 hours and automatically credits your account.
                   </p>
                 </div>
               </div>
@@ -365,10 +365,10 @@ export default async function ReturnsAndExchangesPage() {
                 Made-to-Measure & Archival Items
               </h2>
               <p>
-                Garments commissioned under our bespoke tailoring program, customized with bespoke embroidery, or personalized sizing are crafted exclusively for the individual patron and are therefore non-returnable under Article L. 221-28 of the French Consumer Code.
+                Garments commissioned under our bespoke tailoring program, customized with bespoke embroidery, or personalized sizing are crafted exclusively for the individual patron and are therefore non-returnable once production commences.
               </p>
               <p>
-                In the rare event of a craftsmanship defect on a custom commission, our Paris atelier provides complimentary alterations and repair adjustments until the garment fits impeccably.
+                In the rare event of a craftsmanship defect on a custom commission, our Mohali atelier provides complimentary alterations and repair adjustments until the garment fits impeccably.
               </p>
             </div>
 

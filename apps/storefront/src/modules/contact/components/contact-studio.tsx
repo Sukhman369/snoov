@@ -25,18 +25,16 @@ export default function ContactStudio() {
 
   // Local Clocks State
   const [times, setTimes] = useState({
-    paris: "",
     tricity: "",
-    newYork: "",
+    local: "",
   })
 
   useEffect(() => {
     const updateTimes = () => {
       const now = new Date()
       setTimes({
-        paris: now.toLocaleTimeString("en-GB", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" }),
-        tricity: now.toLocaleTimeString("en-GB", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit" }),
-        newYork: now.toLocaleTimeString("en-GB", { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit" }),
+        tricity: now.toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata", hour: "2-digit", minute: "2-digit" }),
+        local: now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" }),
       })
     }
     updateTimes()
@@ -66,22 +64,18 @@ export default function ContactStudio() {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-snoov-green"></span>
           </span>
           <span className="text-[11px] uppercase tracking-widest text-snoov-sand font-semibold">
-            CONCIERGE DESK ACTIVE · AVERAGE RESPONSE &lt; 15 MINS
+            MOHALI ATELIER DESK ONLINE · AVERAGE RESPONSE &lt; 15 MINS
           </span>
         </div>
 
         <div className="flex items-center gap-6 text-[10px] uppercase tracking-wider text-snoov-sand/70">
           <div>
-            <span className="text-snoov-sand/40 mr-1.5">TRICITY [IST]</span>
+            <span className="text-snoov-sand/40 mr-1.5">MOHALI [IST]</span>
             <span className="text-snoov-canvas font-semibold">{times.tricity || "18:50"}</span>
           </div>
           <div>
-            <span className="text-snoov-sand/40 mr-1.5">PARIS [CET]</span>
-            <span className="text-snoov-canvas font-semibold">{times.paris || "15:20"}</span>
-          </div>
-          <div>
-            <span className="text-snoov-sand/40 mr-1.5">NYC [EST]</span>
-            <span className="text-snoov-canvas font-semibold">{times.newYork || "09:20"}</span>
+            <span className="text-snoov-sand/40 mr-1.5">YOUR TIME</span>
+            <span className="text-snoov-canvas font-semibold">{times.local || "LOCAL"}</span>
           </div>
         </div>
       </div>
@@ -179,21 +173,16 @@ export default function ContactStudio() {
           </div>
 
           {/* Atelier Coordinates Box */}
-          <div className="p-6 bg-snoov-sand/20 border border-snoov-border rounded-base space-y-4 font-mono text-xs text-snoov-charcoal">
+          <div className="p-6 bg-snoov-sand/20 border border-snoov-border rounded-base space-y-3 font-mono text-xs text-snoov-charcoal">
             <span className="text-[10px] uppercase text-snoov-green font-semibold block">
-              PHYSICAL ATELIER HUBS
+              ATELIER HEADQUARTERS
             </span>
             
-            <div className="space-y-1 pb-3 border-b border-snoov-border/60">
-              <strong className="block text-[11px] uppercase">TRICITY / INDIA STUDIO</strong>
-              <span className="text-[11px] text-snoov-muted block">30.7333° N, 76.7794° E</span>
-              <span className="text-[11px] text-snoov-muted block">Sector 82 JLPL, Mohali · Chandigarh Tricity</span>
-            </div>
-
             <div className="space-y-1">
-              <strong className="block text-[11px] uppercase">PARIS / EUROPE ATELIER</strong>
-              <span className="text-[11px] text-snoov-muted block">48.8566° N, 2.3522° E</span>
-              <span className="text-[11px] text-snoov-muted block">14 Rue de Turenne, 75004 Paris, France</span>
+              <strong className="block text-[11px] uppercase">SNOOV ATELIER · MOHALI (TRICITY)</strong>
+              <span className="text-[11px] text-snoov-muted block">30.7333° N, 76.7794° E</span>
+              <span className="text-[11px] text-snoov-muted block">Sector 82 JLPL Industrial Area, Mohali, Punjab 140308, India</span>
+              <span className="text-[10px] text-snoov-green block pt-1">Direct Same-Day Courier Dispatch Hub</span>
             </div>
           </div>
 
