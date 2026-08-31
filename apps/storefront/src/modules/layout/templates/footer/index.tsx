@@ -172,6 +172,9 @@ export default async function Footer() {
             <LocalizedClientLink href="/terms-and-conditions" className="hover:text-snoov-charcoal transition-colors">
               Terms & Conditions
             </LocalizedClientLink>
+            <LocalizedClientLink href="/cookie-policy" className="hover:text-snoov-charcoal transition-colors">
+              Cookie Policy
+            </LocalizedClientLink>
             <LocalizedClientLink href="/store" className="hover:text-snoov-charcoal transition-colors">
               Traceability & Audit
             </LocalizedClientLink>
