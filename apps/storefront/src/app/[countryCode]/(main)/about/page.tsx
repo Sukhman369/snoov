@@ -216,13 +216,25 @@ export default async function AboutStoryPage() {
               </p>
             </div>
 
-            <LocalizedClientLink
-              href="/store"
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-snoov-charcoal text-snoov-canvas text-xs font-mono uppercase tracking-wider font-semibold rounded-sm hover:bg-snoov-green transition-colors shrink-0"
-            >
-              <span>Explore The Collection</span>
-              <span>→</span>
-            </LocalizedClientLink>
+            <div className="flex flex-wrap items-center gap-3 shrink-0">
+              <a
+                href="https://www.instagram.com/snoov.cm/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3.5 bg-snoov-canvas text-snoov-charcoal text-xs font-mono uppercase tracking-wider font-semibold rounded-sm border border-snoov-border hover:border-snoov-charcoal transition-colors"
+              >
+                <span>Follow @snoov.cm</span>
+                <span className="text-[10px]">↗</span>
+              </a>
+
+              <LocalizedClientLink
+                href="/store"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-snoov-charcoal text-snoov-canvas text-xs font-mono uppercase tracking-wider font-semibold rounded-sm hover:bg-snoov-green transition-colors"
+              >
+                <span>Explore Collection</span>
+                <span>→</span>
+              </LocalizedClientLink>
+            </div>
           </div>
 
         </div>

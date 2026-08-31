@@ -106,7 +106,7 @@ export default function ContactStudio() {
 
             {/* Community IG */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/snoov.cm/"
               target="_blank"
               rel="noreferrer"
               className="group p-5 bg-snoov-sand/40 hover:bg-snoov-sand/80 border border-snoov-border rounded-base flex items-center justify-between transition-all duration-300 block"
@@ -115,8 +115,8 @@ export default function ContactStudio() {
                 <span className="text-xs font-mono font-bold text-snoov-charcoal uppercase block">
                   INSTAGRAM COMMUNITY DM
                 </span>
-                <span className="text-xs font-mono text-snoov-charcoal block">
-                  @snoov.atelier
+                <span className="text-xs font-mono text-snoov-green block font-semibold">
+                  @snoov.cm
                 </span>
                 <p className="text-xs text-snoov-muted font-sans">
                   Tag us in your fits or pitch creative community projects.
