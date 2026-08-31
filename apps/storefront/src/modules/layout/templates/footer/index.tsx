@@ -78,7 +78,7 @@ export default async function Footer() {
               </span>
               <ul className="space-y-3 text-snoov-muted">
                 <li>
-                  <LocalizedClientLink href="/store" className="hover:text-snoov-green transition-colors">
+                  <LocalizedClientLink href="/size-guide" className="hover:text-snoov-green transition-colors">
                     Atelier Sizing Guide
                   </LocalizedClientLink>
                 </li>
