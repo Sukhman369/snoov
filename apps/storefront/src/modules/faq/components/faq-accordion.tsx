@@ -211,32 +211,44 @@ export default function FAQAccordion() {
             return (
               <div
                 key={item.id}
-                className="border border-snoov-border rounded-base overflow-hidden bg-snoov-canvas transition-colors duration-200"
+                className={`border rounded-base overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                  isOpen
+                    ? "border-snoov-charcoal/40 bg-snoov-sand/20 shadow-xs"
+                    : "border-snoov-border bg-snoov-canvas hover:border-snoov-border/80 hover:bg-snoov-sand/10"
+                }`}
               >
                 <button
                   type="button"
                   onClick={() => toggleItem(item.id)}
-                  className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-snoov-sand/20 transition-colors cursor-pointer"
+                  aria-expanded={isOpen}
+                  className="w-full p-6 text-left flex items-center justify-between gap-4 transition-colors cursor-pointer select-none"
                 >
                   <span className="font-serif text-lg sm:text-xl text-snoov-charcoal font-normal">
                     {item.question}
                   </span>
                   <span
-                    className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs border border-snoov-border transition-transform duration-300 ${
+                    className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-mono text-sm border transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                       isOpen
-                        ? "bg-snoov-charcoal text-snoov-canvas rotate-180"
-                        : "bg-snoov-sand text-snoov-charcoal"
+                        ? "bg-snoov-charcoal text-snoov-canvas rotate-45 border-snoov-charcoal"
+                        : "bg-snoov-sand/50 text-snoov-charcoal border-snoov-border hover:bg-snoov-sand"
                     }`}
                   >
-                    {isOpen ? "−" : "+"}
+                    +
                   </span>
                 </button>
 
-                {isOpen && (
-                  <div className="px-6 pb-6 pt-2 text-xs sm:text-sm text-snoov-muted leading-relaxed font-sans border-t border-snoov-border/40">
-                    <p>{item.answer}</p>
+                {/* Smooth CSS Grid Expanding Container */}
+                <div
+                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="px-6 pb-6 pt-2 text-xs sm:text-sm text-snoov-muted leading-relaxed font-sans border-t border-snoov-border/40">
+                      <p>{item.answer}</p>
+                    </div>
                   </div>
-                )}
+                </div>
               </div>
             )
           })
