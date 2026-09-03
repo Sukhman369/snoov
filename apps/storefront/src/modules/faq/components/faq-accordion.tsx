@@ -79,14 +79,14 @@ const FAQ_DATA: FAQItem[] = [
     category: "returns",
     question: "What is your return and exchange policy?",
     answer:
-      "To preserve our conscious limited-capsule production and zero-deadstock philosophy, SNOOV garments are final sale and we do not accept standard returns or refunds. However, if your piece arrives damaged or defective in transit, we guarantee an immediate, complimentary exchange.",
+      "Because SNOOV crafts in small, limited-batch capsules to ensure every patron receives an untouched, brand-new piece, we operate on a damaged-goods exchange guarantee rather than a conventional return model. If your piece arrives damaged or defective in courier transit, we will promptly coordinate a complimentary pickup and dispatch a pristine replacement.",
   },
   {
     id: "damaged-reporting",
     category: "returns",
     question: "What should I do if my order arrives damaged or defective?",
     answer:
-      "Please inspect your package upon delivery and notify our Concierge within 48 hours at concierge@snoov.com or via WhatsApp with your Order ID and photos of the damaged garment and packaging. Our atelier will arrange a complimentary courier pickup and dispatch a pristine replacement.",
+      "Please inspect your package upon delivery and notify our Concierge within 48 hours via WhatsApp or email with your Order ID and photos of the damaged garment and packaging. Our atelier will arrange a complimentary courier pickup and dispatch a pristine replacement.",
   },
 
   // 05. Sustainability & Fabric Care

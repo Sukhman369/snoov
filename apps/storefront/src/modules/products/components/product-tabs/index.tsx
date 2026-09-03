@@ -103,9 +103,9 @@ const ShippingInfoTab = () => {
         <div className="flex items-start gap-x-2">
           <Back />
           <div>
-            <span className="font-semibold">Conscious Final Sale</span>
+            <span className="font-semibold">Conscious Capsule Production</span>
             <p className="max-w-sm">
-              Handcrafted in limited capsule batches to eliminate deadstock. All sales are final—please consult our Atelier Size Guide for sizing assurance.
+              Tailored in limited batches so you always receive an untouched, atelier-fresh piece with zero deadstock waste. Please check our Size Guide for your ideal fit.
             </p>
           </div>
         </div>

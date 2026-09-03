@@ -127,7 +127,7 @@ export default async function TermsAndConditionsPage() {
                     05. Delivery, Shipping Thresholds & Global Expansion
                   </a>
                   <a href="#article-6" className="block hover:text-snoov-green transition-colors">
-                    06. Final Sale & Damaged Item Exchanges
+                    06. Damaged Item Exchange Policy
                   </a>
                   <a href="#article-7" className="block hover:text-snoov-green transition-colors">
                     07. Intellectual Property & Trademarks
@@ -293,29 +293,29 @@ export default async function TermsAndConditionsPage() {
               </div>
             </div>
 
-            {/* Article 6: Final Sale & Damaged Item Exchanges */}
+            {/* Article 6: Damaged Item Exchange Policy */}
             <div id="article-6" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                ARTICLE 06 / FINAL SALE & EXCHANGES
+                ARTICLE 06 / EXCHANGES & REPLACEMENTS
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                6. Final Sale & Damaged Item Exchange Policy
+                6. Damaged Item Exchange Policy & Quality Assurance
               </h2>
               <p>
-                Due to the small-batch, made-to-order, and strictly disciplined capsule production at SNOOV, all sales are considered <strong>final upon delivery</strong>. SNOOV does not entertain standard returns, order cancellations post-dispatch, or cash refunds for change of mind, style preference, or sizing discrepancies.
+                To honor our conscious, limited-batch production model and ensure that every customer receives an untouched, freshly crafted garment with zero deadstock waste, SNOOV operates on an exchange policy dedicated specifically to <strong>transit-damaged or defective goods</strong>. We do not process general returns, cancellations after dispatch, or refunds for subjective change of mind or personal preference.
               </p>
               <p>
-                However, SNOOV guarantees that all pieces reach our patrons in pristine, immaculate condition. In the rare event that an item is received with <strong>transit damage or a verifiable craftsmanship defect</strong>, the Client is entitled to an immediate complimentary exchange for a replacement piece.
+                However, receiving a flawless piece is our uncompromising promise. In the rare event that an item is delivered with <strong>transit damage, packaging compromise, or a craftsmanship defect</strong>, the Client is entitled to an immediate, 100% complimentary exchange for a pristine replacement.
               </p>
               <div className="p-4 bg-snoov-sand/30 border border-snoov-border rounded-base text-xs space-y-2">
                 <strong className="text-snoov-charcoal block uppercase font-mono tracking-wide">
-                  Damage Claim Criteria & Protocol:
+                  Exchange Assistance Guidelines:
                 </strong>
                 <ul className="list-disc pl-4 space-y-1 text-snoov-muted">
-                  <li>Transit damage or defects must be reported to our Concierge within <strong>48 hours</strong> of verified delivery.</li>
-                  <li>Notice must include clear photographs or video documentation of the flaw alongside the original courier shipping label and packaging.</li>
+                  <li>Transit damage or packaging compromise should be reported to our Concierge within <strong>48 hours</strong> of delivery so our team can prompt courier transit insurance claims and reserve a replacement piece.</li>
+                  <li>Notice should include clear photographs or video documentation of the flaw alongside the original courier shipping label and packaging.</li>
                   <li>Garments must remain unworn, unwashed, and retain all original atelier tags, labels, and dust bags.</li>
-                  <li>Upon approval, SNOOV will arrange complimentary courier pickup and dispatch a replacement with priority shipping. If the item is out of stock, full atelier store credit will be issued.</li>
+                  <li>Upon approval, SNOOV arranges complimentary courier pickup and dispatches a replacement with priority shipping. If the edition is archived or sold out, an atelier store credit or bespoke solution will be provided.</li>
                 </ul>
               </div>
               <p className="text-xs">

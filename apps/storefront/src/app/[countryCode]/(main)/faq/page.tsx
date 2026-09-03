@@ -72,7 +72,7 @@ export default async function FAQPage() {
         name: "What is your return and exchange policy?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "To preserve our conscious limited-capsule production and zero-deadstock philosophy, SNOOV garments are final sale and we do not accept standard returns or refunds. However, if your piece arrives damaged or defective in transit, we guarantee an immediate, complimentary exchange.",
+          text: "Because SNOOV crafts in small, limited-batch capsules to ensure every patron receives an untouched, brand-new garment, we do not operate on a conventional return model. Instead, we offer a dedicated damaged-goods exchange guarantee: if your parcel arrives damaged or defective in courier transit, we will promptly coordinate a complimentary pickup and dispatch a pristine replacement.",
         },
       },
       {
