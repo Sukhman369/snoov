@@ -67,7 +67,7 @@ export const FASHION_PRODUCTS: FashionProduct[] = [
       desktop: "1200 × 1600 px",
       mobile: "900 × 1200 px",
       aspectRatio: "3:4",
-      purpose: "Full front studio editorial on model",
+      purpose: "Full front editorial on model",
     },
     secondarySlot: {
       name: "Belgian Linen Blazer — Detail",
@@ -145,7 +145,7 @@ export const FASHION_PRODUCTS: FashionProduct[] = [
       origin: "Knitted in Florence, Italy",
     },
     imageSlot: {
-      name: "Merino Polo — Studio",
+      name: "Merino Polo — Classic",
       desktop: "1200 × 1600 px",
       mobile: "900 × 1200 px",
       aspectRatio: "3:4",
@@ -227,11 +227,11 @@ export const FASHION_PRODUCTS: FashionProduct[] = [
       origin: "Crafted in Barcelos, Portugal",
     },
     imageSlot: {
-      name: "Boxy Tee — Clean Studio",
+      name: "Boxy Tee — Clean Minimal",
       desktop: "1200 × 1600 px",
       mobile: "900 × 1200 px",
       aspectRatio: "3:4",
-      purpose: "Minimal front studio shot",
+      purpose: "Minimal front editorial shot",
     },
     secondarySlot: {
       name: "Boxy Tee — Collar Detail",
@@ -283,6 +283,6 @@ export const FASHION_PRODUCTS: FashionProduct[] = [
     },
     isNewArrival: false,
     isFeatured: true,
-    tag: "ATELIER CRAFT",
+    tag: "SIGNATURE CRAFT",
   },
 ]

@@ -4,7 +4,7 @@ import EditorialBrandStatement from "@modules/home/components/brand-statement"
 import NewArrivalsGrid from "@modules/home/components/new-arrivals-grid"
 import CollectionFeature from "@modules/home/components/collection-feature"
 import CraftsmanshipPillars from "@modules/home/components/craftsmanship-pillars"
-import AtelierNewsletter from "@modules/home/components/atelier-newsletter"
+import CapsuleNewsletter from "@modules/home/components/capsule-newsletter"
 
 export const metadata: Metadata = {
   title: "SNOOV | Modern Editorial Fashion & Sustainable Luxury",
@@ -30,8 +30,8 @@ export default async function Home() {
       {/* 05 — Craftsmanship & Material Pillars */}
       <CraftsmanshipPillars />
 
-      {/* 06 — Private Atelier Newsletter */}
-      <AtelierNewsletter />
+      {/* 06 — Private Capsule Newsletter */}
+      <CapsuleNewsletter />
     </div>
   )
 }

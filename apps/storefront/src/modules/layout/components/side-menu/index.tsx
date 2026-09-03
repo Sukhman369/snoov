@@ -151,7 +151,7 @@ const SideMenu = ({ regions, locales, currentLocale }: SideMenuProps) => {
                         />
                       </div>
                       <Text className="text-[10px] text-snoov-lightMuted tracking-wider uppercase pt-2">
-                        © {new Date().getFullYear()} SNOOV ATELIER. All rights reserved.
+                        © {new Date().getFullYear()} SNOOV. All rights reserved.
                       </Text>
                     </div>
                   </div>

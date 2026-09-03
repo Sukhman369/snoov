@@ -21,7 +21,7 @@ export default async function Nav() {
       <div className="bg-snoov-charcoal text-snoov-sand py-2 px-4 text-center border-b border-snoov-charcoal/40">
         <div className="content-container flex items-center justify-between text-[11px] font-sans tracking-widest uppercase">
           <span className="hidden sm:inline-block text-snoov-sand/60">
-            SNOOV ATELIER · EST. 2026
+            SNOOV · EST. 2026
           </span>
           <span className="mx-auto sm:mx-0 font-medium">
             SPRING / SUMMER 2026 — COMPLIMENTARY WORLDWIDE SHIPPING OVER $250

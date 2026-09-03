@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Shipping, Duties & Delivery | SNOOV Studio & Atelier",
+  title: "Shipping, Duties & Delivery | SNOOV",
   description:
     "Explore SNOOV's shipping policy. Free delivery on orders of ₹7,000 and above across India, same-day delivery in Tricity, and worldwide shipping launching soon.",
   alternates: {
@@ -81,7 +81,7 @@ export default async function ShippingAndDutiesPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Shipping & Delivery</span>
@@ -95,7 +95,7 @@ export default async function ShippingAndDutiesPage() {
               Shipping, Duties & Fulfillment
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              Hand-packaged in our European and Indian ateliers, SNOOV delivers with precision. Enjoy <strong>Complimentary Delivery on orders over ₹7,000</strong> across India, exclusive <strong>Same-Day VIP Delivery in Tricity</strong>, with worldwide delivery launching soon.
+              Carefully packaged at our fulfillment hub, SNOOV delivers with precision. Enjoy <strong>Complimentary Delivery on orders over ₹7,000</strong> across India, exclusive <strong>Same-Day VIP Delivery in Tricity</strong>, with worldwide delivery launching soon.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -140,7 +140,7 @@ export default async function ShippingAndDutiesPage() {
                   </span>
                 </div>
                 <h4 className="font-serif text-lg font-normal text-snoov-charcoal">
-                  Same-Day Atelier Hand-Delivery
+                  Same-Day VIP Hand-Delivery
                 </h4>
                 <p className="text-xs text-snoov-muted leading-relaxed font-sans">
                   Orders placed before <strong>2:00 PM IST</strong> in <strong>Chandigarh, Mohali, or Panchkula</strong> are delivered directly to your doorstep the same evening via dedicated concierge courier.
@@ -234,7 +234,7 @@ export default async function ShippingAndDutiesPage() {
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-snoov-charcoal leading-relaxed">
-                  For our patrons located in <strong>Chandigarh, Mohali, and Panchkula</strong>, any order placed before <strong>2:00 PM IST (Monday through Sunday)</strong> qualifies for <strong>Complimentary Same-Day Evening Hand-Delivery</strong> directly by our dedicated atelier courier team.
+                  For our patrons located in <strong>Chandigarh, Mohali, and Panchkula</strong>, any order placed before <strong>2:00 PM IST (Monday through Sunday)</strong> qualifies for <strong>Complimentary Same-Day Evening Hand-Delivery</strong> directly by our dedicated courier team.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-mono">
                   <div className="p-3 bg-snoov-canvas border border-snoov-border rounded-sm">
@@ -375,7 +375,7 @@ export default async function ShippingAndDutiesPage() {
               </p>
               <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm">
                 <li>
-                  <strong className="text-snoov-charcoal">Tricity Hand-Delivery:</strong> Our dedicated atelier staff coordinates exact delivery timings via phone/WhatsApp before departure.
+                  <strong className="text-snoov-charcoal">Tricity Hand-Delivery:</strong> Our dedicated team coordinates exact delivery timings via phone/WhatsApp before departure.
                 </li>
                 <li>
                   <strong className="text-snoov-charcoal">Domestic Delivery OTP:</strong> You will receive a secure 4-digit OTP via SMS on the morning of delivery to verify handover.
@@ -386,13 +386,13 @@ export default async function ShippingAndDutiesPage() {
             {/* 05. Packaging */}
             <div id="packaging" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                05 / ATELIER PRESENTATION
+                05 / UNBOXING EXPERIENCE
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                Archival Sustainable Packaging
+                Packaging & Unboxing Standards
               </h2>
               <p>
-                Your unboxing experience is an integral part of our atelier ethos:
+                Your unboxing experience is an integral part of our brand ethos:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-xs">
                 <div className="p-4 border border-snoov-border rounded-base bg-snoov-sand/20">

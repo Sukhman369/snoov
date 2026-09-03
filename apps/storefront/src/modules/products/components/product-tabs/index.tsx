@@ -105,7 +105,7 @@ const ShippingInfoTab = () => {
           <div>
             <span className="font-semibold">Conscious Capsule Production</span>
             <p className="max-w-sm">
-              Tailored in limited batches so you always receive an untouched, atelier-fresh piece with zero deadstock waste. Please check our Size Guide for your ideal fit.
+              Tailored in limited batches so you always receive an untouched, freshly crafted piece with zero deadstock waste. Please check our Size Guide for your ideal fit.
             </p>
           </div>
         </div>

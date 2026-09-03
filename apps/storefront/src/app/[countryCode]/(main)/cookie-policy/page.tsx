@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Cookie Policy & Tracking Consent | SNOOV Studio & Atelier",
+  title: "Cookie Policy & Tracking Consent | SNOOV",
   description:
     "Review SNOOV's cookie policy. Learn how we handle essential session cookies, privacy-preserving performance telemetry, and browser consent controls.",
   alternates: {
@@ -38,7 +38,7 @@ export default async function CookiePolicyPage() {
     "@type": "WebPage",
     name: "Cookie Policy & Tracking Consent",
     description:
-      "Cookie governance and consent framework for SNOOV Studio & Atelier.",
+      "Cookie governance and consent framework for SNOOV.",
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
@@ -65,7 +65,7 @@ export default async function CookiePolicyPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Cookie Policy</span>
@@ -288,8 +288,8 @@ export default async function CookiePolicyPage() {
                   </a>
                 </div>
                 <div>
-                  <span className="text-snoov-muted block text-[10px] uppercase">ATELIER PRIVACY DIRECTORATE</span>
-                  <span>SNOOV Studio & Atelier — Data Governance Desk</span>
+                  <span className="text-snoov-muted block text-[10px] uppercase">PRIVACY DIRECTORATE</span>
+                  <span>SNOOV — Data Governance Desk</span>
                   <br />
                   <span>Industrial Area, Chandigarh 160002, India</span>
                 </div>

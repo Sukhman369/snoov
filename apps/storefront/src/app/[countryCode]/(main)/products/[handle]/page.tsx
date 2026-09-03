@@ -19,7 +19,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const fashionProduct = FASHION_PRODUCTS.find((p) => p.handle === handle)
   if (fashionProduct) {
     return {
-      title: `${fashionProduct.title} | SNOOV Atelier`,
+      title: `${fashionProduct.title} | SNOOV`,
       description: fashionProduct.description,
     }
   }
@@ -32,7 +32,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
     if (product) {
       return {
-        title: `${product.title} | SNOOV Atelier`,
+        title: `${product.title} | SNOOV`,
         description: product.description || product.title,
       }
     }
@@ -41,7 +41,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 
   return {
-    title: "SNOOV Atelier Product",
+    title: "SNOOV Product",
   }
 }
 

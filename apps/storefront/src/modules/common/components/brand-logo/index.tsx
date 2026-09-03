@@ -26,7 +26,7 @@ export default function BrandLogo({
   dark = false,
   logoId: explicitLogoId,
   showSubtitle = false,
-  subtitleText = "Studio & Atelier",
+  subtitleText = "Streetwear",
 }: BrandLogoProps) {
   const [activeLogoId, setActiveLogoId] = useState<string>(explicitLogoId || DEFAULT_LOGO_ID)
   const [mounted, setMounted] = useState(false)
@@ -78,7 +78,7 @@ export default function BrandLogo({
       <div className={clx("relative inline-flex items-center justify-center", className)}>
         <Image
           src="/brand/snoov-logo-gold.webp"
-          alt="SNOOV Atelier"
+          alt="SNOOV"
           width={width || 140}
           height={height || 54}
           priority={priority}

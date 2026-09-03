@@ -228,7 +228,7 @@ export const PALETTES: PaletteOption[] = [
   {
     id: "emerald-ivory",
     name: "03 — Signature Emerald & Ivory",
-    subtitle: "Organic European Ateliers",
+    subtitle: "Organic European Workshops",
     description: "The founding identity. Core botanical emerald green with warm ivory linen canvas and sand accents.",
     tag: "CLASSIC EMERALD",
     variables: {

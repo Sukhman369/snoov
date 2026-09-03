@@ -51,14 +51,14 @@ export default function OrderTrackerForm() {
           {
             title: "01. Order Confirmed & Paid",
             date: "Aug 31, 2026 · 11:20 AM",
-            location: "Chandigarh Atelier Cloud",
+            location: "Chandigarh Fulfillment Hub",
             completed: true,
             current: false,
           },
           {
             title: "02. Garment Quality Inspection & Archival Boxing",
             date: "Aug 31, 2026 · 02:45 PM",
-            location: "Atelier Studio, Chandigarh",
+            location: "Chandigarh Facility",
             completed: true,
             current: false,
           },

@@ -54,7 +54,7 @@ const CATEGORIES: CategoryData[] = [
   },
   {
     id: "overshirts",
-    name: "Atelier Overshirts & Outerwear",
+    name: "Heavyweight Overshirts & Outerwear",
     silhouette: "Structured Workwear Silhouette with Layering Room",
     fabricSpec: "100% European Flax® Linen & Organic Heavyweight Canvas",
     measurements: [
@@ -303,7 +303,7 @@ export default function SizeGuideMatrix() {
             Still Unsure About Your Fit?
           </h3>
           <p className="text-xs text-snoov-sand/80 font-sans max-w-md">
-            Transmit your height, weight, and preferred aesthetic to our Chandigarh atelier stylists for personal sizing advice before placing your order.
+            Transmit your height, weight, and preferred aesthetic to our Chandigarh styling team for personal sizing advice before placing your order.
           </p>
         </div>
 
@@ -311,7 +311,7 @@ export default function SizeGuideMatrix() {
           href="/contact"
           className="inline-flex items-center gap-2 px-6 py-3.5 bg-snoov-canvas text-snoov-charcoal text-xs font-mono uppercase tracking-wider font-semibold rounded-sm hover:bg-snoov-sand transition-colors shrink-0"
         >
-          <span>Ask An Atelier Stylist</span>
+          <span>Ask A Stylist</span>
           <span>→</span>
         </LocalizedClientLink>
       </div>

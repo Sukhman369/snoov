@@ -8,11 +8,11 @@ const INQUIRY_TOPICS = [
   { id: "tricity", label: "📍 Tricity Same-Day Courier", subject: "Tricity Hand-Delivery Inquiry" },
   { id: "collabs", label: "🔥 Creator, Collab & Community", subject: "GenZ Creator & Collaboration" },
   { id: "press", label: "🏛️ Press, Stylists & Loans", subject: "Editorial & Stylist Request" },
-  { id: "repairs", label: "🧵 Atelier Seam Repair", subject: "Garment Repair Request" },
+  { id: "repairs", label: "🧵 Garment Seam Repair", subject: "Garment Repair Request" },
   { id: "vibe", label: "💬 General Vibe / Feedback", subject: "General Pod Message" },
 ]
 
-export default function ContactStudio() {
+export default function ContactView() {
   const [selectedTopic, setSelectedTopic] = useState(INQUIRY_TOPICS[0].id)
   const [formData, setFormData] = useState({
     name: "",
@@ -60,7 +60,7 @@ export default function ContactStudio() {
             
             {/* VIP WhatsApp Hotline */}
             <a
-              href="https://wa.me/919876543210?text=Hi%20SNOOV%20Atelier,%20I'd%20like%20to%20inquire%20about"
+              href="https://wa.me/919876543210?text=Hi%20SNOOV,%20I'd%20like%20to%20inquire%20about"
               target="_blank"
               rel="noreferrer"
               className="group p-5 bg-snoov-sand/40 hover:bg-snoov-sand/80 border border-snoov-border rounded-base flex items-center justify-between transition-all duration-300 block"
@@ -90,13 +90,13 @@ export default function ContactStudio() {
             >
               <div className="space-y-1">
                 <span className="text-xs font-mono font-bold text-snoov-charcoal uppercase block">
-                  EMAIL THE ATELIER
+                  EMAIL OUR TEAM
                 </span>
                 <span className="text-xs font-mono text-snoov-green block">
                   concierge@snoov.com
                 </span>
                 <p className="text-xs text-snoov-muted font-sans">
-                  Orders, bespoke tailoring, and press inquiries.
+                  Orders, sizing advice, and press inquiries.
                 </p>
               </div>
               <span className="text-base text-snoov-charcoal group-hover:translate-x-1 transition-transform">
@@ -129,14 +129,14 @@ export default function ContactStudio() {
 
           </div>
 
-          {/* Atelier Coordinates Box */}
+          {/* Headquarters Coordinates Box */}
           <div className="p-6 bg-snoov-sand/20 border border-snoov-border rounded-base space-y-3 font-mono text-xs text-snoov-charcoal">
             <span className="text-[10px] uppercase text-snoov-green font-semibold block">
-              ATELIER HEADQUARTERS
+              HEADQUARTERS & DISPATCH
             </span>
             
             <div className="space-y-1">
-              <strong className="block text-[11px] uppercase">SNOOV ATELIER · CHANDIGARH (TRICITY)</strong>
+              <strong className="block text-[11px] uppercase">SNOOV · CHANDIGARH (TRICITY)</strong>
               <span className="text-[11px] text-snoov-muted block">30.7333° N, 76.7794° E</span>
               <span className="text-[11px] text-snoov-muted block">Industrial Area, Chandigarh 160002, India</span>
               <span className="text-[10px] text-snoov-green block pt-1">Direct Same-Day Courier Dispatch Hub</span>
@@ -196,7 +196,7 @@ export default function ContactStudio() {
                 Transmission Received.
               </h4>
               <p className="text-xs text-snoov-muted font-sans max-w-md mx-auto leading-relaxed">
-                Thank you, <strong>{formData.name || "Patron"}</strong>. Your transmission regarding <strong>{activeTopicObj?.subject}</strong> has been logged. An atelier specialist will reply to <strong>{formData.email}</strong> shortly.
+                Thank you, <strong>{formData.name || "Patron"}</strong>. Your transmission regarding <strong>{activeTopicObj?.subject}</strong> has been logged. A team specialist will reply to <strong>{formData.email}</strong> shortly.
               </p>
               <button
                 type="button"

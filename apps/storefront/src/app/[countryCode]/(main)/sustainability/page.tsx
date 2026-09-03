@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Sustainability, Organic Fibers & Traceability | SNOOV Studio & Atelier",
+  title: "Sustainability, Organic Fibers & Traceability | SNOOV",
   description:
     "Explore SNOOV's verified sustainable standards. GOTS certified organic cotton, European Flax®, closed-loop non-toxic dyeing, and supply chain traceability.",
   alternates: {
@@ -62,7 +62,7 @@ export default async function SustainabilityPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Sustainability & Traceability</span>
@@ -76,7 +76,7 @@ export default async function SustainabilityPage() {
               Sustainability & Traceability
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              True luxury is accountability. We reject fast-fashion overproduction in favor of disciplined small-batch drops, certified organic natural textiles, non-toxic botanic dyeing, and complete farm-to-atelier traceability.
+              True luxury is accountability. We reject fast-fashion overproduction in favor of disciplined small-batch drops, certified organic natural textiles, non-toxic botanic dyeing, and complete farm-to-garment traceability.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -123,8 +123,8 @@ export default async function SustainabilityPage() {
                   <a href="#dyeing" className="block hover:text-snoov-green transition-colors">
                     03. Closed-Loop Low-Impact Dyeing
                   </a>
-                  <a href="#supply-chain" className="block hover:text-snoov-green transition-colors">
-                    04. Farm-to-Atelier Traceability Map
+                  <a href="#traceability" className="block hover:text-snoov-green transition-colors">
+                    04. Farm-to-Garment Traceability Map
                   </a>
                   <a href="#circularity" className="block hover:text-snoov-green transition-colors">
                     05. Circularity & Repair Pledge
@@ -133,19 +133,16 @@ export default async function SustainabilityPage() {
               </div>
 
               {/* Verified Certificate Card */}
-              <div className="p-6 bg-snoov-charcoal text-snoov-canvas rounded-base border border-snoov-charcoal space-y-3">
-                <span className="text-[10px] font-mono tracking-widest uppercase text-snoov-sand/70 block">
-                  INDEPENDENT AUDIT
+              <div className="p-6 bg-snoov-sand/40 border border-snoov-border rounded-base space-y-3">
+                <span className="text-[10px] font-mono tracking-widest uppercase text-snoov-green font-semibold block">
+                  GOTS TC AUDIT STANDARD
                 </span>
-                <h4 className="font-serif text-lg font-normal text-snoov-canvas">
-                  Certificate Transparency
-                </h4>
-                <p className="text-xs text-snoov-sand/80 leading-relaxed font-sans">
-                  We maintain public transaction certificates for every cotton bale and textile bolt processed in our atelier network.
+                <p className="text-xs text-snoov-muted leading-relaxed font-sans">
+                  We maintain public transaction certificates for every cotton bale and textile bolt processed in our production network.
                 </p>
                 <a
                   href="mailto:sustainability@snoov.com?subject=Certification%20Verification%20Request"
-                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-snoov-canvas underline decoration-snoov-sand/40 hover:decoration-snoov-canvas transition-colors pt-2"
+                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-snoov-charcoal underline decoration-snoov-muted/40 hover:decoration-snoov-charcoal transition-colors pt-2"
                 >
                   <span>Request Certificate Audit</span>
                   <span>↗</span>
@@ -280,14 +277,14 @@ export default async function SustainabilityPage() {
               </ul>
             </div>
 
-            {/* 04. Farm-to-Atelier Traceability */}
-            <div id="supply-chain" className="scroll-mt-28 space-y-6 border-b border-snoov-border pb-12">
+            {/* 04. Farm-to-Garment Traceability */}
+            <div id="traceability" className="scroll-mt-28 space-y-6 border-b border-snoov-border pb-12">
               <div>
                 <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
                   04 / TRANSPARENCY
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal mt-1">
-                  4. Farm-to-Atelier Traceability Map
+                  4. Farm-to-Garment Traceability Map
                 </h2>
                 <p className="mt-2">
                   We maintain direct relationships with every link in our value chain:
@@ -338,11 +335,11 @@ export default async function SustainabilityPage() {
 
                 <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
-                    <span className="font-mono text-snoov-green font-semibold block text-[10px] uppercase">
-                      TIER 1 · CUT, SEW & ATELIER FINISHING
+                    <span className="text-[10px] font-mono text-snoov-green uppercase font-semibold block mb-1">
+                      TIER 1 · CUT, SEW & GARMENT FINISHING
                     </span>
-                    <strong className="text-snoov-charcoal block text-xs">Master Tailoring Studios</strong>
-                    <span className="text-snoov-muted text-[11px]">Flagship Studio — Chandigarh (India)</span>
+                    <strong className="text-snoov-charcoal block text-xs">Production Workshops</strong>
+                    <span className="text-snoov-muted text-[11px]">Chandigarh Hub — Punjab / Tricity (India)</span>
                   </div>
                   <div className="sm:text-right font-mono text-[11px] text-snoov-charcoal">
                     Fair Wage & Artisan Certified
@@ -370,7 +367,7 @@ export default async function SustainabilityPage() {
                     Complimentary Seam Repair
                   </strong>
                   <p className="text-snoov-muted">
-                    If your garment experiences a structural seam failure or zipper issue, our atelier will repair it free of charge. Consult our{" "}
+                    If your garment experiences a structural seam failure or zipper issue, our team will repair it free of charge. Consult our{" "}
                     <LocalizedClientLink href="/garment-care" className="text-snoov-green underline">
                       Garment Care Guide
                     </LocalizedClientLink>.

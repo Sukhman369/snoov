@@ -18,8 +18,8 @@ const PILLARS = [
   },
   {
     num: "03",
-    title: "Family-Owned Ateliers",
-    subtitle: "Generational tailoring heritage",
+    title: "Ethical Craft Workshops",
+    subtitle: "Generational craftsmanship heritage",
     description:
       "Produced in limited batches across ethical workshops in Northern Portugal and Tuscany, guaranteeing fair living wages and master craftsmanship.",
   },
@@ -35,7 +35,7 @@ export default function CraftsmanshipPillars() {
           <div className="flex items-center gap-2 mb-2">
             <span className="w-5 h-[1px] bg-snoov-green" />
             <span className="text-[10px] font-mono uppercase tracking-widest text-snoov-green font-semibold">
-              ATELIER STANDARDS
+              CRAFT STANDARDS
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl text-snoov-charcoal font-normal tracking-tight">

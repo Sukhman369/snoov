@@ -3,7 +3,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import SizeGuideMatrix from "@modules/size-guide/components/size-guide-matrix"
 
 export const metadata: Metadata = {
-  title: "Atelier Size Guide & Fit Matrix | SNOOV Studio",
+  title: "Size Guide & Fit Matrix | SNOOV",
   description:
     "Explore SNOOV's international size matrix (US, UK, EU, JP). Detailed garment measurements in CM and Inches for heavyweight t-shirts, hoodies, and overshirts.",
   alternates: {
@@ -46,7 +46,7 @@ export default async function SizeGuidePage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Size Guide & Fit Matrix</span>

@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Lookbook & Editorial Archive | SNOOV Studio & Atelier",
+  title: "Lookbook & Editorial Archive | SNOOV",
   description:
     "Explore SNOOV's seasonal lookbooks, campaign editorials, architectural tailoring silhouettes, and high-contrast GenZ streetwear archives.",
   alternates: {
@@ -65,7 +65,7 @@ export default async function LookbookPage() {
     },
     {
       id: "LOOK 05",
-      title: "Cropped Atelier Blouson & Leather Crossbody",
+      title: "Cropped Heavyweight Blouson & Leather Crossbody",
       season: "SS26 Collection",
       fabric: "Vegetable-Tanned Cowhide · Canvas Canvas",
       aspect: "aspect-[3/4]",
@@ -95,7 +95,7 @@ export default async function LookbookPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Lookbook</span>
@@ -154,7 +154,7 @@ export default async function LookbookPage() {
               </h2>
             </div>
             <div className="text-xs font-mono text-snoov-muted">
-              6 ARCHIVAL LOOKS · EDITED BY SNOOV STUDIO
+              6 ARCHIVAL LOOKS · EDITED BY SNOOV
             </div>
           </div>
 
@@ -205,7 +205,7 @@ export default async function LookbookPage() {
         </div>
       </section>
 
-      {/* ── Backstage Atelier Moodboard & Credits ── */}
+      {/* ── Backstage Moodboard & Credits ── */}
       <section className="content-container pb-20 sm:pb-28">
         <div className="p-8 sm:p-12 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-8">
           
@@ -219,14 +219,14 @@ export default async function LookbookPage() {
               </h3>
             </div>
             <span className="text-xs font-mono text-snoov-muted">
-              CHANDIGARH / TRICITY ATELIER
+              CHANDIGARH / TRICITY
             </span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs font-mono">
             <div>
               <span className="text-snoov-muted text-[10px] uppercase block mb-1">CREATIVE DIRECTION</span>
-              <span className="text-snoov-charcoal font-semibold">SNOOV Studio Collective</span>
+              <span className="text-snoov-charcoal font-semibold">SNOOV Collective</span>
             </div>
             <div>
               <span className="text-snoov-muted text-[10px] uppercase block mb-1">PHOTOGRAPHY</span>
@@ -237,7 +237,7 @@ export default async function LookbookPage() {
               <span className="text-snoov-charcoal font-semibold">GenZ Community Pod</span>
             </div>
             <div>
-              <span className="text-snoov-muted text-[10px] uppercase block mb-1">ATELIER STUDIO</span>
+              <span className="text-snoov-muted text-[10px] uppercase block mb-1">DESIGN & PRODUCTION</span>
               <span className="text-snoov-charcoal font-semibold">Chandigarh, India</span>
             </div>
           </div>

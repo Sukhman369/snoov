@@ -179,7 +179,7 @@ export default function FashionStoreView({
             SHOWING <strong className="text-snoov-charcoal">{filteredProducts.length}</strong> STYLES
           </span>
           <span className="text-snoov-green">
-            ✓ ALL ITEMS IN STOCK AT ATELIER
+            ✓ ALL ITEMS IN STOCK & READY TO SHIP
           </span>
         </div>
 

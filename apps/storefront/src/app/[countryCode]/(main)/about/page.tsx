@@ -59,7 +59,7 @@ export default async function AboutStoryPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Our Story</span>
@@ -174,7 +174,7 @@ export default async function AboutStoryPage() {
                 [ 1200 × 750px · COMMUNITY & LIFESTYLE EDITORIAL ]
               </p>
               <p className="text-[11px] text-snoov-muted/80 font-sans italic mt-1">
-                Space reserved for community imagery: Streetwear lookbook, backstage atelier, or skate culture visuals.
+                Space reserved for community imagery: Streetwear lookbook, backstage design lab, or skate culture visuals.
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default async function AboutStoryPage() {
                 [ CRAFTSMANSHIP & GSM TEXTILE TEXT SPACE ]
               </span>
               <p className="text-xs text-snoov-muted italic">
-                *Reserved for atelier details: Fabric weights, sustainable European & Indian organic mills, and tactile silhouette draping.*
+                *Reserved for craft details: Fabric weights, sustainable European & Indian organic mills, and tactile silhouette draping.*
               </p>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default async function AboutStoryPage() {
                 Be Part of the SNOOV Community
               </h3>
               <p className="text-xs text-snoov-muted font-sans max-w-md">
-                Get private access to limited capsule releases, pop-up events, and private atelier lookbooks.
+                Get private access to limited capsule releases, pop-up events, and private seasonal lookbooks.
               </p>
             </div>
 

@@ -34,7 +34,7 @@ export default function EditorialBrandStatement() {
                 </div>
                 <div>
                   <span className="block text-snoov-charcoal font-medium text-sm font-sans">02 / CRAFT</span>
-                  <span>Artisanal Atelier Tailoring</span>
+                  <span>Heavyweight Streetwear Construction</span>
                 </div>
               </div>
 
@@ -42,7 +42,7 @@ export default function EditorialBrandStatement() {
                 href="/store"
                 className="editorial-link text-xs tracking-editorial"
               >
-                READ OUR ATELIER CHRONICLE →
+                READ OUR BRAND CHRONICLE →
               </LocalizedClientLink>
             </div>
           </div>

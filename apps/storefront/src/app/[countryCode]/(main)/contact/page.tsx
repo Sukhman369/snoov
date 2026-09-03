@@ -1,11 +1,11 @@
 import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import ContactStudio from "@modules/contact/components/contact-studio"
+import ContactView from "@modules/contact/components/contact-view"
 
 export const metadata: Metadata = {
   title: "Client Concierge, VIP Lines & Direct Inquiries | SNOOV",
   description:
-    "Direct contact with the SNOOV Studio. Instant VIP WhatsApp hotline, Tricity same-day support, press loans, and creator collaboration requests.",
+    "Direct contact with the SNOOV team. Instant VIP WhatsApp hotline, Tricity same-day support, press loans, and creator collaboration requests.",
   alternates: {
     canonical: "https://snoovlifestyle.com/contact",
   },
@@ -67,7 +67,7 @@ export default async function ContactPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Concierge & Contact</span>
@@ -96,7 +96,7 @@ export default async function ContactPage() {
 
       {/* ── Interactive Contact Experience ── */}
       <section className="content-container py-12 sm:py-20">
-        <ContactStudio />
+        <ContactView />
       </section>
     </div>
   )

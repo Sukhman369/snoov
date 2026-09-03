@@ -341,7 +341,7 @@ export default function HeroG() {
 
         {/* Brand statement */}
         <div className="text-[10px] font-mono text-white/50 uppercase tracking-widest">
-          SNOOV STUDIO · CRAFTED FOR STREETWEAR DISRUPTORS
+          SNOOV · CRAFTED FOR STREETWEAR DISRUPTORS
         </div>
 
       </div>

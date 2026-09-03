@@ -15,10 +15,10 @@ export default async function Footer() {
             <div>
               <BrandLogo width={160} height={58} className="-ml-2" />
               <span className="text-[10px] font-mono tracking-widest text-snoov-green uppercase font-semibold block mt-1">
-                STUDIO & ATELIER · CHANDIGARH / TRICITY
+                CHANDIGARH / TRICITY
               </span>
               <p className="mt-4 text-xs text-snoov-muted leading-relaxed font-sans max-w-sm">
-                A conscious luxury streetwear & fashion house focused on architectural tailoring, tactile organic textiles, and enduring silhouette design.
+                A conscious luxury streetwear brand focused on intentional cuts, tactile organic textiles, and enduring silhouette design.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export default async function Footer() {
               <ul className="space-y-3 text-snoov-muted">
                 <li>
                   <LocalizedClientLink href="/size-guide" className="hover:text-snoov-green transition-colors">
-                    Atelier Sizing Guide
+                    Size Guide
                   </LocalizedClientLink>
                 </li>
                 <li>
@@ -115,10 +115,10 @@ export default async function Footer() {
               </ul>
             </div>
 
-            {/* Column 3: Atelier & Connect */}
+            {/* Column 3: Brand & Connect */}
             <div>
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-charcoal font-semibold block mb-4">
-                03 / ATELIER
+                03 / BRAND
               </span>
               <ul className="space-y-3 text-snoov-muted">
                 <li>
@@ -188,7 +188,7 @@ export default async function Footer() {
         {/* Bottom Legal & Copyright Bar */}
         <div className="pt-8 mt-4 border-t border-snoov-border flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-mono text-snoov-muted uppercase tracking-wider">
           <div>
-            © {new Date().getFullYear()} SNOOV STUDIO & ATELIER. ALL RIGHTS RESERVED.
+            © {new Date().getFullYear()} SNOOV. ALL RIGHTS RESERVED.
           </div>
           <div className="flex items-center gap-6">
             <LocalizedClientLink href="/privacy" className="hover:text-snoov-charcoal transition-colors">

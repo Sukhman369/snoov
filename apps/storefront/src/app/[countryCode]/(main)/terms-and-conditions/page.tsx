@@ -2,9 +2,9 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions of Sale & Service | SNOOV Studio & Atelier",
+  title: "Terms & Conditions of Sale & Service | SNOOV",
   description:
-    "Review the terms and conditions governing purchases, bespoke atelier services, delivery, damaged item exchanges, intellectual property, and client care at SNOOV.",
+    "Review the terms and conditions governing purchases, delivery, damaged item exchanges, intellectual property, and client care at SNOOV.",
   alternates: {
     canonical: "https://snoovlifestyle.com/terms-and-conditions",
   },
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function TermsAndConditionsPage() {
   const lastUpdated = "August 31, 2026"
-  const legalEntity = "SNOOV Studio & Atelier"
+  const legalEntity = "SNOOV"
   const contactEmail = "concierge@snoov.com"
 
   const breadcrumbSchema = {
@@ -39,7 +39,7 @@ export default async function TermsAndConditionsPage() {
     "@type": "WebPage",
     name: "Terms & Conditions of Sale and Service",
     description:
-      "General Terms and Conditions of Sale and Service for SNOOV Studio & Atelier.",
+      "General Terms and Conditions of Sale and Service for SNOOV.",
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
@@ -66,7 +66,7 @@ export default async function TermsAndConditionsPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Terms & Conditions</span>
@@ -80,7 +80,7 @@ export default async function TermsAndConditionsPage() {
               Terms & Conditions
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              These General Terms and Conditions govern the purchase of garments, accessories, and digital services offered by SNOOV Studio & Atelier across our global e-commerce storefront and atelier locations.
+              These General Terms and Conditions govern the purchase of garments, accessories, and digital services offered by SNOOV across our digital storefront.
             </p>
             <div className="flex flex-wrap items-center gap-6 mt-8 pt-6 border-t border-snoov-border/60 text-xs font-mono text-snoov-muted">
               <div>
@@ -153,15 +153,15 @@ export default async function TermsAndConditionsPage() {
                   Need Clarification?
                 </h4>
                 <p className="text-xs text-snoov-sand/80 leading-relaxed font-sans">
-                  Our Atelier Concierge team is available to assist with inquiries regarding order agreements or international terms.
+                  Our Concierge team is available to assist with inquiries regarding order agreements or international terms.
                 </p>
-                <a
-                  href={`mailto:${contactEmail}?subject=Terms%20Inquiry`}
-                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-snoov-canvas underline decoration-snoov-sand/40 hover:decoration-snoov-canvas transition-colors pt-2"
+                <LocalizedClientLink
+                  href="/contact"
+                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-snoov-charcoal underline decoration-snoov-muted/40 hover:decoration-snoov-charcoal transition-colors pt-2"
                 >
-                  <span>Contact Atelier Concierge</span>
+                  <span>Contact Concierge</span>
                   <span>↗</span>
-                </a>
+                </LocalizedClientLink>
               </div>
             </div>
           </aside>
@@ -181,7 +181,7 @@ export default async function TermsAndConditionsPage() {
                 These General Terms and Conditions of Sale and Service (the &quot;Terms&quot;) apply exclusively between <strong>{legalEntity}</strong> (operating under the commercial trade name <strong>SNOOV</strong>, based in Chandigarh, India) and any individual consumer acting in a private capacity (the &quot;Client&quot;).
               </p>
               <p>
-                By placing an order on our storefront (snoovlifestyle.com) or confirming a bespoke atelier commission, the Client unreservedly acknowledges and accepts these Terms in full.
+                By placing an order on our storefront (snoovlifestyle.com) or completing a transaction, the Client unreservedly acknowledges and accepts these Terms in full.
               </p>
             </div>
 
@@ -271,7 +271,7 @@ export default async function TermsAndConditionsPage() {
                 5. Delivery, Free Shipping Threshold & Worldwide Expansion
               </h2>
               <p>
-                Garments are dispatched from our flagship atelier hub in Chandigarh (Tricity), India. SNOOV provides <strong>complimentary delivery across India on all orders valued at ₹7,000 or above</strong>. For orders below ₹7,000, standard carrier shipping rates apply and are calculated transparently at checkout prior to payment.
+                Garments are dispatched from our fulfillment hub in Chandigarh (Tricity), India. SNOOV provides <strong>complimentary delivery across India on all orders valued at ₹7,000 or above</strong>. For orders below ₹7,000, standard carrier shipping rates apply and are calculated transparently at checkout prior to payment.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 border border-snoov-border rounded-base">
@@ -314,8 +314,8 @@ export default async function TermsAndConditionsPage() {
                 <ul className="list-disc pl-4 space-y-1 text-snoov-muted">
                   <li>Transit damage or packaging compromise should be reported to our Concierge within <strong>48 hours</strong> of delivery so our team can prompt courier transit insurance claims and reserve a replacement piece.</li>
                   <li>Notice should include clear photographs or video documentation of the flaw alongside the original courier shipping label and packaging.</li>
-                  <li>Garments must remain unworn, unwashed, and retain all original atelier tags, labels, and dust bags.</li>
-                  <li>Upon approval, SNOOV arranges complimentary courier pickup and dispatches a replacement with priority shipping. If the edition is archived or sold out, an atelier store credit or bespoke solution will be provided.</li>
+                  <li>Garments must remain unworn, unwashed, and retain all original brand tags, labels, and dust bags.</li>
+                  <li>Upon approval, SNOOV arranges complimentary courier pickup and dispatches a replacement with priority shipping. If the edition is archived or sold out, a store credit will be provided.</li>
                 </ul>
               </div>
               <p className="text-xs">
@@ -354,7 +354,7 @@ export default async function TermsAndConditionsPage() {
                 SNOOV garments are engineered from certified organic textiles (GOTS) and European Flax®. Clients benefit from the statutory guarantee of conformity under Articles L. 217-4 et seq. of the French Consumer Code and against hidden defects under Articles 1641 et seq. of the French Civil Code.
               </p>
               <p>
-                If a garment exhibits a structural tailoring defect or transit damage, SNOOV provides complimentary atelier repairs or an immediate replacement exchange.
+                If a garment exhibits a structural tailoring defect or transit damage, SNOOV provides complimentary repairs or an immediate replacement exchange.
               </p>
             </div>
 
@@ -385,8 +385,8 @@ export default async function TermsAndConditionsPage() {
               
               <div className="p-6 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-3 font-mono text-xs text-snoov-charcoal">
                 <div>
-                  <span className="text-snoov-muted block text-[10px] uppercase">ATELIER HEADQUARTERS & LEGAL DESK</span>
-                  <span>SNOOV Studio & Atelier</span>
+                  <span className="text-snoov-muted block text-[10px] uppercase">HEADQUARTERS & LEGAL DESK</span>
+                  <span>SNOOV</span>
                   <br />
                   <span>Industrial Area, Chandigarh 160002, India</span>
                   <br />

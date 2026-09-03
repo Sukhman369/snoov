@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Exchange & Replacement Policy | SNOOV Studio & Atelier",
+  title: "Exchange & Replacement Policy | SNOOV",
   description:
     "Discover SNOOV's conscious craftsmanship approach and our damaged goods exchange guarantee. Complimentary courier replacement for transit-damaged or flawed pieces.",
   alternates: {
@@ -51,7 +51,7 @@ export default async function ReturnsAndExchangesPage() {
         name: "How do I request an exchange for a damaged product?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Please inspect your order upon delivery and notify our Concierge within 48 hours via WhatsApp or email with your Order ID and clear photographs of the damaged garment and packaging. Our atelier team will arrange a complimentary courier pickup and dispatch a replacement.",
+          text: "Please inspect your order upon delivery and notify our Concierge within 48 hours via WhatsApp or email with your Order ID and clear photographs of the damaged garment and packaging. Our team will arrange a complimentary courier pickup and dispatch a replacement.",
         },
       },
       {
@@ -59,7 +59,7 @@ export default async function ReturnsAndExchangesPage() {
         name: "Can I exchange an item for a different size or color?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Because each capsule is crafted in strictly limited batches with zero excess stock, we are unable to accommodate post-delivery size or preference swaps. We warmly encourage patrons to consult our detailed Atelier Size Guide or reach out to our styling team before placing an order to ensure a confident fit.",
+          text: "Because each capsule is crafted in strictly limited batches with zero excess stock, we are unable to accommodate post-delivery size or preference swaps. We warmly encourage patrons to consult our detailed Size Guide or reach out to our styling team before placing an order to ensure a confident fit.",
         },
       },
     ],
@@ -83,7 +83,7 @@ export default async function ReturnsAndExchangesPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Exchange & Replacement Policy</span>
@@ -91,13 +91,13 @@ export default async function ReturnsAndExchangesPage() {
 
           <div className="max-w-4xl">
             <span className="inline-block px-2.5 py-1 text-[10px] font-mono tracking-widest uppercase bg-snoov-sand text-snoov-charcoal/90 rounded-sm border border-snoov-border mb-4">
-              Client Care & Assurance · Conscious Atelier Standards
+              Client Care & Assurance · Conscious Production Standards
             </span>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-light tracking-tight text-snoov-charcoal leading-[1.1] mb-6">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif text-snoov-charcoal font-normal tracking-tight">
               Exchange & Replacement Policy
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              At SNOOV, every garment is tailored in intentional, small-batch capsules rather than mass-produced inventory. To ensure that every patron receives an untouched, atelier-fresh piece and to honor our sustainable craftsmanship model, we focus our exchange policy exclusively on products that arrive damaged or defective in transit. If your piece encounters any issue on its way to you, our atelier takes full responsibility and guarantees an immediate, complimentary replacement.
+              At SNOOV, every garment is tailored in intentional, small-batch capsules rather than mass-produced inventory. To ensure that every patron receives an untouched, freshly crafted piece and to honor our sustainable craftsmanship model, we focus our exchange policy exclusively on products that arrive damaged or defective in transit. If your piece encounters any issue on its way to you, our brand takes full responsibility and guarantees an immediate, complimentary replacement.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -111,7 +111,7 @@ export default async function ReturnsAndExchangesPage() {
                 <span className="text-snoov-green font-semibold">100% Complimentary</span>
               </div>
               <div>
-                <span className="text-snoov-muted block text-[10px] uppercase">ATELIER AUDIT</span>
+                <span className="text-snoov-muted block text-[10px] uppercase">QUALITY AUDIT</span>
                 <span className="text-snoov-charcoal font-semibold">{verificationTime}</span>
               </div>
               <div>
@@ -210,7 +210,7 @@ export default async function ReturnsAndExchangesPage() {
                   When your parcel arrives, you can be certain that your piece is brand-new, hand-inspected, and has never been previously circulated, worn, or repeatedly handled. To preserve this level of hygiene, product integrity, and our commitment to zero-deadstock sustainability, we do not operate a general return-for-refund model.
                 </p>
                 <p className="text-xs text-snoov-muted leading-relaxed">
-                  Instead, we channel all our care into ensuring that every piece that leaves our atelier reaches you in flawless condition—backed by our dedicated, complimentary exchange guarantee if anything ever happens during transit.
+                  Instead, we channel all our care into ensuring that every piece that leaves our workshop reaches you in flawless condition—backed by our dedicated, complimentary exchange guarantee if anything ever happens during transit.
                 </p>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default async function ReturnsAndExchangesPage() {
                     ★ OUT-OF-STOCK COMMITMENT
                   </span>
                   <p className="text-xs text-snoov-muted">
-                    If the damaged edition is archived or completely sold out, our atelier team will work personally with you—offering a preferred alternative piece or full store credit so you remain completely satisfied.
+                    If the damaged edition is archived or completely sold out, our team will work personally with you—offering a preferred alternative piece or full store credit so you remain completely satisfied.
                   </p>
                 </div>
               </div>
@@ -337,7 +337,7 @@ export default async function ReturnsAndExchangesPage() {
                     ⓘ HELPFUL POINTS TO KEEP IN MIND
                   </span>
                   <ul className="space-y-2 text-xs text-snoov-muted">
-                    <li>• <strong>Original State:</strong> For hygiene reasons and to verify that damage occurred in transit, pieces must remain unworn, unwashed, and in their original packaging with atelier tags intact.</li>
+                    <li>• <strong>Original State:</strong> For hygiene reasons and to verify that damage occurred in transit, pieces must remain unworn, unwashed, and in their original packaging with original brand tags intact.</li>
                     <li>• <strong>48-Hour Window:</strong> Reaching out within 48 hours enables us to quickly raise transit insurance claims with our courier partner and reserve a replacement piece.</li>
                     <li>• <strong>Sizing Confidence:</strong> Since each capsule is strictly limited in volume, we are unable to facilitate post-delivery size or style swaps. We warmly encourage checking our Size Guide or contacting our styling desk before checkout.</li>
                   </ul>
@@ -358,14 +358,14 @@ export default async function ReturnsAndExchangesPage() {
               </p>
               <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm">
                 <li>
-                  <strong className="text-snoov-charcoal">Atelier Size Matrix:</strong> Every piece features exact measurements in both centimeters and inches. Please refer to our{" "}
+                  <strong className="text-snoov-charcoal">Streetwear Size Matrix:</strong> Every piece features exact measurements in both centimeters and inches. Please refer to our{" "}
                   <LocalizedClientLink href="/size-guide" className="text-snoov-green font-medium underline underline-offset-4 hover:opacity-80">
                     Comprehensive Size Guide
                   </LocalizedClientLink>{" "}
                   before completing checkout.
                 </li>
                 <li>
-                  <strong className="text-snoov-charcoal">Stylist Consultation:</strong> Unsure how a specific drop-shoulder hoodie or heavyweight tee drapes? Our Chandigarh atelier stylists are readily accessible via WhatsApp or email to provide personalized sizing guidance based on your height, weight, and preferred aesthetic.
+                  <strong className="text-snoov-charcoal">Stylist Consultation:</strong> Unsure how a specific drop-shoulder hoodie or heavyweight tee drapes? Our Chandigarh styling team is readily accessible via WhatsApp or email to provide personalized sizing guidance based on your height, weight, and preferred aesthetic.
                 </li>
                 <li>
                   <strong className="text-snoov-charcoal">Lifetime Garment Care:</strong> For long-term care and maintenance of your organic textiles, explore our{" "}

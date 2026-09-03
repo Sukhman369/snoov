@@ -67,7 +67,7 @@ export default function NewArrivalsGrid() {
         {/* Bottom Editorial Callout */}
         <div className="mt-16 pt-8 border-t border-snoov-border flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-xs text-snoov-muted font-sans">
-            Showing <span className="font-semibold text-snoov-charcoal">{filteredProducts.length}</span> curated garments from the SS26 Atelier release.
+            Showing <span className="font-semibold text-snoov-charcoal">{filteredProducts.length}</span> curated garments from the SS26 Capsule release.
           </p>
           <LocalizedClientLink
             href="/store"

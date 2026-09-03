@@ -3,7 +3,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import FAQAccordion from "@modules/faq/components/faq-accordion"
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions (FAQ) | SNOOV Studio & Atelier",
+  title: "Frequently Asked Questions (FAQ) | SNOOV",
   description:
     "Find instant answers to frequently asked questions about SNOOV capsule drops, free delivery on orders above ₹7,000, Tricity same-day delivery, sizing, and damaged goods exchange guarantee.",
   alternates: {
@@ -105,7 +105,7 @@ export default async function FAQPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Frequently Asked Questions</span>

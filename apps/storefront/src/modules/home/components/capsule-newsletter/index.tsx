@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 
-export default function AtelierNewsletter() {
+export default function CapsuleNewsletter() {
   const [email, setEmail] = useState("")
   const [subscribed, setSubscribed] = useState(false)
 
@@ -18,7 +18,7 @@ export default function AtelierNewsletter() {
       <div className="editorial-container text-center max-w-2xl mx-auto">
         
         <span className="text-[10px] font-mono uppercase tracking-widest text-snoov-green font-semibold">
-          PRIVATE ATELIER DISPATCH
+          PRIVATE CAPSULE DISPATCH
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl text-snoov-charcoal font-normal tracking-tight mt-2">
@@ -49,7 +49,7 @@ export default function AtelierNewsletter() {
         ) : (
           <div className="mt-8 p-4 bg-white border border-snoov-green/30 rounded-[2px] inline-block">
             <p className="text-xs font-mono text-snoov-green font-semibold uppercase tracking-wider">
-              ✓ Welcome to the Atelier Dispatch. Your private invitation is on its way.
+              ✓ Welcome to the SNOOV Dispatch. Your private invitation is on its way.
             </p>
           </div>
         )}

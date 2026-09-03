@@ -3,7 +3,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import OrderTrackerForm from "@modules/order/components/order-tracker-form"
 
 export const metadata: Metadata = {
-  title: "Shipment & Order Tracking Radar | SNOOV Studio",
+  title: "Shipment & Order Tracking Radar | SNOOV",
   description:
     "Track your active SNOOV streetwear order in real time. Live milestone status for Tricity same-day delivery, Blue Dart Express domestic transit, and global DHL shipments.",
   alternates: {
@@ -46,7 +46,7 @@ export default async function TrackOrderPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Shipment Tracking</span>
@@ -67,7 +67,7 @@ export default async function TrackOrderPage() {
             </h1>
 
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              Follow your garment&apos;s journey from our Chandigarh tailoring studio and archival packaging suite directly to your doorstep.
+              Follow your garment&apos;s journey from our Chandigarh fulfillment hub and archival packaging suite directly to your doorstep.
             </p>
           </div>
         </div>

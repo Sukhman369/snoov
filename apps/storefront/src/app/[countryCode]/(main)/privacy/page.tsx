@@ -2,9 +2,9 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Privacy & Data Protection | SNOOV Studio & Atelier",
+  title: "Privacy & Data Protection | SNOOV",
   description:
-    "Learn how SNOOV protects your personal data, respects GDPR/CCPA rights, and maintains client privacy across our atelier, e-commerce, and bespoke services.",
+    "Learn how SNOOV protects your personal data, respects GDPR/CCPA rights, and maintains client privacy across our e-commerce platform and client services.",
   alternates: {
     canonical: "https://snoovlifestyle.com/privacy",
   },
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function PrivacyPolicyPage() {
   const lastUpdated = "August 31, 2026"
-  const legalEntity = "SNOOV Studio & Atelier"
+  const legalEntity = "SNOOV"
   const contactEmail = "privacy@snoov.com"
 
   const breadcrumbSchema = {
@@ -39,7 +39,7 @@ export default async function PrivacyPolicyPage() {
     "@type": "WebPage",
     name: "Privacy & Data Protection Policy",
     description:
-      "Privacy policy and data governance practices of SNOOV Studio & Atelier.",
+      "Privacy policy and data governance practices of SNOOV.",
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
@@ -66,7 +66,7 @@ export default async function PrivacyPolicyPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Privacy Policy</span>
@@ -80,7 +80,7 @@ export default async function PrivacyPolicyPage() {
               Privacy & Data Protection
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              At SNOOV Studio & Atelier, we treat your personal data with the same discretion, precision, and craftsmanship we apply to our garments. This policy transparently outlines how your information is gathered, secured, and respected.
+              At SNOOV, we treat your personal data with the same discretion, precision, and care we apply to our garments. This policy transparently outlines how your information is gathered, secured, and respected.
             </p>
             <div className="flex flex-wrap items-center gap-6 mt-8 pt-6 border-t border-snoov-border/60 text-xs font-mono text-snoov-muted">
               <div>
@@ -172,7 +172,7 @@ export default async function PrivacyPolicyPage() {
                 1. Principles of Data Stewardship
               </h2>
               <p>
-                SNOOV operates on a strict principle of <strong>data minimization</strong>. We only gather and retain information necessary to deliver exceptional atelier garments, process global commerce transactions securely, and provide bespoke client assistance.
+                SNOOV operates on a strict principle of <strong>data minimization</strong>. We only gather and retain information necessary to deliver exceptional streetwear garments, process global commerce transactions securely, and provide personalized client assistance.
               </p>
               <p>
                 We do not sell, rent, monetize, or broker your personal information to third-party data brokers under any circumstances.
@@ -240,7 +240,7 @@ export default async function PrivacyPolicyPage() {
                   <strong className="text-snoov-charcoal">Legitimate Business Interests:</strong> Fraud detection, storefront cybersecurity, enhancing garment fit recommendations, and analyzing site diagnostics.
                 </li>
                 <li>
-                  <strong className="text-snoov-charcoal">Explicit Consent:</strong> Sending the private SNOOV Atelier editorial newsletter, lookbook drops, and invitations to private showroom events (revocable at any moment).
+                  <strong className="text-snoov-charcoal">Explicit Consent:</strong> Sending the private SNOOV editorial newsletter, lookbook drops, and invitations to private showroom events (revocable at any moment).
                 </li>
                 <li>
                   <strong className="text-snoov-charcoal">Legal Obligation:</strong> Tax reporting, customs declarations, and audit records mandated by fiscal authorities in France, Portugal, and international delivery destinations.
@@ -405,8 +405,8 @@ export default async function PrivacyPolicyPage() {
                   </a>
                 </div>
                 <div>
-                  <span className="text-snoov-muted block text-[10px] uppercase">ATELIER POSTAL ADDRESS</span>
-                  <span>SNOOV Studio & Atelier — Data Governance Desk</span>
+                  <span className="text-snoov-muted block text-[10px] uppercase">POSTAL ADDRESS</span>
+                  <span>SNOOV — Data Governance Desk</span>
                   <br />
                   <span>Industrial Area, Chandigarh 160002, India</span>
                 </div>

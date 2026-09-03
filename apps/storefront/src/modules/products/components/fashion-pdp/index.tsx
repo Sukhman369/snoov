@@ -254,11 +254,11 @@ export default function FashionPDP({ product }: FashionPDPProps) {
               </button>
 
               <div className="flex items-center justify-center gap-6 text-[10px] font-mono text-snoov-muted uppercase tracking-wider pt-2">
-                <span>✓ Atelier Quality & Exchange Guarantee</span>
+                <span>✓ Premium Quality & Exchange Guarantee</span>
                 <span>•</span>
                 <span>✓ Free Delivery Over ₹7,000</span>
                 <span>•</span>
-                <span>✓ Atelier Box Included</span>
+                <span>✓ Signature Packaging Included</span>
               </div>
             </div>
 
@@ -329,7 +329,7 @@ export default function FashionPDP({ product }: FashionPDPProps) {
             <div className="bg-snoov-canvas border border-snoov-border p-6 sm:p-8 max-w-lg w-full rounded-[2px] shadow-2xl relative">
               <div className="flex items-center justify-between pb-4 border-b border-snoov-border">
                 <h3 className="font-serif text-2xl text-snoov-charcoal font-medium">
-                  Atelier Sizing Guide (CM)
+                  Streetwear Sizing Guide (CM)
                 </h3>
                 <button
                   onClick={() => setIsSizeGuideOpen(false)}

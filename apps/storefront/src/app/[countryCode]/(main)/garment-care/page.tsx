@@ -2,9 +2,9 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Garment Care & Fabric Longevity Guide | SNOOV Studio & Atelier",
+  title: "Garment Care & Fabric Longevity Guide | SNOOV",
   description:
-    "Master the care of SNOOV garments. Complete washing protocols, flat-drying methods, textile preservation, and complimentary atelier repair guidelines.",
+    "Master the care of SNOOV garments. Complete washing protocols, flat-drying methods, textile preservation, and complimentary repair guidelines.",
   alternates: {
     canonical: "https://snoovlifestyle.com/garment-care",
   },
@@ -37,7 +37,7 @@ export default async function GarmentCarePage() {
     "@type": "HowTo",
     name: "How to Care for Heavyweight Organic SNOOV Garments",
     description:
-      "Official atelier instructions for washing, drying, ironing, and preserving certified organic cotton, European Flax®, and streetwear silhouettes.",
+      "Official care instructions for washing, drying, ironing, and preserving certified organic cotton, European Flax®, and streetwear silhouettes.",
     step: [
       {
         "@type": "HowToStep",
@@ -75,7 +75,7 @@ export default async function GarmentCarePage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Garment Care</span>
@@ -140,7 +140,7 @@ export default async function GarmentCarePage() {
                     04. Storage & Archival Preservation
                   </a>
                   <a href="#repairs" className="block hover:text-snoov-green transition-colors">
-                    05. Complimentary Atelier Repair Desk
+                    05. Complimentary Repair Desk
                   </a>
                 </nav>
               </div>
@@ -148,19 +148,19 @@ export default async function GarmentCarePage() {
               {/* Repair Program Box */}
               <div className="p-6 bg-snoov-charcoal text-snoov-canvas rounded-base border border-snoov-charcoal space-y-3">
                 <span className="text-[10px] font-mono tracking-widest uppercase text-snoov-sand/70 block">
-                  ATELIER CIRCULARITY
+                  LIFETIME CIRCULARITY
                 </span>
                 <h4 className="font-serif text-lg font-normal text-snoov-canvas">
                   Free Seam & Stitch Repair
                 </h4>
                 <p className="text-xs text-snoov-sand/80 leading-relaxed font-sans">
-                  If a seam relaxes or a rivet requires replacement over the life of your garment, our Chandigarh master atelier will repair it free of charge.
+                  If a seam relaxes or a rivet requires replacement over the life of your garment, our Chandigarh team will repair it free of charge.
                 </p>
                 <a
-                  href={`mailto:${contactEmail}?subject=Atelier%20Repair%20Request`}
+                  href={`mailto:${contactEmail}?subject=Garment%20Repair%20Request`}
                   className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-snoov-canvas underline decoration-snoov-sand/40 hover:decoration-snoov-canvas transition-colors pt-2"
                 >
-                  <span>Request Atelier Repair</span>
+                  <span>Request Garment Repair</span>
                   <span>↗</span>
                 </a>
               </div>
@@ -368,16 +368,16 @@ export default async function GarmentCarePage() {
               </div>
             </div>
 
-            {/* 05. Atelier Repairs */}
+            {/* 05. Repairs */}
             <div id="repairs" className="scroll-mt-28 space-y-4">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
                 05 / LIFETIME CARE
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                5. Complimentary Atelier Repair Service
+                5. Complimentary Repair Service
               </h2>
               <p>
-                We stand behind the engineering of every SNOOV silhouette. If a seam loosens, a button falls off, or hardware fails through normal wear, send it to our atelier for a complimentary master artisan repair.
+                We stand behind the engineering of every SNOOV silhouette. If a seam loosens, a button falls off, or hardware fails through normal wear, send it to our Chandigarh workshop for a complimentary repair.
               </p>
               
               <div className="p-6 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2 font-mono text-xs text-snoov-charcoal">
@@ -389,7 +389,7 @@ export default async function GarmentCarePage() {
                 </div>
                 <div>
                   <span className="text-snoov-muted block text-[10px] uppercase">REPAIR TURNAROUND</span>
-                  <span>7 to 10 business days from atelier parcel receipt.</span>
+                  <span>7 to 10 business days from parcel receipt.</span>
                 </div>
               </div>
             </div>

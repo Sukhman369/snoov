@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "Accessibility Statement & Inclusivity | SNOOV Studio & Atelier",
+  title: "Accessibility Statement & Inclusivity | SNOOV",
   description:
     "Learn about SNOOV's commitment to digital accessibility, WCAG 2.1 Level AA compliance, screen reader support, and assistive concierge services.",
   alternates: {
@@ -38,7 +38,7 @@ export default async function AccessibilityPage() {
     "@type": "WebPage",
     name: "Accessibility Statement & Digital Inclusion",
     description:
-      "Accessibility statement and WCAG 2.1 Level AA conformance standard for SNOOV Studio & Atelier.",
+      "Accessibility statement and WCAG 2.1 Level AA conformance standard for SNOOV.",
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
@@ -65,7 +65,7 @@ export default async function AccessibilityPage() {
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-[11px] font-mono uppercase tracking-widest text-snoov-muted mb-6">
             <LocalizedClientLink href="/" className="hover:text-snoov-green transition-colors">
-              Atelier
+              Home
             </LocalizedClientLink>
             <span>/</span>
             <span className="text-snoov-charcoal font-semibold">Accessibility</span>
@@ -79,7 +79,7 @@ export default async function AccessibilityPage() {
               Accessibility Statement
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              At SNOOV Studio & Atelier, we believe conscious luxury and architectural design should be accessible to all patrons without barriers. We continuously engineer our digital storefront to adhere to global accessibility standards.
+              At SNOOV, we believe conscious luxury streetwear and architectural design should be accessible to all patrons without barriers. We continuously engineer our digital storefront to adhere to global accessibility standards.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -144,7 +144,7 @@ export default async function AccessibilityPage() {
                   Personal Order Assistance
                 </h4>
                 <p className="text-xs text-snoov-sand/80 leading-relaxed font-sans">
-                  If you encounter any difficulty navigating our collection or completing checkout, our atelier team will happily assist you directly.
+                  If you encounter any difficulty navigating our collection or completing checkout, our team will happily assist you directly.
                 </p>
                 <a
                   href={`mailto:${contactEmail}?subject=Accessibility%20Support`}

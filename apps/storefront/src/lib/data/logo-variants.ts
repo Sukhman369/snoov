@@ -28,10 +28,10 @@ export const LOGO_VARIANTS: LogoVariant[] = [
     category: "script",
   },
   {
-    id: "gold-atelier",
-    name: "02 — Royal Gold Atelier Serif",
+    id: "gold-classic",
+    name: "02 — Royal Gold Serif",
     subtitle: "Classic Heritage & High Luxury",
-    tag: "ATELIER CLASSIC",
+    tag: "ROYAL CLASSIC",
     description:
       "Architectural Roman serif lettering in radiant champagne gold with polished metallic luster and classic poise.",
     src: "/brand/snoov-logo-gold.webp",
