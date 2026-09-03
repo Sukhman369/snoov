@@ -85,9 +85,9 @@ const ShippingInfoTab = () => {
         <div className="flex items-start gap-x-2">
           <FastDelivery />
           <div>
-            <span className="font-semibold">Complimentary delivery</span>
+            <span className="font-semibold">Fast Delivery (Free over ₹7,000)</span>
             <p className="max-w-sm">
-              Your package arrives in 3–5 business days with premium courier tracking and carbon-neutral packaging.
+              Enjoy free delivery across India on orders of ₹7,000 and above. Standard shipping rates apply for orders below ₹7,000. Arrives in 3–5 business days. Worldwide shipping launching soon.
             </p>
           </div>
         </div>

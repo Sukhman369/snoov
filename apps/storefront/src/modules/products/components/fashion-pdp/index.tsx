@@ -256,7 +256,7 @@ export default function FashionPDP({ product }: FashionPDPProps) {
               <div className="flex items-center justify-center gap-6 text-[10px] font-mono text-snoov-muted uppercase tracking-wider pt-2">
                 <span>✓ Atelier Quality & Exchange Guarantee</span>
                 <span>•</span>
-                <span>✓ Carbon Neutral Delivery</span>
+                <span>✓ Free Delivery Over ₹7,000</span>
                 <span>•</span>
                 <span>✓ Atelier Box Included</span>
               </div>

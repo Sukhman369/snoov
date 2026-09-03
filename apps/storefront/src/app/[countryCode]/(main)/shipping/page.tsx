@@ -4,7 +4,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 export const metadata: Metadata = {
   title: "Shipping, Duties & Delivery | SNOOV Studio & Atelier",
   description:
-    "Explore SNOOV's shipping services. Same-Day VIP Delivery in Tricity (Chandigarh, Mohali, Panchkula), Express All-India dispatch, and Worldwide DDP courier.",
+    "Explore SNOOV's shipping policy. Free delivery on orders of ₹7,000 and above across India, same-day delivery in Tricity, and worldwide shipping launching soon.",
   alternates: {
     canonical: "https://snoovlifestyle.com/shipping",
   },
@@ -38,6 +38,14 @@ export default async function ShippingAndDutiesPage() {
     mainEntity: [
       {
         "@type": "Question",
+        name: "What are SNOOV's shipping charges and free delivery threshold?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We offer complimentary delivery across India on all orders of ₹7,000 and above. For orders below ₹7,000, standard carrier shipping charges apply and are calculated at checkout.",
+        },
+      },
+      {
+        "@type": "Question",
         name: "Do you offer Same-Day delivery in Chandigarh, Mohali, and Panchkula (Tricity)?",
         acceptedAnswer: {
           "@type": "Answer",
@@ -46,18 +54,10 @@ export default async function ShippingAndDutiesPage() {
       },
       {
         "@type": "Question",
-        name: "How fast is delivery across India?",
+        name: "Do you ship internationally / worldwide?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Orders across India are dispatched via Blue Dart Air and Delhivery Express, reaching major metros (Delhi NCR, Mumbai, Bengaluru, Hyderabad) within 24 to 48 hours, and rest of India within 2 to 4 business days.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Will international clients pay unexpected customs duties?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "No. All international shipments are delivered on a Delivery Duty Paid (DDP) basis with DHL Express and FedEx. All tariffs and taxes are prepaid at checkout.",
+          text: "Worldwide delivery is currently being finalized and will launch very soon. Follow our updates or contact our concierge team for early international delivery access.",
         },
       },
     ],
@@ -95,7 +95,7 @@ export default async function ShippingAndDutiesPage() {
               Shipping, Duties & Fulfillment
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              Hand-packaged in our European and Indian ateliers, SNOOV delivers with precision. Enjoy exclusive <strong>Same-Day VIP Delivery in Tricity</strong>, seamless All-India Air Express, and worldwide DDP courier transit.
+              Hand-packaged in our European and Indian ateliers, SNOOV delivers with precision. Enjoy <strong>Complimentary Delivery on orders over ₹7,000</strong> across India, exclusive <strong>Same-Day VIP Delivery in Tricity</strong>, with worldwide delivery launching soon.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -109,12 +109,12 @@ export default async function ShippingAndDutiesPage() {
                 <span className="text-snoov-charcoal font-semibold">1 – 3 Business Days</span>
               </div>
               <div>
-                <span className="text-snoov-muted block text-[10px] uppercase">DOMESTIC SHIPPING</span>
-                <span className="text-snoov-green font-semibold">100% Complimentary</span>
+                <span className="text-snoov-muted block text-[10px] uppercase">FREE SHIPPING</span>
+                <span className="text-snoov-green font-semibold">Orders ≥ ₹7,000</span>
               </div>
               <div>
-                <span className="text-snoov-muted block text-[10px] uppercase">INTERNATIONAL (DDP)</span>
-                <span className="text-snoov-charcoal font-semibold">DHL & FedEx Priority</span>
+                <span className="text-snoov-muted block text-[10px] uppercase">WORLDWIDE DELIVERY</span>
+                <span className="text-snoov-charcoal font-semibold">Finalizing Soon</span>
               </div>
             </div>
           </div>
@@ -157,10 +157,10 @@ export default async function ShippingAndDutiesPage() {
                 </span>
                 <nav className="space-y-2.5 text-xs text-snoov-muted">
                   <a href="#tricity-india" className="block hover:text-snoov-green transition-colors font-medium text-snoov-charcoal">
-                    01. India & Tricity Same-Day Delivery
+                    01. India & Free Shipping (₹7,000+)
                   </a>
                   <a href="#global-destinations" className="block hover:text-snoov-green transition-colors">
-                    02. International Rates & Timelines
+                    02. Worldwide Shipping (Launching Soon)
                   </a>
                   <a href="#ddp-customs" className="block hover:text-snoov-green transition-colors">
                     03. Delivery Duty Paid (DDP) Guarantee
@@ -219,7 +219,7 @@ export default async function ShippingAndDutiesPage() {
                   India & Tricity Delivery Network
                 </h2>
                 <p className="mt-2">
-                  India is our home and primary market. We have engineered a high-speed logistics network to ensure swift, secure, and complimentary delivery across the entire country.
+                  India is our home and primary market. We offer <strong>complimentary delivery on all orders of ₹7,000 and above</strong>. For orders below ₹7,000, standard carrier shipping charges apply and are calculated at checkout.
                 </p>
               </div>
 
@@ -262,11 +262,11 @@ export default async function ShippingAndDutiesPage() {
                       <strong className="text-snoov-charcoal block font-mono uppercase text-[11px]">
                         TIER 1 METROS (DELHI NCR, MUMBAI, BENGALURU, HYDERABAD, KOLKATA)
                       </strong>
-                      <span className="text-snoov-muted text-[11px]">Blue Dart Air / Delhivery Express</span>
+                      <span className="text-snoov-muted text-[11px]">Blue Dart Air / Delhivery Express · 24–48 Hours</span>
                     </div>
                     <div className="sm:text-right font-mono">
-                      <span className="text-snoov-charcoal block font-medium">24 – 48 Hours</span>
-                      <span className="text-snoov-green font-semibold">Complimentary</span>
+                      <span className="text-snoov-green font-semibold block">Free on orders ≥ ₹7,000</span>
+                      <span className="text-snoov-muted text-[10px]">Standard rates apply below ₹7,000</span>
                     </div>
                   </div>
 
@@ -276,11 +276,11 @@ export default async function ShippingAndDutiesPage() {
                       <strong className="text-snoov-charcoal block font-mono uppercase text-[11px]">
                         REST OF INDIA & REGIONAL CAPITALS
                       </strong>
-                      <span className="text-snoov-muted text-[11px]">Express Surface & Air Cargo</span>
+                      <span className="text-snoov-muted text-[11px]">Express Surface & Air Cargo · 2–4 Business Days</span>
                     </div>
                     <div className="sm:text-right font-mono">
-                      <span className="text-snoov-charcoal block font-medium">2 – 4 Business Days</span>
-                      <span className="text-snoov-green font-semibold">Complimentary</span>
+                      <span className="text-snoov-green font-semibold block">Free on orders ≥ ₹7,000</span>
+                      <span className="text-snoov-muted text-[10px]">Standard rates apply below ₹7,000</span>
                     </div>
                   </div>
 
@@ -292,76 +292,42 @@ export default async function ShippingAndDutiesPage() {
             <div id="global-destinations" className="scroll-mt-28 space-y-6 border-b border-snoov-border pb-12">
               <div>
                 <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                  02 / INTERNATIONAL LOGISTICS
+                  02 / GLOBAL EXPANSION
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal mt-1">
-                  Worldwide Shipping Rates & Timelines
+                  Worldwide Shipping (Finalizing Soon)
                 </h2>
                 <p className="mt-2">
-                  All international deliveries are dispatched via <strong>DHL Express Worldwide</strong> or <strong>FedEx International Priority</strong> with prepaid customs duties (DDP).
+                  We are actively finalizing our international logistics integrations to make SNOOV available worldwide soon. Global express courier routes (including DHL Express Worldwide and FedEx International Priority with Delivery Duty Paid options) will be enabled shortly.
                 </p>
               </div>
 
-              {/* Transit Rates Table */}
-              <div className="border border-snoov-border rounded-base overflow-hidden bg-snoov-sand/10">
-                <div className="divide-y divide-snoov-border text-xs">
-                  
-                  {/* UAE & Gulf */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="text-snoov-charcoal block font-mono uppercase text-[11px]">
-                        MIDDLE EAST (UAE, SAUDI ARABIA, QATAR, KUWAIT)
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">DHL Express Air Priority (DDP)</span>
-                    </div>
-                    <div className="sm:text-right font-mono">
-                      <span className="text-snoov-charcoal block font-medium">2 – 3 Business Days</span>
-                      <span className="text-snoov-green font-semibold">Complimentary on orders &gt; ₹25,000 / $300</span>
-                    </div>
+              {/* Worldwide Coming Soon Notice */}
+              <div className="p-6 bg-snoov-sand/40 border border-snoov-border rounded-base space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-xs font-mono font-bold text-snoov-green uppercase tracking-wider">
+                    ★ WORLDWIDE COURIER INTEGRATION IN PROGRESS
+                  </span>
+                  <span className="text-[11px] font-mono bg-snoov-green/10 text-snoov-green px-2.5 py-1 rounded-sm font-semibold">
+                    Launching Soon
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-snoov-charcoal leading-relaxed">
+                  To ensure that international patrons experience the same impeccable standard as our domestic clients, our operations team is currently completing international customs clearances, duty pre-payment (DDP) protocols, and regional hub partnerships.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-mono">
+                  <div className="p-3 bg-snoov-canvas border border-snoov-border rounded-sm">
+                    <strong className="text-snoov-charcoal block">NORTH AMERICA</strong>
+                    <span className="text-[11px] text-snoov-muted">US & Canada (FedEx / DHL)</span>
                   </div>
-
-                  {/* US & Canada */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="text-snoov-charcoal block font-mono uppercase text-[11px]">
-                        UNITED STATES & CANADA
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">FedEx International Priority / DHL Express</span>
-                    </div>
-                    <div className="sm:text-right font-mono">
-                      <span className="text-snoov-charcoal block font-medium">3 – 5 Business Days</span>
-                      <span className="text-snoov-green font-semibold">Complimentary on orders &gt; $250</span>
-                    </div>
+                  <div className="p-3 bg-snoov-canvas border border-snoov-border rounded-sm">
+                    <strong className="text-snoov-charcoal block">UK & EUROPE</strong>
+                    <span className="text-[11px] text-snoov-muted">Pre-cleared DDP Courier</span>
                   </div>
-
-                  {/* UK & Europe */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="text-snoov-charcoal block font-mono uppercase text-[11px]">
-                        UNITED KINGDOM & EUROPEAN UNION
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">DHL Express Priority (All Taxes Included)</span>
-                    </div>
-                    <div className="sm:text-right font-mono">
-                      <span className="text-snoov-charcoal block font-medium">3 – 5 Business Days</span>
-                      <span className="text-snoov-green font-semibold">Complimentary on orders &gt; £200 / €230</span>
-                    </div>
+                  <div className="p-3 bg-snoov-canvas border border-snoov-border rounded-sm">
+                    <strong className="text-snoov-charcoal block">MIDDLE EAST & APAC</strong>
+                    <span className="text-[11px] text-snoov-muted">Priority Air Network</span>
                   </div>
-
-                  {/* Asia-Pacific */}
-                  <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div>
-                      <strong className="text-snoov-charcoal block font-mono uppercase text-[11px]">
-                        ASIA-PACIFIC (SINGAPORE, AUSTRALIA, JAPAN)
-                      </strong>
-                      <span className="text-snoov-muted text-[11px]">DHL Express Worldwide</span>
-                    </div>
-                    <div className="sm:text-right font-mono">
-                      <span className="text-snoov-charcoal block font-medium">3 – 5 Business Days</span>
-                      <span className="text-snoov-charcoal font-medium">Complimentary on orders &gt; $300</span>
-                    </div>
-                  </div>
-
                 </div>
               </div>
             </div>

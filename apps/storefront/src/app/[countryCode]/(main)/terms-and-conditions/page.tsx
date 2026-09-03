@@ -124,7 +124,7 @@ export default async function TermsAndConditionsPage() {
                     04. Order Process & Contract Formation
                   </a>
                   <a href="#article-5" className="block hover:text-snoov-green transition-colors">
-                    05. Global Delivery & Customs (DDP)
+                    05. Delivery, Shipping Thresholds & Global Expansion
                   </a>
                   <a href="#article-6" className="block hover:text-snoov-green transition-colors">
                     06. Final Sale & Damaged Item Exchanges
@@ -262,31 +262,32 @@ export default async function TermsAndConditionsPage() {
             </div>
 
             {/* Article 5: Delivery & Duties */}
+            {/* Article 5: Delivery & Shipping */}
             <div id="article-5" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                ARTICLE 05 / LOGISTICS
+                ARTICLE 05 / LOGISTICS & SHIPPING
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                5. Global Delivery & Customs (DDP)
+                5. Delivery, Free Shipping Threshold & Worldwide Expansion
               </h2>
               <p>
-                Garments are dispatched from our flagship atelier hub in Chandigarh (Tricity), India.
+                Garments are dispatched from our flagship atelier hub in Chandigarh (Tricity), India. SNOOV provides <strong>complimentary delivery across India on all orders valued at ₹7,000 or above</strong>. For orders below ₹7,000, standard carrier shipping rates apply and are calculated transparently at checkout prior to payment.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 border border-snoov-border rounded-base">
                   <span className="text-[10px] font-mono uppercase text-snoov-green font-semibold block mb-1">
-                    DELIVERY DUTY PAID (DDP)
+                    DOMESTIC DELIVERY & FREE SHIPPING THRESHOLD
                   </span>
                   <p className="text-xs text-snoov-muted">
-                    For the US, UK, EU, Switzerland, and UAE, all import duties, customs tariffs, and local brokerage charges are prepaid by SNOOV. No unexpected fees will be requested upon arrival.
+                    Complimentary doorstep delivery on orders of ₹7,000+. For orders under ₹7,000, nominal shipping fees are calculated at checkout based on standard courier rates.
                   </p>
                 </div>
                 <div className="p-4 border border-snoov-border rounded-base">
                   <span className="text-[10px] font-mono uppercase text-snoov-green font-semibold block mb-1">
-                    DISPATCH & SIGNATURE
+                    WORLDWIDE EXPANSION (FINALIZING SOON)
                   </span>
                   <p className="text-xs text-snoov-muted">
-                    Orders are shipped via DHL Express or FedEx Priority. High-value atelier parcels require an adult signature upon delivery to ensure chain of custody.
+                    International delivery protocols are currently being finalized. Global shipping options (including DHL Express Worldwide and FedEx International Priority with DDP options) will launch soon.
                   </p>
                 </div>
               </div>

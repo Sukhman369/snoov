@@ -84,7 +84,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <LocalizedClientLink href="/shipping" className="hover:text-snoov-green transition-colors">
-                    Complimentary Shipping
+                    Shipping & Delivery (Free &gt; ₹7,000)
                   </LocalizedClientLink>
                 </li>
                 <li>

@@ -45,16 +45,16 @@ const FAQ_DATA: FAQItem[] = [
   {
     id: "domestic-transit",
     category: "shipping",
-    question: "What are the domestic India shipping timelines?",
+    question: "What are your shipping charges and free delivery threshold?",
     answer:
-      "We ship across all pin codes in India via Blue Dart Express and premium couriers. Metro deliveries arrive in 2 to 3 business days; regional deliveries arrive within 3 to 5 business days with full real-time tracking.",
+      "We offer complimentary doorstep delivery across India on all orders of ₹7,000 and above. If your order total is less than ₹7,000, standard carrier shipping charges apply and will be calculated at checkout. Metro deliveries typically arrive within 24 to 48 hours.",
   },
   {
     id: "international-ddp",
     category: "shipping",
-    question: "Do you ship internationally, and are customs duties included (DDP)?",
+    question: "Do you ship internationally / worldwide?",
     answer:
-      "Yes, we ship globally via DHL Express and FedEx Priority. For the US, UK, EU, UAE, and Canada, orders are dispatched Delivery Duty Paid (DDP)—all import duties and tariffs are prepaid by SNOOV with zero surprise fees on delivery.",
+      "Worldwide delivery is currently being finalized and will launch very soon! We are establishing dedicated global air courier routes with prepaid customs (DDP). Follow our updates or contact our concierge desk for early international availability.",
   },
 
   // 03. Sizing & Silhouettes

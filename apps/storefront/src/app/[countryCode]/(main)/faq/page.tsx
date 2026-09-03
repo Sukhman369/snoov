@@ -5,7 +5,7 @@ import FAQAccordion from "@modules/faq/components/faq-accordion"
 export const metadata: Metadata = {
   title: "Frequently Asked Questions (FAQ) | SNOOV Studio & Atelier",
   description:
-    "Find instant answers to frequently asked questions about SNOOV capsule drops, Tricity same-day delivery, international DDP shipping, sizing, and damaged goods exchange policy.",
+    "Find instant answers to frequently asked questions about SNOOV capsule drops, free delivery on orders above ₹7,000, Tricity same-day delivery, sizing, and damaged goods exchange guarantee.",
   alternates: {
     canonical: "https://snoovlifestyle.com/faq",
   },
@@ -41,6 +41,14 @@ export default async function FAQPage() {
         acceptedAnswer: {
           "@type": "Answer",
           text: "To eliminate overproduction and deadstock waste, SNOOV releases garments in strictly disciplined capsule editions. Once an edition is archived, it is rarely restocked.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are your shipping charges and free delivery threshold?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We offer complimentary delivery across India on orders of ₹7,000 and above. For orders under ₹7,000, standard carrier shipping charges apply at checkout. Worldwide shipping is currently being finalized and will launch soon.",
         },
       },
       {
