@@ -219,7 +219,7 @@ export default async function LookbookPage() {
               </h3>
             </div>
             <span className="text-xs font-mono text-snoov-muted">
-              MOHALI / TRICITY ATELIER
+              CHANDIGARH / TRICITY ATELIER
             </span>
           </div>
 
@@ -238,7 +238,7 @@ export default async function LookbookPage() {
             </div>
             <div>
               <span className="text-snoov-muted text-[10px] uppercase block mb-1">ATELIER STUDIO</span>
-              <span className="text-snoov-charcoal font-semibold">Mohali, Punjab</span>
+              <span className="text-snoov-charcoal font-semibold">Chandigarh, India</span>
             </div>
           </div>
 

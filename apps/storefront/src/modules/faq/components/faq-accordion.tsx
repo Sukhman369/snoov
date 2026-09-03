@@ -24,7 +24,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "orders",
     question: "Can I modify or cancel my order after placement?",
     answer:
-      "Because our Mohali atelier team begins fulfilling orders promptly, please reach out via our WhatsApp VIP concierge or concierge@snoov.com within 60 minutes of placing your order if you require an address or sizing modification.",
+      "Because our Chandigarh atelier team begins fulfilling orders promptly, please reach out via our WhatsApp VIP concierge or concierge@snoov.com within 60 minutes of placing your order if you require an address or sizing modification.",
   },
   {
     id: "payment-methods",
@@ -70,7 +70,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "sizing",
     question: "Do you offer personal sizing consultations?",
     answer:
-      "Yes. If you have unique proportions or want styling advice, transmit your height, weight, and fit preference to our Mohali atelier stylists via WhatsApp or our Contact page.",
+      "Yes. If you have unique proportions or want styling advice, transmit your height, weight, and fit preference to our Chandigarh atelier stylists via WhatsApp or our Contact page.",
   },
 
   // 04. Exchange Policy & Guarantee
@@ -102,7 +102,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "sustainability",
     question: "Does SNOOV offer complimentary garment repairs?",
     answer:
-      "Yes. Every piece is built for years of wear. If a seam relaxes or hardware requires maintenance, our Mohali atelier provides complimentary artisan repairs. Visit our Garment Care page to initiate a service.",
+      "Yes. Every piece is built for years of wear. If a seam relaxes or hardware requires maintenance, our Chandigarh atelier provides complimentary artisan repairs. Visit our Garment Care page to initiate a service.",
   },
 ]
 
@@ -196,7 +196,7 @@ export default function FAQAccordion() {
           <div className="p-12 text-center border border-dashed border-snoov-border rounded-base bg-snoov-sand/20 space-y-3">
             <p className="font-serif text-xl text-snoov-charcoal">No questions found matching &quot;{searchQuery}&quot;</p>
             <p className="text-xs text-snoov-muted font-sans max-w-md mx-auto">
-              Our Mohali concierge is available to answer any custom inquiries directly.
+              Our Chandigarh concierge is available to answer any custom inquiries directly.
             </p>
             <LocalizedClientLink
               href="/contact"
@@ -265,7 +265,7 @@ export default function FAQAccordion() {
             Connect Directly with the Studio
           </h3>
           <p className="text-xs text-snoov-muted font-sans max-w-md">
-            Our Mohali team answers all tailoring, sizing, and shipping inquiries directly.
+            Our Chandigarh team answers all tailoring, sizing, and shipping inquiries directly.
           </p>
         </div>
 

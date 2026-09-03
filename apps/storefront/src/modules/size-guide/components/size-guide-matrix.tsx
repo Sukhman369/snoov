@@ -303,7 +303,7 @@ export default function SizeGuideMatrix() {
             Still Unsure About Your Fit?
           </h3>
           <p className="text-xs text-snoov-sand/80 font-sans max-w-md">
-            Transmit your height, weight, and preferred aesthetic to our Mohali atelier stylists for personal sizing advice before placing your order.
+            Transmit your height, weight, and preferred aesthetic to our Chandigarh atelier stylists for personal sizing advice before placing your order.
           </p>
         </div>
 

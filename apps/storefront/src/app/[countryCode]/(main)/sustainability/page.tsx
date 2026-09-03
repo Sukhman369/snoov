@@ -342,7 +342,7 @@ export default async function SustainabilityPage() {
                       TIER 1 · CUT, SEW & ATELIER FINISHING
                     </span>
                     <strong className="text-snoov-charcoal block text-xs">Master Tailoring Studios</strong>
-                    <span className="text-snoov-muted text-[11px]">Flagship Studio — Mohali / Punjab (India)</span>
+                    <span className="text-snoov-muted text-[11px]">Flagship Studio — Chandigarh (India)</span>
                   </div>
                   <div className="sm:text-right font-mono text-[11px] text-snoov-charcoal">
                     Fair Wage & Artisan Certified

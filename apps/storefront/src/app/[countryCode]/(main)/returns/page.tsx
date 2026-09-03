@@ -97,7 +97,7 @@ export default async function ReturnsAndExchangesPage() {
               Exchange & Replacement Policy
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              Every SNOOV silhouette is cut, constructed, and finished with meticulous intentionality in our Mohali atelier. To honor our zero-deadstock commitment and artisanal production discipline, all purchases are final. However, your complete peace of mind remains sacred: if any piece arrives damaged in transit or compromised by a craftsmanship defect, we guarantee an immediate, complimentary exchange.
+              Every SNOOV silhouette is cut, constructed, and finished with meticulous intentionality in our Chandigarh atelier. To honor our zero-deadstock commitment and artisanal production discipline, all purchases are final. However, your complete peace of mind remains sacred: if any piece arrives damaged in transit or compromised by a craftsmanship defect, we guarantee an immediate, complimentary exchange.
             </p>
 
             {/* Quick Metrics Bar */}
@@ -363,7 +363,7 @@ export default async function ReturnsAndExchangesPage() {
                   before completing checkout.
                 </li>
                 <li>
-                  <strong className="text-snoov-charcoal">Stylist Consultation:</strong> Unsure how a specific drop-shoulder hoodie or heavyweight tee drapes? Our Mohali atelier stylists are readily accessible via WhatsApp or email to provide personalized sizing guidance based on your height, weight, and preferred aesthetic.
+                  <strong className="text-snoov-charcoal">Stylist Consultation:</strong> Unsure how a specific drop-shoulder hoodie or heavyweight tee drapes? Our Chandigarh atelier stylists are readily accessible via WhatsApp or email to provide personalized sizing guidance based on your height, weight, and preferred aesthetic.
                 </li>
                 <li>
                   <strong className="text-snoov-charcoal">Lifetime Garment Care:</strong> For long-term care and maintenance of your organic textiles, explore our{" "}

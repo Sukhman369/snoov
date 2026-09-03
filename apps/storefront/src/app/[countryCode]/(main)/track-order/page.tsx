@@ -67,7 +67,7 @@ export default async function TrackOrderPage() {
             </h1>
 
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              Follow your garment&apos;s journey from our Mohali tailoring studio and archival packaging suite directly to your doorstep.
+              Follow your garment&apos;s journey from our Chandigarh tailoring studio and archival packaging suite directly to your doorstep.
             </p>
           </div>
         </div>

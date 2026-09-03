@@ -136,9 +136,9 @@ export default function ContactStudio() {
             </span>
             
             <div className="space-y-1">
-              <strong className="block text-[11px] uppercase">SNOOV ATELIER · MOHALI (TRICITY)</strong>
+              <strong className="block text-[11px] uppercase">SNOOV ATELIER · CHANDIGARH (TRICITY)</strong>
               <span className="text-[11px] text-snoov-muted block">30.7333° N, 76.7794° E</span>
-              <span className="text-[11px] text-snoov-muted block">Sector 82 JLPL Industrial Area, Mohali, Punjab 140308, India</span>
+              <span className="text-[11px] text-snoov-muted block">Industrial Area, Chandigarh 160002, India</span>
               <span className="text-[10px] text-snoov-green block pt-1">Direct Same-Day Courier Dispatch Hub</span>
             </div>
           </div>

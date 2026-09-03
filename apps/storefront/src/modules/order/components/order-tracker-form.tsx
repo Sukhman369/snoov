@@ -41,7 +41,7 @@ export default function OrderTrackerForm() {
       setResult({
         orderId: cleanOrder.startsWith("#") ? cleanOrder : `#${cleanOrder}`,
         status: isTricity ? "Out for Same-Day Hand Delivery" : "In Transit via Express Courier",
-        carrier: isTricity ? "SNOOV Tricity Direct Courier (Mohali Hub)" : "Blue Dart Express Air",
+        carrier: isTricity ? "SNOOV Tricity Direct Courier (Chandigarh Hub)" : "Blue Dart Express Air",
         awb: isTricity ? "TRICITY-SAME-DAY-8821" : "BD-8492019482IN",
         trackingUrl: isTricity
           ? "https://wa.me/919876543210?text=Hi%20SNOOV%20Concierge,%20checking%20my%20Tricity%20order"
@@ -51,21 +51,21 @@ export default function OrderTrackerForm() {
           {
             title: "01. Order Confirmed & Paid",
             date: "Aug 31, 2026 · 11:20 AM",
-            location: "Mohali Atelier Cloud",
+            location: "Chandigarh Atelier Cloud",
             completed: true,
             current: false,
           },
           {
             title: "02. Garment Quality Inspection & Archival Boxing",
             date: "Aug 31, 2026 · 02:45 PM",
-            location: "Sector 82 JLPL Atelier, Mohali",
+            location: "Atelier Studio, Chandigarh",
             completed: true,
             current: false,
           },
           {
             title: isTricity ? "03. Dispatched via Tricity Courier Van" : "03. Handed to Express Air Courier",
             date: "Aug 31, 2026 · 04:15 PM",
-            location: "Mohali Dispatch Facility",
+            location: "Chandigarh Dispatch Facility",
             completed: true,
             current: true,
           },
@@ -257,7 +257,7 @@ export default function OrderTrackerForm() {
             TRICITY SAME-DAY DESK
           </strong>
           <p className="text-snoov-muted text-[11px] font-sans">
-            Need to adjust your Mohali, Chandigarh, or Panchkula hand-delivery slot?
+            Need to adjust your Chandigarh, Mohali, or Panchkula hand-delivery slot?
           </p>
           <a
             href="https://wa.me/919876543210?text=Hi%20SNOOV,%20I'd%20like%20to%20adjust%20my%20Tricity%20delivery"

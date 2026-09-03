@@ -178,7 +178,7 @@ export default async function TermsAndConditionsPage() {
                 1. Scope of Agreement & Acceptance
               </h2>
               <p>
-                These General Terms and Conditions of Sale and Service (the &quot;Terms&quot;) apply exclusively between <strong>{legalEntity}</strong> (operating under the commercial trade name <strong>SNOOV</strong>, based in Mohali, Punjab, India) and any individual consumer acting in a private capacity (the &quot;Client&quot;).
+                These General Terms and Conditions of Sale and Service (the &quot;Terms&quot;) apply exclusively between <strong>{legalEntity}</strong> (operating under the commercial trade name <strong>SNOOV</strong>, based in Chandigarh, India) and any individual consumer acting in a private capacity (the &quot;Client&quot;).
               </p>
               <p>
                 By placing an order on our storefront (snoov.com) or confirming a bespoke atelier commission, the Client unreservedly acknowledges and accepts these Terms in full.
@@ -270,7 +270,7 @@ export default async function TermsAndConditionsPage() {
                 5. Global Delivery & Customs (DDP)
               </h2>
               <p>
-                Garments are dispatched from our flagship atelier hub in Mohali (Tricity), Punjab, India.
+                Garments are dispatched from our flagship atelier hub in Chandigarh (Tricity), India.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 border border-snoov-border rounded-base">
@@ -379,7 +379,7 @@ export default async function TermsAndConditionsPage() {
                 10. Governing Law, Jurisdiction & Dispute Resolution
               </h2>
               <p>
-                These Terms are governed by and construed in accordance with the laws of <strong>India</strong>, under the exclusive jurisdiction of the competent courts of Mohali / Punjab.
+                These Terms are governed by and construed in accordance with the laws of <strong>India</strong>, under the exclusive jurisdiction of the competent courts of Chandigarh.
               </p>
               
               <div className="p-6 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-3 font-mono text-xs text-snoov-charcoal">
@@ -387,7 +387,7 @@ export default async function TermsAndConditionsPage() {
                   <span className="text-snoov-muted block text-[10px] uppercase">ATELIER HEADQUARTERS & LEGAL DESK</span>
                   <span>SNOOV Studio & Atelier</span>
                   <br />
-                  <span>Sector 82 JLPL Industrial Area, Mohali, Punjab 140308, India</span>
+                  <span>Industrial Area, Chandigarh 160002, India</span>
                   <br />
                   <span className="text-snoov-muted">Direct: {contactEmail}</span>
                 </div>

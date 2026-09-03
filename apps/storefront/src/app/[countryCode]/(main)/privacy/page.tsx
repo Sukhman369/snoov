@@ -408,7 +408,7 @@ export default async function PrivacyPolicyPage() {
                   <span className="text-snoov-muted block text-[10px] uppercase">ATELIER POSTAL ADDRESS</span>
                   <span>SNOOV Studio & Atelier — Data Governance Desk</span>
                   <br />
-                  <span>Sector 82 JLPL Industrial Area, Mohali, Punjab 140308, India</span>
+                  <span>Industrial Area, Chandigarh 160002, India</span>
                 </div>
                 <div>
                   <span className="text-snoov-muted block text-[10px] uppercase">RESPONSE TIMEFRAME</span>
