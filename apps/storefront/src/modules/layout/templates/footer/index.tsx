@@ -89,7 +89,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <LocalizedClientLink href="/returns" className="hover:text-snoov-green transition-colors">
-                    30-Day Returns & Exchanges
+                    Exchange & Replacement Policy
                   </LocalizedClientLink>
                 </li>
                 <li>

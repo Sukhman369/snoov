@@ -445,10 +445,10 @@ export default async function ShippingAndDutiesPage() {
                 </div>
                 <div className="p-4 border border-snoov-border rounded-base bg-snoov-sand/20">
                   <span className="font-mono text-snoov-green font-semibold block mb-1 text-[10px] uppercase">
-                    CIRCULAR RETURNS
+                    CIRCULAR PACKAGING
                   </span>
                   <strong className="text-snoov-charcoal block mb-1">Dual Adhesive Strip</strong>
-                  <p className="text-snoov-muted">Pre-integrated resealable tape for effortless circular returns.</p>
+                  <p className="text-snoov-muted">Pre-integrated resealable tape for effortless packaging reuse or exchange transit.</p>
                 </div>
               </div>
             </div>

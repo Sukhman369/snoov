@@ -73,20 +73,20 @@ const FAQ_DATA: FAQItem[] = [
       "Yes. If you have unique proportions or want styling advice, transmit your height, weight, and fit preference to our Mohali atelier stylists via WhatsApp or our Contact page.",
   },
 
-  // 04. Returns & Exchanges
+  // 04. Exchange Policy & Guarantee
   {
     id: "return-window",
     category: "returns",
     question: "What is your return and exchange policy?",
     answer:
-      "We offer a 30-day return and exchange promise from the day your package arrives. Garments must be unworn, unwashed, and have all original atelier tags attached. Size exchanges are complimentary with priority dispatch.",
+      "To preserve our conscious limited-capsule production and zero-deadstock philosophy, SNOOV garments are final sale and we do not accept standard returns or refunds. However, if your piece arrives damaged or defective in transit, we guarantee an immediate, complimentary exchange.",
   },
   {
-    id: "refund-timing",
+    id: "damaged-reporting",
     category: "returns",
-    question: "How quickly are refunds processed?",
+    question: "What should I do if my order arrives damaged or defective?",
     answer:
-      "Once your return reaches our Mohali atelier, our artisans inspect the item within 48 business hours. Refunds are issued to your original payment method in 3 to 5 business days, or instantly if you opt for SNOOV Store Credit (+5% bonus value).",
+      "Please inspect your package upon delivery and notify our Concierge within 48 hours at concierge@snoov.com or via WhatsApp with your Order ID and photos of the damaged garment and packaging. Our atelier will arrange a complimentary courier pickup and dispatch a pristine replacement.",
   },
 
   // 05. Sustainability & Fabric Care
@@ -111,7 +111,7 @@ const CATEGORIES = [
   { id: "orders", label: "⚡ Orders & Drops" },
   { id: "shipping", label: "📍 Shipping & Tricity" },
   { id: "sizing", label: "📐 Sizing & Fit" },
-  { id: "returns", label: "🔄 Returns & Exchanges" },
+  { id: "returns", label: "🔄 Exchange & Guarantee" },
   { id: "sustainability", label: "🌿 Organic Fabrics & Care" },
 ]
 

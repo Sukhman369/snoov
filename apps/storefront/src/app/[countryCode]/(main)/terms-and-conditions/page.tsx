@@ -4,7 +4,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 export const metadata: Metadata = {
   title: "Terms & Conditions of Sale & Service | SNOOV Studio & Atelier",
   description:
-    "Review the terms and conditions governing purchases, bespoke atelier services, delivery, returns, intellectual property, and client care at SNOOV.",
+    "Review the terms and conditions governing purchases, bespoke atelier services, delivery, damaged item exchanges, intellectual property, and client care at SNOOV.",
   alternates: {
     canonical: "https://snoov.com/terms-and-conditions",
   },
@@ -127,7 +127,7 @@ export default async function TermsAndConditionsPage() {
                     05. Global Delivery & Customs (DDP)
                   </a>
                   <a href="#article-6" className="block hover:text-snoov-green transition-colors">
-                    06. Right of Withdrawal & 30-Day Returns
+                    06. Final Sale & Damaged Item Exchanges
                   </a>
                   <a href="#article-7" className="block hover:text-snoov-green transition-colors">
                     07. Intellectual Property & Trademarks
@@ -292,31 +292,35 @@ export default async function TermsAndConditionsPage() {
               </div>
             </div>
 
-            {/* Article 6: Returns */}
+            {/* Article 6: Final Sale & Damaged Item Exchanges */}
             <div id="article-6" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                ARTICLE 06 / WITHDRAWAL & RETURNS
+                ARTICLE 06 / FINAL SALE & EXCHANGES
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                6. Right of Withdrawal & 30-Day Returns
+                6. Final Sale & Damaged Item Exchange Policy
               </h2>
               <p>
-                In accordance with Directive 2011/83/EU and SNOOV&apos;s luxury standard, Clients enjoy a <strong>30-day trial period</strong> from the date of parcel receipt to request an exchange or full refund.
+                Due to the small-batch, made-to-order, and strictly disciplined capsule production at SNOOV, all sales are considered <strong>final upon delivery</strong>. SNOOV does not entertain standard returns, order cancellations post-dispatch, or cash refunds for change of mind, style preference, or sizing discrepancies.
+              </p>
+              <p>
+                However, SNOOV guarantees that all pieces reach our patrons in pristine, immaculate condition. In the rare event that an item is received with <strong>transit damage or a verifiable craftsmanship defect</strong>, the Client is entitled to an immediate complimentary exchange for a replacement piece.
               </p>
               <div className="p-4 bg-snoov-sand/30 border border-snoov-border rounded-base text-xs space-y-2">
                 <strong className="text-snoov-charcoal block uppercase font-mono tracking-wide">
-                  Return Eligibility Criteria:
+                  Damage Claim Criteria & Protocol:
                 </strong>
                 <ul className="list-disc pl-4 space-y-1 text-snoov-muted">
-                  <li>Garments must remain unworn, unwashed, and in immaculate original condition.</li>
-                  <li>All security tags, fabric care labels, and designer ribbon seals must remain intact.</li>
-                  <li>Items must be returned in the original archival box with dust bags included.</li>
+                  <li>Transit damage or defects must be reported to our Concierge within <strong>48 hours</strong> of verified delivery.</li>
+                  <li>Notice must include clear photographs or video documentation of the flaw alongside the original courier shipping label and packaging.</li>
+                  <li>Garments must remain unworn, unwashed, and retain all original atelier tags, labels, and dust bags.</li>
+                  <li>Upon approval, SNOOV will arrange complimentary courier pickup and dispatch a replacement with priority shipping. If the item is out of stock, full atelier store credit will be issued.</li>
                 </ul>
               </div>
               <p className="text-xs">
-                For step-by-step return instructions and portal generation, consult our dedicated{" "}
+                For complete step-by-step reporting protocols and concierge contact, consult our dedicated{" "}
                 <LocalizedClientLink href="/returns" className="text-snoov-green font-medium underline underline-offset-4 hover:opacity-80">
-                  Returns & Exchanges Policy
+                  Exchange & Replacement Policy
                 </LocalizedClientLink>.
               </p>
             </div>
@@ -349,7 +353,7 @@ export default async function TermsAndConditionsPage() {
                 SNOOV garments are engineered from certified organic textiles (GOTS) and European Flax®. Clients benefit from the statutory guarantee of conformity under Articles L. 217-4 et seq. of the French Consumer Code and against hidden defects under Articles 1641 et seq. of the French Civil Code.
               </p>
               <p>
-                If a garment exhibits a structural tailoring defect or seam flaw, SNOOV provides complimentary atelier repairs, replacement, or a complete refund.
+                If a garment exhibits a structural tailoring defect or transit damage, SNOOV provides complimentary atelier repairs or an immediate replacement exchange.
               </p>
             </div>
 

@@ -5,7 +5,7 @@ import FAQAccordion from "@modules/faq/components/faq-accordion"
 export const metadata: Metadata = {
   title: "Frequently Asked Questions (FAQ) | SNOOV Studio & Atelier",
   description:
-    "Find instant answers to frequently asked questions about SNOOV capsule drops, Tricity same-day delivery, international DDP shipping, sizing, and 30-day returns.",
+    "Find instant answers to frequently asked questions about SNOOV capsule drops, Tricity same-day delivery, international DDP shipping, sizing, and damaged goods exchange policy.",
   alternates: {
     canonical: "https://snoov.com/faq",
   },
@@ -64,7 +64,7 @@ export default async function FAQPage() {
         name: "What is your return and exchange policy?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We offer a 30-day return and exchange promise from the day your package arrives. Garments must be unworn, unwashed, and have all original atelier tags attached.",
+          text: "To preserve our conscious limited-capsule production and zero-deadstock philosophy, SNOOV garments are final sale and we do not accept standard returns or refunds. However, if your piece arrives damaged or defective in transit, we guarantee an immediate, complimentary exchange.",
         },
       },
       {

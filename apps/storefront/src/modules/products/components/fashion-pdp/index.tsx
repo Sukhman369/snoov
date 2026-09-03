@@ -254,7 +254,7 @@ export default function FashionPDP({ product }: FashionPDPProps) {
               </button>
 
               <div className="flex items-center justify-center gap-6 text-[10px] font-mono text-snoov-muted uppercase tracking-wider pt-2">
-                <span>✓ 30-Day Returns</span>
+                <span>✓ Atelier Quality & Exchange Guarantee</span>
                 <span>•</span>
                 <span>✓ Carbon Neutral Delivery</span>
                 <span>•</span>

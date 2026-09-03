@@ -2,17 +2,17 @@ import { Metadata } from "next"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
-  title: "30-Day Returns & Exchanges | SNOOV Studio & Atelier",
+  title: "Exchange & Replacement Policy | SNOOV Studio & Atelier",
   description:
-    "Discover SNOOV's complimentary 30-day return and exchange policy. Step-by-step return portal, DHL/FedEx courier pickup, and atelier inspection standards.",
+    "Discover SNOOV's conscious craftsmanship policy and complimentary damaged goods exchange guarantee. Priority courier replacement for transit-damaged or defective pieces.",
   alternates: {
     canonical: "https://snoov.com/returns",
   },
 }
 
 export default async function ReturnsAndExchangesPage() {
-  const returnWindow = "30 Days from Delivery"
-  const processingTime = "48 Business Hours"
+  const reportingWindow = "Within 48 Hours"
+  const verificationTime = "24–48 Business Hours"
   const contactEmail = "concierge@snoov.com"
 
   const breadcrumbSchema = {
@@ -28,7 +28,7 @@ export default async function ReturnsAndExchangesPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Returns & Exchanges",
+        name: "Exchange & Replacement Policy",
         item: "https://snoov.com/returns",
       },
     ],
@@ -40,26 +40,26 @@ export default async function ReturnsAndExchangesPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What is SNOOV's return window?",
+        name: "What is SNOOV's return and exchange policy?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Clients have 30 calendar days from the date of package delivery to request an exchange or full refund.",
+          text: "To eliminate deadstock waste and honor our conscious limited-capsule production, SNOOV operates on a final-sale model and does not accept standard returns or refunds. However, in the rare event that an item arrives damaged or flawed in transit, we provide an immediate, complimentary exchange for a pristine replacement.",
         },
       },
       {
         "@type": "Question",
-        name: "Are return shipments complimentary?",
+        name: "How do I request an exchange for a damaged product?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, SNOOV provides prepaid DHL Express or FedEx return shipping labels for all eligible orders across the EU, UK, US, Canada, UAE, and Switzerland.",
+          text: "Please inspect your order upon delivery and notify our Concierge Desk within 48 hours by emailing concierge@snoov.com with your Order ID and clear photographs of the damaged garment and packaging. Our atelier team will arrange a complimentary courier pickup and dispatch a replacement.",
         },
       },
       {
         "@type": "Question",
-        name: "How long does it take to process my refund?",
+        name: "Can I exchange an item for a different size or color?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Once the parcel reaches our Mohali atelier, our artisans perform a quality check within 48 business hours and issue your refund to the original payment method.",
+          text: "Because each capsule is crafted in strictly limited quantities, we cannot accommodate size or preference exchanges once an order has been delivered. We encourage patrons to consult our detailed Atelier Size Guide or contact our styling team before placing an order.",
         },
       },
     ],
@@ -86,37 +86,37 @@ export default async function ReturnsAndExchangesPage() {
               Atelier
             </LocalizedClientLink>
             <span>/</span>
-            <span className="text-snoov-charcoal font-semibold">Returns & Exchanges</span>
+            <span className="text-snoov-charcoal font-semibold">Exchange & Replacement Policy</span>
           </nav>
 
           <div className="max-w-4xl">
             <span className="inline-block px-2.5 py-1 text-[10px] font-mono tracking-widest uppercase bg-snoov-sand text-snoov-charcoal/90 rounded-sm border border-snoov-border mb-4">
-              Client Care & Assurance · 30-Day Guarantee
+              Client Care & Assurance · Conscious Atelier Standards
             </span>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-light tracking-tight text-snoov-charcoal leading-[1.1] mb-6">
-              Returns & Exchanges
+              Exchange & Replacement Policy
             </h1>
             <p className="text-sm sm:text-base text-snoov-muted leading-relaxed max-w-2xl font-sans">
-              We design every silhouette with uncompromising intention. If the fit, drape, or feel of your piece does not meet your personal expectations, we offer complimentary global returns and size exchanges within 30 days.
+              Every SNOOV silhouette is cut, constructed, and finished with meticulous intentionality in our Mohali atelier. To honor our zero-deadstock commitment and artisanal production discipline, all purchases are final. However, your complete peace of mind remains sacred: if any piece arrives damaged in transit or compromised by a craftsmanship defect, we guarantee an immediate, complimentary exchange.
             </p>
 
             {/* Quick Metrics Bar */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-6 border-t border-snoov-border/60 text-xs font-mono">
               <div>
-                <span className="text-snoov-muted block text-[10px] uppercase">RETURN WINDOW</span>
-                <span className="text-snoov-charcoal font-semibold">{returnWindow}</span>
+                <span className="text-snoov-muted block text-[10px] uppercase">REPORT WINDOW</span>
+                <span className="text-snoov-charcoal font-semibold">{reportingWindow}</span>
               </div>
               <div>
-                <span className="text-snoov-muted block text-[10px] uppercase">RETURN SHIPPING</span>
+                <span className="text-snoov-muted block text-[10px] uppercase">EXCHANGE SHIPPING</span>
                 <span className="text-snoov-green font-semibold">100% Complimentary</span>
               </div>
               <div>
                 <span className="text-snoov-muted block text-[10px] uppercase">ATELIER AUDIT</span>
-                <span className="text-snoov-charcoal font-semibold">{processingTime}</span>
+                <span className="text-snoov-charcoal font-semibold">{verificationTime}</span>
               </div>
               <div>
-                <span className="text-snoov-muted block text-[10px] uppercase">SIZE EXCHANGES</span>
-                <span className="text-snoov-charcoal font-semibold">Priority Dispatch</span>
+                <span className="text-snoov-muted block text-[10px] uppercase">REPLACEMENT DISPATCH</span>
+                <span className="text-snoov-charcoal font-semibold">Priority Courier</span>
               </div>
             </div>
           </div>
@@ -132,47 +132,47 @@ export default async function ReturnsAndExchangesPage() {
             <div className="lg:sticky lg:top-28 space-y-6">
               <div className="p-6 bg-snoov-sand/40 border border-snoov-border rounded-base">
                 <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-charcoal font-semibold block mb-4">
-                  00 / Return Navigation
+                  00 / Policy Overview
                 </span>
                 <nav className="space-y-2.5 text-xs text-snoov-muted">
-                  <a href="#how-it-works" className="block hover:text-snoov-green transition-colors">
-                    01. Step-by-Step Return Process
+                  <a href="#conscious-philosophy" className="block hover:text-snoov-green transition-colors">
+                    01. Conscious Production & Final Sale
+                  </a>
+                  <a href="#damage-guarantee" className="block hover:text-snoov-green transition-colors">
+                    02. Damaged Goods Exchange Guarantee
+                  </a>
+                  <a href="#how-to-report" className="block hover:text-snoov-green transition-colors">
+                    03. 3-Step Damage Reporting Protocol
                   </a>
                   <a href="#eligibility" className="block hover:text-snoov-green transition-colors">
-                    02. Condition & Eligibility Criteria
+                    04. Defect & Quality Verification Standards
                   </a>
-                  <a href="#exchanges" className="block hover:text-snoov-green transition-colors">
-                    03. Complimentary Size Exchanges
-                  </a>
-                  <a href="#refunds" className="block hover:text-snoov-green transition-colors">
-                    04. Refund Timelines & Settlement
-                  </a>
-                  <a href="#exclusions" className="block hover:text-snoov-green transition-colors">
-                    05. Made-to-Measure & Archival Items
+                  <a href="#fit-assistance" className="block hover:text-snoov-green transition-colors">
+                    05. Pre-Purchase Sizing & Styling Advice
                   </a>
                 </nav>
               </div>
 
-              {/* Instant Return Portal Trigger Box */}
+              {/* Instant Exchange Desk Trigger Box */}
               <div className="p-6 bg-snoov-charcoal text-snoov-canvas rounded-base border border-snoov-charcoal space-y-4">
                 <span className="text-[10px] font-mono tracking-widest uppercase text-snoov-sand/70 block">
-                  DIGITAL RETURN DESK
+                  CONCIERGE DESK
                 </span>
                 <h4 className="font-serif text-lg font-normal text-snoov-canvas">
-                  Initiate Return or Exchange
+                  Report Damaged Arrival
                 </h4>
                 <p className="text-xs text-snoov-sand/80 leading-relaxed font-sans">
-                  Have your Order ID (e.g., #SNV-84920) and billing email ready to generate your prepaid courier label.
+                  Received a piece that was compromised in transit? Have your Order ID (e.g., #SNV-84920) and photos of the package ready for our team.
                 </p>
                 <div className="pt-2">
                   <LocalizedClientLink
-                    href="/account"
+                    href="/contact"
                     className="inline-flex items-center justify-center w-full py-2.5 px-4 bg-snoov-canvas text-snoov-charcoal text-xs font-mono uppercase tracking-wider font-semibold rounded-sm hover:bg-snoov-sand transition-colors"
                   >
-                    Open Client Portal
+                    Open Client Desk
                   </LocalizedClientLink>
                   <a
-                    href={`mailto:${contactEmail}?subject=Return%20Request`}
+                    href={`mailto:${contactEmail}?subject=Damaged%20Item%20Exchange%20Request`}
                     className="block text-center text-[11px] font-mono text-snoov-sand/60 hover:text-snoov-canvas transition-colors mt-3"
                   >
                     Or Email Concierge Desk ↗
@@ -182,35 +182,95 @@ export default async function ReturnsAndExchangesPage() {
             </div>
           </aside>
 
-          {/* Detailed Return Protocols */}
+          {/* Detailed Policy Protocols */}
           <article className="lg:col-span-8 space-y-16 text-sm text-snoov-muted leading-relaxed font-sans">
             
-            {/* 01. Step-by-Step Return Process */}
-            <div id="how-it-works" className="scroll-mt-28 space-y-6 border-b border-snoov-border pb-12">
+            {/* 01. Conscious Production & Final Sale */}
+            <div id="conscious-philosophy" className="scroll-mt-28 space-y-6 border-b border-snoov-border pb-12">
               <div>
                 <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                  01 / WORKFLOW
+                  01 / PHILOSOPHY
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal mt-1">
-                  Step-by-Step Return Process
+                  Conscious Production & Final Sale
                 </h2>
                 <p className="mt-2">
-                  We have structured our return protocol to be effortless and completely paperless.
+                  At SNOOV, our design philosophy revolves around intentionality, sustainability, and absolute reverence for artisan craft.
                 </p>
               </div>
 
+              <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-3">
+                <h3 className="font-serif text-base text-snoov-charcoal font-medium">
+                  Why We Operate on a Final-Sale Discipline
+                </h3>
+                <p className="text-xs text-snoov-muted leading-relaxed">
+                  Unlike conventional fashion brands that rely on mass industrial overproduction, SNOOV creates in disciplined, limited-run capsules. Every garment is crafted from premium certified raw materials (380–550 GSM GOTS organic cotton, natural botanical dyes, and European linen).
+                </p>
+                <p className="text-xs text-snoov-muted leading-relaxed">
+                  To eliminate deadstock inventory, reduce carbon emissions associated with frequent reverse logistics, and ensure that every customer receives an untouched, atelier-fresh garment, <strong className="text-snoov-charcoal">we do not accept standard returns, refunds, or cancellations for change of mind or personal preference</strong>.
+                </p>
+              </div>
+            </div>
+
+            {/* 02. Damaged Goods Exchange Guarantee */}
+            <div id="damage-guarantee" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
+              <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
+                02 / CLIENT REASSURANCE
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
+                Damaged Goods Exchange Guarantee
+              </h2>
+              <p>
+                While our final-sale model preserves atelier integrity, your satisfaction and receiving an immaculate garment are non-negotiable. If your order is compromised during transit or bears an unexpected manufacturing flaw:
+              </p>
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div className="p-5 border border-snoov-border bg-snoov-sand/10 rounded-base space-y-2">
+                  <span className="text-xs font-mono text-snoov-green uppercase font-semibold block">
+                    ✓ 100% COMPLIMENTARY EXCHANGE
+                  </span>
+                  <p className="text-xs text-snoov-muted">
+                    If an item arrives damaged or defective, SNOOV covers all return courier and replacement shipping charges. A pristine replacement will be expedited from our studio at zero cost to you.
+                  </p>
+                </div>
+
+                <div className="p-5 border border-snoov-border bg-snoov-sand/10 rounded-base space-y-2">
+                  <span className="text-xs font-mono text-snoov-charcoal uppercase font-semibold block">
+                    ★ OUT-OF-STOCK PROTECTION
+                  </span>
+                  <p className="text-xs text-snoov-muted">
+                    If the damaged silhouette or size is archived or completely sold out, our atelier will provide an immediate SNOOV Atelier Credit or work closely with you on an equivalent bespoke solution.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 03. 3-Step Damage Reporting Protocol */}
+            <div id="how-to-report" className="scroll-mt-28 space-y-6 border-b border-snoov-border pb-12">
+              <div>
+                <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
+                  03 / PROTOCOL
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal mt-1">
+                  Step-by-Step Damage Reporting Process
+                </h2>
+                <p className="mt-2">
+                  To ensure a seamless and prompt resolution, please follow these three simple steps upon receiving your delivery:
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 {/* Step 1 */}
                 <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-snoov-green">STEP 01</span>
-                    <span className="text-[10px] font-mono text-snoov-muted uppercase">ONLINE</span>
+                    <span className="text-[10px] font-mono text-snoov-muted uppercase">WITHIN 48H</span>
                   </div>
                   <h3 className="font-serif text-base font-normal text-snoov-charcoal">
-                    Generate Prepaid Label
+                    Inspect & Document
                   </h3>
                   <p className="text-xs text-snoov-muted">
-                    Sign in to your client account or enter your order number on our return portal to receive an instant DHL Express / FedEx QR code & shipping label.
+                    Please inspect your parcel upon arrival. Take clear photographs or a short video highlighting the damaged area of the garment as well as the outer packaging box.
                   </p>
                 </div>
 
@@ -218,13 +278,13 @@ export default async function ReturnsAndExchangesPage() {
                 <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-snoov-green">STEP 02</span>
-                    <span className="text-[10px] font-mono text-snoov-muted uppercase">PACKAGING</span>
+                    <span className="text-[10px] font-mono text-snoov-muted uppercase">NOTIFY</span>
                   </div>
                   <h3 className="font-serif text-base font-normal text-snoov-charcoal">
-                    Prepare the Archival Box
+                    Contact Concierge
                   </h3>
                   <p className="text-xs text-snoov-muted">
-                    Place the unworn garment inside its protective organic cotton dust bag and back into the original SNOOV reusable shipment box.
+                    Email <strong className="text-snoov-charcoal font-mono">{contactEmail}</strong> or reach us on WhatsApp with your Order ID and attached media within 48 hours of delivery.
                   </p>
                 </div>
 
@@ -232,144 +292,86 @@ export default async function ReturnsAndExchangesPage() {
                 <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-snoov-green">STEP 03</span>
-                    <span className="text-[10px] font-mono text-snoov-muted uppercase">COURIER</span>
+                    <span className="text-[10px] font-mono text-snoov-muted uppercase">EXPEDITE</span>
                   </div>
                   <h3 className="font-serif text-base font-normal text-snoov-charcoal">
-                    Doorstep Pickup or Drop-Off
+                    Courier Exchange
                   </h3>
                   <p className="text-xs text-snoov-muted">
-                    Schedule a complimentary courier doorstep collection at your preferred hour or drop the package at any authorized DHL Express / FedEx service point.
-                  </p>
-                </div>
-
-                {/* Step 4 */}
-                <div className="p-5 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-mono font-bold text-snoov-green">STEP 04</span>
-                    <span className="text-[10px] font-mono text-snoov-muted uppercase">SETTLEMENT</span>
-                  </div>
-                  <h3 className="font-serif text-base font-normal text-snoov-charcoal">
-                    Atelier Audit & Refund
-                  </h3>
-                  <p className="text-xs text-snoov-muted">
-                    Upon delivery to our Mohali studio, our team verifies condition within 48 hours and automatically credits your account.
+                    Our team verifies the claim within 24–48 hours, coordinates a complimentary doorstep courier pickup, and dispatches your pristine replacement piece immediately.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* 02. Condition & Eligibility Criteria */}
+            {/* 04. Defect & Quality Verification Standards */}
             <div id="eligibility" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                02 / QUALITY STANDARDS
+                04 / VERIFICATION CRITERIA
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                Condition & Eligibility Criteria
+                Defect & Quality Verification Standards
               </h2>
               <p>
-                To maintain the integrity of our conscious luxury collections, all returned items undergo a microscopic craftsmanship inspection:
+                To safeguard the integrity of our patrons and artisans, claims are assessed under transparent standards:
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-5 border border-snoov-border bg-snoov-sand/10 rounded-base space-y-2">
                   <span className="text-xs font-mono text-snoov-green uppercase font-semibold block">
-                    ✓ ELIGIBLE FOR FULL REFUND
+                    ✓ ELIGIBLE FOR IMMEDIATE EXCHANGE
                   </span>
                   <ul className="space-y-1.5 text-xs text-snoov-muted">
-                    <li>• Unworn, unwashed, and unmarked garments.</li>
-                    <li>• Original atelier security tags & care labels attached.</li>
-                    <li>• Free of fragrance, deodorants, or makeup traces.</li>
-                    <li>• Accompanied by original dust bags and archival box.</li>
+                    <li>• Visible transit damage, torn packaging affecting garment.</li>
+                    <li>• Fabric tears, punctures, or indelible transit stains.</li>
+                    <li>• Structural craftsmanship flaws (broken zipper, failed seam).</li>
+                    <li>• Discrepancy between received item and order confirmation.</li>
                   </ul>
                 </div>
 
                 <div className="p-5 border border-snoov-border bg-snoov-sand/10 rounded-base space-y-2">
                   <span className="text-xs font-mono text-snoov-muted uppercase font-semibold block">
-                    ✕ INELIGIBLE / NON-RETURNABLE
+                    ✕ NOT ELIGIBLE FOR EXCHANGE / RETURN
                   </span>
                   <ul className="space-y-1.5 text-xs text-snoov-muted">
-                    <li>• Items showing visible signs of wear or laundering.</li>
-                    <li>• Garments with severed or missing security tags.</li>
-                    <li>• Customized, tailored, or bespoke monogrammed orders.</li>
-                    <li>• Final archive sale pieces marked as non-returnable.</li>
+                    <li>• Normal handling or subjective change of mind.</li>
+                    <li>• Sizing mismatches where the ordered size was delivered correctly.</li>
+                    <li>• Garments worn, washed, or lacking original atelier tags.</li>
+                    <li>• Damage reported beyond the 48-hour post-delivery window.</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            {/* 03. Size Exchanges */}
-            <div id="exchanges" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
+            {/* 05. Pre-Purchase Sizing & Styling Advice */}
+            <div id="fit-assistance" className="scroll-mt-28 space-y-4">
               <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                03 / FIT PERFECTION
+                05 / CONFIDENCE IN FIT
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                Complimentary Size Exchanges
+                Pre-Purchase Sizing & Styling Advice
               </h2>
               <p>
-                Finding your exact silhouette is essential. If you require a different size or fit variation:
+                Because our pieces are final sale, we want you to feel completely confident before welcoming a SNOOV silhouette into your wardrobe:
               </p>
               <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm">
                 <li>
-                  <strong className="text-snoov-charcoal">Instant Hold:</strong> When you select an exchange in our return portal, the replacement size is immediately reserved in our atelier inventory to prevent sell-out.
-                </li>
-                <li>
-                  <strong className="text-snoov-charcoal">Priority Dispatch:</strong> Your replacement piece is dispatched via complimentary express shipping as soon as the carrier registers the return package in transit.
-                </li>
-                <li>
-                  <strong className="text-snoov-charcoal">Fit Guidance:</strong> Need tailored advice before exchanging? Consult our{" "}
+                  <strong className="text-snoov-charcoal">Atelier Size Matrix:</strong> Every piece features exact measurements in both centimeters and inches. Please refer to our{" "}
                   <LocalizedClientLink href="/size-guide" className="text-snoov-green font-medium underline underline-offset-4 hover:opacity-80">
-                    Atelier Size & Fit Matrix
+                    Comprehensive Size Guide
                   </LocalizedClientLink>{" "}
-                  or contact our stylists.
+                  before completing checkout.
+                </li>
+                <li>
+                  <strong className="text-snoov-charcoal">Stylist Consultation:</strong> Unsure how a specific drop-shoulder hoodie or heavyweight tee drapes? Our Mohali atelier stylists are readily accessible via WhatsApp or email to provide personalized sizing guidance based on your height, weight, and preferred aesthetic.
+                </li>
+                <li>
+                  <strong className="text-snoov-charcoal">Lifetime Garment Care:</strong> For long-term care and maintenance of your organic textiles, explore our{" "}
+                  <LocalizedClientLink href="/garment-care" className="text-snoov-green font-medium underline underline-offset-4 hover:opacity-80">
+                    Garment Care & Longevity Guide
+                  </LocalizedClientLink>.
                 </li>
               </ul>
-            </div>
-
-            {/* 04. Refund Timelines */}
-            <div id="refunds" className="scroll-mt-28 space-y-4 border-b border-snoov-border pb-12">
-              <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                04 / SETTLEMENT
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                Refund Timelines & Settlement
-              </h2>
-              <p>
-                Approved refunds are credited directly to the original method of payment:
-              </p>
-              <div className="space-y-3 pt-1 text-xs">
-                <div className="flex justify-between items-center py-2.5 border-b border-snoov-border/60">
-                  <span className="text-snoov-charcoal font-medium">Credit & Debit Cards (Visa, Mastercard, Amex)</span>
-                  <span className="font-mono text-snoov-muted">3 – 5 Business Days</span>
-                </div>
-                <div className="flex justify-between items-center py-2.5 border-b border-snoov-border/60">
-                  <span className="text-snoov-charcoal font-medium">Apple Pay & Digital Wallets</span>
-                  <span className="font-mono text-snoov-muted">1 – 2 Business Days</span>
-                </div>
-                <div className="flex justify-between items-center py-2.5 border-b border-snoov-border/60">
-                  <span className="text-snoov-charcoal font-medium">Klarna Pay in 3 / Installments</span>
-                  <span className="font-mono text-snoov-muted">Immediate Schedule Adjustment</span>
-                </div>
-                <div className="flex justify-between items-center py-2.5">
-                  <span className="text-snoov-charcoal font-medium">SNOOV Atelier Store Credit</span>
-                  <span className="font-mono text-snoov-green font-semibold">Instantaneous (+5% Bonus Credit)</span>
-                </div>
-              </div>
-            </div>
-
-            {/* 05. Bespoke & Archival Exclusions */}
-            <div id="exclusions" className="scroll-mt-28 space-y-4">
-              <span className="text-[11px] font-mono uppercase tracking-widest text-snoov-green font-semibold block">
-                05 / EXCEPTIONS
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-serif text-snoov-charcoal font-normal">
-                Made-to-Measure & Archival Items
-              </h2>
-              <p>
-                Garments commissioned under our bespoke tailoring program, customized with bespoke embroidery, or personalized sizing are crafted exclusively for the individual patron and are therefore non-returnable once production commences.
-              </p>
-              <p>
-                In the rare event of a craftsmanship defect on a custom commission, our Mohali atelier provides complimentary alterations and repair adjustments until the garment fits impeccably.
-              </p>
             </div>
 
           </article>
