@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Review SNOOV's cookie policy. Learn how we handle essential session cookies, privacy-preserving performance telemetry, and browser consent controls.",
   alternates: {
-    canonical: "https://snoov.com/cookie-policy",
+    canonical: "https://snoovlifestyle.com/cookie-policy",
   },
 }
 
@@ -22,13 +22,13 @@ export default async function CookiePolicyPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Cookie Policy",
-        item: "https://snoov.com/cookie-policy",
+        item: "https://snoovlifestyle.com/cookie-policy",
       },
     ],
   }
@@ -42,7 +42,7 @@ export default async function CookiePolicyPage() {
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
-      logo: "https://snoov.com/logo.png",
+      logo: "https://snoovlifestyle.com/logo.png",
     },
     dateModified: "2026-08-31",
   }

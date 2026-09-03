@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Find instant answers to frequently asked questions about SNOOV capsule drops, Tricity same-day delivery, international DDP shipping, sizing, and damaged goods exchange policy.",
   alternates: {
-    canonical: "https://snoov.com/faq",
+    canonical: "https://snoovlifestyle.com/faq",
   },
 }
 
@@ -20,13 +20,13 @@ export default async function FAQPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "FAQ",
-        item: "https://snoov.com/faq",
+        item: "https://snoovlifestyle.com/faq",
       },
     ],
   }

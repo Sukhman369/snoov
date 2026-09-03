@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Explore SNOOV's seasonal lookbooks, campaign editorials, architectural tailoring silhouettes, and high-contrast GenZ streetwear archives.",
   alternates: {
-    canonical: "https://snoov.com/lookbook",
+    canonical: "https://snoovlifestyle.com/lookbook",
   },
 }
 
@@ -19,13 +19,13 @@ export default async function LookbookPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Lookbook",
-        item: "https://snoov.com/lookbook",
+        item: "https://snoovlifestyle.com/lookbook",
       },
     ],
   }

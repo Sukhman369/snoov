@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Master the care of SNOOV garments. Complete washing protocols, flat-drying methods, textile preservation, and complimentary atelier repair guidelines.",
   alternates: {
-    canonical: "https://snoov.com/garment-care",
+    canonical: "https://snoovlifestyle.com/garment-care",
   },
 }
 
@@ -21,13 +21,13 @@ export default async function GarmentCarePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Garment Care",
-        item: "https://snoov.com/garment-care",
+        item: "https://snoovlifestyle.com/garment-care",
       },
     ],
   }

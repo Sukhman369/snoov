@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Track your active SNOOV streetwear order in real time. Live milestone status for Tricity same-day delivery, Blue Dart Express domestic transit, and global DHL shipments.",
   alternates: {
-    canonical: "https://snoov.com/track-order",
+    canonical: "https://snoovlifestyle.com/track-order",
   },
 }
 
@@ -20,13 +20,13 @@ export default async function TrackOrderPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Track Order",
-        item: "https://snoov.com/track-order",
+        item: "https://snoovlifestyle.com/track-order",
       },
     ],
   }

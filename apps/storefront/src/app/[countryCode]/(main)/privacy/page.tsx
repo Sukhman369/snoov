@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Learn how SNOOV protects your personal data, respects GDPR/CCPA rights, and maintains client privacy across our atelier, e-commerce, and bespoke services.",
   alternates: {
-    canonical: "https://snoov.com/privacy",
+    canonical: "https://snoovlifestyle.com/privacy",
   },
 }
 
@@ -23,13 +23,13 @@ export default async function PrivacyPolicyPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Privacy & Data Protection",
-        item: "https://snoov.com/privacy",
+        item: "https://snoovlifestyle.com/privacy",
       },
     ],
   }
@@ -43,7 +43,7 @@ export default async function PrivacyPolicyPage() {
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
-      logo: "https://snoov.com/logo.png",
+      logo: "https://snoovlifestyle.com/logo.png",
     },
     dateModified: "2026-08-31",
   }

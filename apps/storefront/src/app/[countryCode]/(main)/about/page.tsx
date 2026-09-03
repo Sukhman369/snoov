@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Discover the origins of SNOOV. Driven by the instinctual power of the Orca whale and crafted as a conscious streetwear community for the next generation.",
   alternates: {
-    canonical: "https://snoov.com/about",
+    canonical: "https://snoovlifestyle.com/about",
   },
 }
 
@@ -19,13 +19,13 @@ export default async function AboutStoryPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Our Story",
-        item: "https://snoov.com/about",
+        item: "https://snoovlifestyle.com/about",
       },
     ],
   }
@@ -34,8 +34,8 @@ export default async function AboutStoryPage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "SNOOV",
-    url: "https://snoov.com",
-    logo: "https://snoov.com/logo.png",
+    url: "https://snoovlifestyle.com",
+    logo: "https://snoovlifestyle.com/logo.png",
     description:
       "A conscious luxury streetwear community designed for GenZ, inspired by the instinctual strength and monochrome elegance of the Orca whale.",
   }

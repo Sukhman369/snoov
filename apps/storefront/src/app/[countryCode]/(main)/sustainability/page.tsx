@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Explore SNOOV's verified sustainable standards. GOTS certified organic cotton, European Flax®, closed-loop non-toxic dyeing, and supply chain traceability.",
   alternates: {
-    canonical: "https://snoov.com/sustainability",
+    canonical: "https://snoovlifestyle.com/sustainability",
   },
 }
 
@@ -19,13 +19,13 @@ export default async function SustainabilityPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Sustainability & Traceability",
-        item: "https://snoov.com/sustainability",
+        item: "https://snoovlifestyle.com/sustainability",
       },
     ],
   }
@@ -39,7 +39,7 @@ export default async function SustainabilityPage() {
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
-      logo: "https://snoov.com/logo.png",
+      logo: "https://snoovlifestyle.com/logo.png",
     },
     dateModified: "2026-08-31",
   }

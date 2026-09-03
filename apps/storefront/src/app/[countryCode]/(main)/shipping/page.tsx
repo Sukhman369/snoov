@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Explore SNOOV's shipping services. Same-Day VIP Delivery in Tricity (Chandigarh, Mohali, Panchkula), Express All-India dispatch, and Worldwide DDP courier.",
   alternates: {
-    canonical: "https://snoov.com/shipping",
+    canonical: "https://snoovlifestyle.com/shipping",
   },
 }
 
@@ -21,13 +21,13 @@ export default async function ShippingAndDutiesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Shipping & Duties",
-        item: "https://snoov.com/shipping",
+        item: "https://snoovlifestyle.com/shipping",
       },
     ],
   }

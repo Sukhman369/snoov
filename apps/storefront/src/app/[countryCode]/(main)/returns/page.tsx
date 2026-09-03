@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Discover SNOOV's conscious craftsmanship policy and complimentary damaged goods exchange guarantee. Priority courier replacement for transit-damaged or defective pieces.",
   alternates: {
-    canonical: "https://snoov.com/returns",
+    canonical: "https://snoovlifestyle.com/returns",
   },
 }
 
@@ -23,13 +23,13 @@ export default async function ReturnsAndExchangesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Exchange & Replacement Policy",
-        item: "https://snoov.com/returns",
+        item: "https://snoovlifestyle.com/returns",
       },
     ],
   }

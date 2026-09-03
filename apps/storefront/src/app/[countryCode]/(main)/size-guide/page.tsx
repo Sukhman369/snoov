@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Explore SNOOV's international size matrix (US, UK, EU, JP). Detailed garment measurements in CM and Inches for heavyweight t-shirts, hoodies, and overshirts.",
   alternates: {
-    canonical: "https://snoov.com/size-guide",
+    canonical: "https://snoovlifestyle.com/size-guide",
   },
 }
 
@@ -20,13 +20,13 @@ export default async function SizeGuidePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Size Guide",
-        item: "https://snoov.com/size-guide",
+        item: "https://snoovlifestyle.com/size-guide",
       },
     ],
   }

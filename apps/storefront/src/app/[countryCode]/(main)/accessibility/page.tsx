@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Learn about SNOOV's commitment to digital accessibility, WCAG 2.1 Level AA compliance, screen reader support, and assistive concierge services.",
   alternates: {
-    canonical: "https://snoov.com/accessibility",
+    canonical: "https://snoovlifestyle.com/accessibility",
   },
 }
 
@@ -22,13 +22,13 @@ export default async function AccessibilityPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Accessibility Statement",
-        item: "https://snoov.com/accessibility",
+        item: "https://snoovlifestyle.com/accessibility",
       },
     ],
   }
@@ -42,7 +42,7 @@ export default async function AccessibilityPage() {
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
-      logo: "https://snoov.com/logo.png",
+      logo: "https://snoovlifestyle.com/logo.png",
     },
     dateModified: "2026-08-31",
   }
@@ -314,7 +314,7 @@ export default async function AccessibilityPage() {
                 5. Assisted Ordering & Feedback
               </h2>
               <p>
-                We welcome feedback from patrons and accessibility advocates. If you experience an accessibility barrier on any part of snoov.com, or if you would like personalized assistance placing an order, please contact our concierge team:
+                We welcome feedback from patrons and accessibility advocates. If you experience an accessibility barrier on any part of snoovlifestyle.com, or if you would like personalized assistance placing an order, please contact our concierge team:
               </p>
 
               <div className="p-6 bg-snoov-sand/30 border border-snoov-border rounded-base space-y-3 font-mono text-xs text-snoov-charcoal">

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Direct contact with the SNOOV Studio. Instant VIP WhatsApp hotline, Tricity same-day support, press loans, and creator collaboration requests.",
   alternates: {
-    canonical: "https://snoov.com/contact",
+    canonical: "https://snoovlifestyle.com/contact",
   },
 }
 
@@ -20,13 +20,13 @@ export default async function ContactPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Client Concierge",
-        item: "https://snoov.com/contact",
+        item: "https://snoovlifestyle.com/contact",
       },
     ],
   }
@@ -35,7 +35,7 @@ export default async function ContactPage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "SNOOV",
-    url: "https://snoov.com",
+    url: "https://snoovlifestyle.com",
     contactPoint: [
       {
         "@type": "ContactPoint",

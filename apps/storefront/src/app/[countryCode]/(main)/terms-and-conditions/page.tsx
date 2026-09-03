@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Review the terms and conditions governing purchases, bespoke atelier services, delivery, damaged item exchanges, intellectual property, and client care at SNOOV.",
   alternates: {
-    canonical: "https://snoov.com/terms-and-conditions",
+    canonical: "https://snoovlifestyle.com/terms-and-conditions",
   },
 }
 
@@ -23,13 +23,13 @@ export default async function TermsAndConditionsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://snoov.com",
+        item: "https://snoovlifestyle.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Terms & Conditions",
-        item: "https://snoov.com/terms-and-conditions",
+        item: "https://snoovlifestyle.com/terms-and-conditions",
       },
     ],
   }
@@ -43,7 +43,7 @@ export default async function TermsAndConditionsPage() {
     publisher: {
       "@type": "Organization",
       name: "SNOOV",
-      logo: "https://snoov.com/logo.png",
+      logo: "https://snoovlifestyle.com/logo.png",
     },
     dateModified: "2026-08-31",
   }
@@ -181,7 +181,7 @@ export default async function TermsAndConditionsPage() {
                 These General Terms and Conditions of Sale and Service (the &quot;Terms&quot;) apply exclusively between <strong>{legalEntity}</strong> (operating under the commercial trade name <strong>SNOOV</strong>, based in Chandigarh, India) and any individual consumer acting in a private capacity (the &quot;Client&quot;).
               </p>
               <p>
-                By placing an order on our storefront (snoov.com) or confirming a bespoke atelier commission, the Client unreservedly acknowledges and accepts these Terms in full.
+                By placing an order on our storefront (snoovlifestyle.com) or confirming a bespoke atelier commission, the Client unreservedly acknowledges and accepts these Terms in full.
               </p>
             </div>
 
