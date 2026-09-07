@@ -24,7 +24,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "orders",
     question: "Can I modify or cancel my order after placement?",
     answer:
-      "Because our Chandigarh team begins fulfilling orders promptly, please reach out via our WhatsApp VIP concierge or mail us within 60 minutes of placing your order if you require an address or sizing modification.",
+      "Because our Chandigarh atelier team begins fulfilling orders promptly, please reach out via our WhatsApp VIP concierge or mail us within 60 minutes of placing your order if you require an address or sizing modification.",
   },
   {
     id: "payment-methods",
@@ -45,16 +45,16 @@ const FAQ_DATA: FAQItem[] = [
   {
     id: "domestic-transit",
     category: "shipping",
-    question: "What are your shipping charges and free delivery threshold?",
+    question: "What are the domestic India shipping timelines?",
     answer:
-      "We offer complimentary doorstep delivery across India on all orders of ₹7,000 and above. If your order total is less than ₹7,000, standard carrier shipping charges apply and will be calculated at checkout. Metro deliveries typically arrive within 24 to 48 hours.",
+      "We ship across all pin codes in India via Blue Dart Express and premium couriers. Metro deliveries arrive in 2 to 3 business days; regional deliveries arrive within 3 to 5 business days with full real-time tracking.",
   },
   {
     id: "international-ddp",
     category: "shipping",
-    question: "Do you ship internationally / worldwide?",
+    question: "Do you ship internationally, and are customs duties included (DDP)?",
     answer:
-      "Worldwide delivery is currently being finalized and will launch very soon! We are establishing dedicated global air courier routes with prepaid customs (DDP). Follow our updates or contact our concierge desk for early international availability.",
+      "Yes, we ship globally via DHL Express and FedEx Priority. For the US, UK, EU, UAE, and Canada, orders are dispatched Delivery Duty Paid (DDP)—all import duties and tariffs are prepaid by SNOOV with zero surprise fees on delivery.",
   },
 
   // 03. Sizing & Silhouettes
@@ -70,7 +70,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "sizing",
     question: "Do you offer personal sizing consultations?",
     answer:
-      "Yes. If you have unique proportions or want styling advice, transmit your height, weight, and fit preference to our Chandigarh styling team via WhatsApp or our Contact page.",
+      "Yes. If you have unique proportions or want styling advice, transmit your height, weight, and fit preference to our Chandigarh atelier stylists via WhatsApp or our Contact page.",
   },
 
   // 04. Exchange Policy & Guarantee
@@ -79,14 +79,14 @@ const FAQ_DATA: FAQItem[] = [
     category: "returns",
     question: "What is your return and exchange policy?",
     answer:
-      "Because SNOOV crafts in small, limited-batch capsules to ensure every patron receives an untouched, brand-new piece, we operate on a damaged-goods exchange guarantee rather than a conventional return model. If your piece arrives damaged or defective in courier transit, we will promptly coordinate a complimentary pickup and dispatch a pristine replacement.",
+      "To preserve our conscious limited-capsule production and zero-deadstock philosophy, SNOOV garments are final sale and we do not accept standard returns or refunds. However, if your piece arrives damaged or defective in transit, we guarantee an immediate, complimentary exchange.",
   },
   {
     id: "damaged-reporting",
     category: "returns",
     question: "What should I do if my order arrives damaged or defective?",
     answer:
-      "Please inspect your package upon delivery and notify our Concierge within 48 hours via WhatsApp or email with your Order ID and photos of the damaged garment and packaging. Our team will arrange a complimentary courier pickup and dispatch a pristine replacement.",
+      "Please inspect your package upon delivery and notify our Concierge within 48 hours at concierge@snoov.com or via WhatsApp with your Order ID and photos of the damaged garment and packaging. Our atelier will arrange a complimentary courier pickup and dispatch a pristine replacement.",
   },
 
   // 05. Sustainability & Fabric Care
@@ -102,7 +102,7 @@ const FAQ_DATA: FAQItem[] = [
     category: "sustainability",
     question: "Does SNOOV offer complimentary garment repairs?",
     answer:
-      "Yes. Every piece is built for years of wear. If a seam relaxes or hardware requires maintenance, our Chandigarh team provides complimentary repairs. Visit our Garment Care page to initiate a service.",
+      "Yes. Every piece is built for years of wear. If a seam relaxes or hardware requires maintenance, our Chandigarh atelier provides complimentary artisan repairs. Visit our Garment Care page to initiate a service.",
   },
 ]
 
@@ -140,10 +140,10 @@ export default function FAQAccordion() {
 
   return (
     <div className="space-y-12 sm:space-y-16">
-      
+
       {/* ── Search & Filter Controls ── */}
       <div className="space-y-6">
-        
+
         {/* Instant Search Bar */}
         <div className="relative max-w-2xl">
           <input
@@ -176,11 +176,10 @@ export default function FAQAccordion() {
                 key={cat.id}
                 type="button"
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-4 py-2 text-xs font-mono rounded-sm transition-all duration-200 cursor-pointer ${
-                  isActive
-                    ? "bg-snoov-charcoal text-snoov-canvas font-semibold shadow-sm"
-                    : "bg-snoov-sand/30 text-snoov-muted hover:text-snoov-charcoal border border-snoov-border"
-                }`}
+                className={`px-4 py-2 text-xs font-mono rounded-sm transition-all duration-200 cursor-pointer ${isActive
+                  ? "bg-snoov-charcoal text-snoov-canvas font-semibold shadow-sm"
+                  : "bg-snoov-sand/30 text-snoov-muted hover:text-snoov-charcoal border border-snoov-border"
+                  }`}
               >
                 {cat.label}
               </button>
@@ -202,7 +201,7 @@ export default function FAQAccordion() {
               href="/contact"
               className="inline-block mt-2 px-5 py-2.5 bg-snoov-charcoal text-snoov-canvas text-xs font-mono uppercase tracking-wider rounded-sm hover:bg-snoov-green transition-colors"
             >
-              Ask SNOOV Concierge →
+              Ask Atelier Concierge →
             </LocalizedClientLink>
           </div>
         ) : (
@@ -211,11 +210,10 @@ export default function FAQAccordion() {
             return (
               <div
                 key={item.id}
-                className={`border rounded-base overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                  isOpen
-                    ? "border-snoov-charcoal/40 bg-snoov-sand/20 shadow-xs"
-                    : "border-snoov-border bg-snoov-canvas hover:border-snoov-border/80 hover:bg-snoov-sand/10"
-                }`}
+                className={`border rounded-base overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen
+                  ? "border-snoov-charcoal/40 bg-snoov-sand/20 shadow-xs"
+                  : "border-snoov-border bg-snoov-canvas hover:border-snoov-border/80 hover:bg-snoov-sand/10"
+                  }`}
               >
                 <button
                   type="button"
@@ -227,11 +225,10 @@ export default function FAQAccordion() {
                     {item.question}
                   </span>
                   <span
-                    className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-mono text-sm border transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                      isOpen
-                        ? "bg-snoov-charcoal text-snoov-canvas rotate-45 border-snoov-charcoal"
-                        : "bg-snoov-sand/50 text-snoov-charcoal border-snoov-border hover:bg-snoov-sand"
-                    }`}
+                    className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-mono text-sm border transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen
+                      ? "bg-snoov-charcoal text-snoov-canvas rotate-45 border-snoov-charcoal"
+                      : "bg-snoov-sand/50 text-snoov-charcoal border-snoov-border hover:bg-snoov-sand"
+                      }`}
                   >
                     +
                   </span>
@@ -239,9 +236,8 @@ export default function FAQAccordion() {
 
                 {/* Smooth CSS Grid Expanding Container */}
                 <div
-                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                  }`}
+                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    }`}
                 >
                   <div className="overflow-hidden">
                     <div className="px-6 pb-6 pt-2 text-xs sm:text-sm text-snoov-muted leading-relaxed font-sans border-t border-snoov-border/40">
@@ -262,10 +258,10 @@ export default function FAQAccordion() {
             NEED MORE INFORMATION?
           </span>
           <h3 className="font-serif text-2xl sm:text-3xl font-normal text-snoov-charcoal">
-            Connect Directly with Our Team
+            Connect Directly with the Studio
           </h3>
           <p className="text-xs text-snoov-muted font-sans max-w-md">
-            Our Chandigarh team answers all sizing, styling, and shipping inquiries directly.
+            Our Chandigarh team answers all tailoring, sizing, and shipping inquiries directly.
           </p>
         </div>
 
