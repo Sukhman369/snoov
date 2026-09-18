@@ -5,7 +5,7 @@ import Image from "next/image"
 export const metadata: Metadata = {
   title: "SNOOV | Drop 001 Coming Soon — Conscious Luxury Streetwear",
   description:
-    "SNOOV Streetwear Studio, Mohali. Private archive formulation in progress. Register for VIP early access.",
+    "Being yourself is never ordinary. Your identity needs no permission. Every detail, every drop is created around individuality, confidence, and the freedom to stand apart.",
 }
 
 export default function ComingSoonPage() {
@@ -73,8 +73,7 @@ export default function ComingSoonPage() {
 
           {/* Editorial Subtitle */}
           <p className="font-sans text-xs sm:text-sm text-[#7A6B6E] leading-relaxed max-w-lg mb-10 font-normal">
-            An intentional study in silhouette, natural European flax, and uncompromised form.
-            The inaugural capsule is limited to strictly 150 numbered allocations worldwide.
+            Being yourself is never ordinary. Your identity needs no permission. Every detail, every drop is created around individuality, confidence, and the freedom to stand apart.
           </p>
 
           {/* Action Button: Register for Early Access */}
