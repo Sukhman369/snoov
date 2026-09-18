@@ -5,7 +5,7 @@ import Image from "next/image"
 export const metadata: Metadata = {
   title: "SNOOV | Drop 001 Coming Soon — Conscious Luxury Streetwear",
   description:
-    "SNOOV measures nothing. It defines nothing. Because the moment you define yourself, you stop becoming. We create for the ones still moving, still changing, still becoming something the world hasn't named yet.",
+    "SNOOV measures the distance between fitting in and becoming unforgettable. It lives in the choices nobody asked you to make, the places nobody told you to go, and the version of yourself you haven't met yet. Because ordinary is only a starting point.",
 }
 
 export default function ComingSoonPage() {
@@ -70,14 +70,17 @@ export default function ComingSoonPage() {
 
           {/* Editorial Subtitle — Inverted Pyramid Structure */}
           <div className="font-sans text-xs sm:text-sm text-[#7A6B6E] leading-relaxed max-w-xl mx-auto mb-10 font-normal text-center flex flex-col items-center gap-1 sm:gap-1.5">
-            <p className="max-w-xl">
-              SNOOV measures nothing. It defines nothing. Because the moment you define yourself, you stop becoming.
+            <p className="max-w-xl text-center">
+              SNOOV measures the distance between fitting in and becoming unforgettable.
+            </p>
+            <p className="max-w-lg text-center">
+              It lives in the choices nobody asked you to make, the places nobody told you to go,
             </p>
             <p className="max-w-md text-center">
-              We create for the ones still moving, still changing,
+              and the version of yourself you haven&apos;t met yet.
             </p>
-            <p className="max-w-xs sm:max-w-sm text-center">
-              still becoming something the world hasn&apos;t named yet.
+            <p className="max-w-xs text-center font-medium text-[#2B2B2B]">
+              Because ordinary is only a starting point.
             </p>
           </div>
 
