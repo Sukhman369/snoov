@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function ComingSoonPage() {
   return (
-    <div className="h-screen w-full overflow-y-auto scroll-smooth snap-y snap-mandatory select-none bg-[#FAF8F3]">
+    <div className="w-full min-h-screen bg-[#FAF8F3] text-[#2B2B2B] select-none scroll-smooth">
       {/* ── Screen 01: Fullscreen Image with Greyish Bottom Shade & Scroll Indicator ── */}
-      <section className="h-screen w-full relative flex flex-col justify-end items-center snap-start overflow-hidden bg-[#E8E6E1]">
+      <section className="relative w-full h-screen flex flex-col justify-end items-center overflow-hidden bg-[#E8E6E1]">
         {/* Fullscreen Image Container (Left empty for your custom image) */}
         <div className="absolute inset-0 w-full h-full bg-[#E8E6E1]">
           {/*
@@ -48,7 +48,7 @@ export default function ComingSoonPage() {
       {/* ── Screen 02: Whole Current Coming Soon Page ── */}
       <section
         id="content"
-        className="min-h-screen w-full snap-start bg-[#FAF8F3] text-[#2B2B2B] flex flex-col justify-between px-6 py-12 sm:px-12 sm:py-16 relative"
+        className="min-h-screen w-full bg-[#FAF8F3] text-[#2B2B2B] flex flex-col justify-between px-6 py-12 sm:px-12 sm:py-16 relative"
       >
         {/* Center Stage — Minimal, Sculptural, Empty Canvas */}
         <main className="relative z-10 my-auto py-12 sm:py-20 flex flex-col items-center text-center max-w-2xl mx-auto w-full">
