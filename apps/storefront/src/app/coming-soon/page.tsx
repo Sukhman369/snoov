@@ -37,13 +37,7 @@ export default function ComingSoonPage() {
           </div>
         </div>
 
-        {/* Status Micro-Badge */}
-        <div className="inline-flex items-center gap-2.5 px-3 py-1 mb-6 rounded-full border border-[#E4DDD0] bg-white/60 backdrop-blur-xs">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#6B1F3C] animate-pulse" />
-          <span className="text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.25em] text-[#6B1F3C] font-semibold">
-            PRIVATE RELEASE IN FORMULATION
-          </span>
-        </div>
+
 
         {/* Minimal Editorial Title */}
         <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl text-[#2B2B2B] font-light tracking-tight leading-[1.1] mb-6">
