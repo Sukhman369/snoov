@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react"
-import Link from "next/link"
 import Image from "next/image"
 
 export default function EarlyAccessPage() {
@@ -78,13 +77,9 @@ export default function EarlyAccessPage() {
     <div className="min-h-[100dvh] w-full bg-[#09090B] text-[#EDEDED] flex flex-col justify-between px-4 py-6 sm:px-12 sm:py-12 relative overflow-hidden select-none">
       {/* Top Header — Minimal Nav Bar */}
       <header className="relative z-10 w-full flex items-center justify-between border-b border-zinc-800/60 pb-4 sm:pb-5">
-        <Link
-          href="/coming-soon"
-          className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors"
-        >
-          <span>←</span>
-          <span>RETURN TO OVERVIEW</span>
-        </Link>
+        <span className="text-[9px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-500">
+          SNOOV STUDIO
+        </span>
         <span className="text-[9px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-600">
           INVITATION REGISTRY
         </span>
@@ -261,19 +256,13 @@ export default function EarlyAccessPage() {
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="w-full flex flex-col sm:flex-row items-center gap-3">
-                <Link
-                  href="/coming-soon"
-                  className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white text-black text-[11px] font-mono uppercase tracking-[0.2em] font-semibold rounded-[2px] transition-all hover:bg-[#D4AF37] hover:text-black"
-                >
-                  RETURN TO HOMEPAGE
-                </Link>
+              {/* Action Button */}
+              <div className="w-full pt-2">
                 <button
                   onClick={() => setSuccessData(null)}
-                  className="w-full sm:w-auto px-6 py-3.5 border border-zinc-800 text-zinc-400 text-[11px] font-mono uppercase tracking-[0.2em] font-medium rounded-[2px] hover:text-white hover:border-zinc-600 transition-all"
+                  className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white text-black text-[11px] font-mono uppercase tracking-[0.2em] font-semibold rounded-[2px] transition-all hover:bg-[#D4AF37] hover:text-black active:scale-[0.98]"
                 >
-                  CLOSE
+                  DISMISS
                 </button>
               </div>
             </div>
