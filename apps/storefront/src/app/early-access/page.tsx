@@ -74,17 +74,7 @@ export default function EarlyAccessPage() {
   }
 
   return (
-    <div className="min-h-[100dvh] w-full bg-[#09090B] text-[#EDEDED] flex flex-col justify-between px-4 py-6 sm:px-12 sm:py-12 relative overflow-hidden select-none">
-      {/* Top Header — Minimal Nav Bar */}
-      <header className="relative z-10 w-full flex items-center justify-between border-b border-zinc-800/60 pb-4 sm:pb-5">
-        <span className="text-[9px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-500">
-          SNOOV STUDIO
-        </span>
-        <span className="text-[9px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-600">
-          INVITATION REGISTRY
-        </span>
-      </header>
-
+    <div className="min-h-[100dvh] w-full bg-[#09090B] text-[#EDEDED] flex flex-col justify-between px-4 py-8 sm:px-12 sm:py-16 relative overflow-hidden select-none">
       {/* Center Stage — Minimalist Dark Form */}
       <main className="relative z-10 my-auto py-8 sm:py-12 flex flex-col items-center justify-center max-w-md w-full mx-auto">
         {/* Logo */}
