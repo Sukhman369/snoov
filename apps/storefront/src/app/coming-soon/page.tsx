@@ -73,14 +73,8 @@ export default function ComingSoonPage() {
       </main>
 
       {/* Bottom Bar — Minimalist Status */}
-      <footer className="relative z-10 w-full flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-mono tracking-[0.2em] text-[#7A6B6E] border-t border-[#E4DDD0]/60 pt-5">
-        <div className="flex items-center gap-3">
-          <span className="w-2 h-2 rounded-full bg-emerald-700/80 animate-ping" />
-          <span className="uppercase text-[#2B2B2B]">SIGNAL 01 · REGISTRY OPEN</span>
-        </div>
-        <div className="text-center sm:text-right">
-          <span className="text-[#A49598]">SNOOV STUDIO &copy; 2026. ALL RIGHTS RESERVED.</span>
-        </div>
+      <footer className="relative z-10 w-full flex items-center justify-center text-[10px] font-mono tracking-[0.2em] text-[#A49598] pt-6">
+        <span>SNOOV STUDIO &copy; 2026. ALL RIGHTS RESERVED.</span>
       </footer>
     </div>
   )
