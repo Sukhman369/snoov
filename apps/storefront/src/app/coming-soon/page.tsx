@@ -16,7 +16,7 @@ export default function ComingSoonPage() {
         {/* Fullscreen Image Container */}
         <div className="absolute inset-0 w-full h-full bg-[#09090B]">
           <Image
-            src="/brand/coming-soon-hero.jpg"
+            src="/brand/coming-soon-hero.webp"
             alt="SNOOV Streetwear Editorial"
             fill
             priority
