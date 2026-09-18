@@ -3,19 +3,19 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --snoov-primary: #008000;
-  --snoov-primary-hover: #006400;
-  --snoov-primary-light: #EBF6EB;
-  --snoov-primary-subtle: rgba(0, 128, 0, 0.08);
-  --snoov-canvas: #FBF9F5;
-  --snoov-sand: #F5F1E8;
-  --snoov-ecru: #EFE9DD;
-  --snoov-cream: #FAF8F3;
-  --snoov-border: #EAE4D7;
-  --snoov-border-dark: #D8D0BF;
-  --snoov-charcoal: #1A1A1A;
-  --snoov-muted: #66625D;
-  --snoov-light-muted: #8F8A82;
+  --snoov-primary: #6B1F3C;
+  --snoov-primary-hover: #4E1529;
+  --snoov-primary-light: #FAE8EF;
+  --snoov-primary-subtle: rgba(107, 31, 60, 0.08);
+  --snoov-canvas: #FAF8F3;
+  --snoov-sand: #F2EFE8;
+  --snoov-ecru: #EAE5DC;
+  --snoov-cream: #FDFCF9;
+  --snoov-border: #E4DDD0;
+  --snoov-border-dark: #D1C9BB;
+  --snoov-charcoal: #2B2B2B;
+  --snoov-muted: #7A6B6E;
+  --snoov-light-muted: #A49598;
 }
 
 @layer base {

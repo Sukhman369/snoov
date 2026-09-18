@@ -85,4 +85,4 @@ export const LOGO_VARIANTS: LogoVariant[] = [
   },
 ]
 
-export const DEFAULT_LOGO_ID = "crimson-script"
+export const DEFAULT_LOGO_ID = "gold-classic"

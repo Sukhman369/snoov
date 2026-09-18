@@ -38,7 +38,7 @@ export default function HeroA() {
               SEASONAL EDITORIAL
             </span>
             <p className="font-serif text-sm sm:text-base text-snoov-charcoal leading-snug">
-              "A wardrobe refined to pure tactile necessity."
+              &ldquo;A wardrobe refined to pure tactile necessity.&rdquo;
             </p>
             <LocalizedClientLink
               href="/store"

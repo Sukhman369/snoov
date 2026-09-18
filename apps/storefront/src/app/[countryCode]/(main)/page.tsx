@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import HeroStudio from "@modules/home/components/hero-studio"
+import HeroA from "@modules/home/components/hero-studio/variants/hero-a"
 import EditorialBrandStatement from "@modules/home/components/brand-statement"
 import NewArrivalsGrid from "@modules/home/components/new-arrivals-grid"
 import CollectionFeature from "@modules/home/components/collection-feature"
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 export default async function Home() {
   return (
     <div className="flex flex-col w-full bg-snoov-canvas">
-      {/* 01 — Hero Studio (5 variants — toggle bottom right) */}
-      <HeroStudio />
+      {/* 01 — Hero Section: A — Magazine Editorial */}
+      <HeroA />
 
       {/* 02 — Brand Editorial Manifesto */}
       <EditorialBrandStatement />

@@ -35,25 +35,6 @@ export default function BrandLogo({
     setMounted(true)
     if (explicitLogoId) {
       setActiveLogoId(explicitLogoId)
-      return
-    }
-
-    // Read stored logo from localStorage
-    const saved = localStorage.getItem("snoov_logo")
-    if (saved && LOGO_VARIANTS.some((l) => l.id === saved)) {
-      setActiveLogoId(saved)
-    }
-
-    // Listen for real-time logo change events from LogoStudio
-    const handleLogoChange = (e: CustomEvent<{ id: string }>) => {
-      if (e.detail?.id) {
-        setActiveLogoId(e.detail.id)
-      }
-    }
-
-    window.addEventListener("snoov-logo-change", handleLogoChange as EventListener)
-    return () => {
-      window.removeEventListener("snoov-logo-change", handleLogoChange as EventListener)
     }
   }, [explicitLogoId])
 
