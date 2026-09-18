@@ -76,15 +76,6 @@ export default function EarlyAccessPage() {
 
   return (
     <div className="min-h-screen w-full bg-[#FAF8F3] text-[#2B2B2B] flex flex-col justify-between px-6 py-8 sm:px-12 sm:py-12 relative overflow-hidden">
-      {/* Subtle architectural grid accents */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-30"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, #E4DDD0 1px, transparent 1px), linear-gradient(to bottom, #E4DDD0 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
-      />
 
       {/* Top Header — Minimal Nav Bar */}
       <header className="relative z-10 w-full flex items-center justify-between border-b border-[#E4DDD0]/60 pb-5">

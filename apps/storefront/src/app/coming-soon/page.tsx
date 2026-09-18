@@ -11,15 +11,6 @@ export const metadata: Metadata = {
 export default function ComingSoonPage() {
   return (
     <div className="min-h-screen w-full bg-[#FAF8F3] text-[#2B2B2B] flex flex-col justify-between px-6 py-8 sm:px-12 sm:py-12 relative overflow-hidden select-none">
-      {/* Subtle architectural grid accents */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-30"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, #E4DDD0 1px, transparent 1px), linear-gradient(to bottom, #E4DDD0 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
-      />
 
       {/* Center Stage — Minimal, Sculptural, Empty Canvas */}
       <main className="relative z-10 my-auto py-16 sm:py-24 flex flex-col items-center text-center max-w-2xl mx-auto">
