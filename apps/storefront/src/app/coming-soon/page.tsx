@@ -21,18 +21,8 @@ export default function ComingSoonPage() {
         }}
       />
 
-      {/* Top Bar — Lean & Understated */}
-      <header className="relative z-10 w-full flex items-center justify-between text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-[#7A6B6E] border-b border-[#E4DDD0]/60 pb-5">
-        <span className="font-semibold text-[#2B2B2B] flex items-center gap-2">
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#6B1F3C]" />
-          SNOOV STREETWEAR
-        </span>
-        <span className="hidden sm:inline-block">MOHALI, PUNJAB — STUDIO ARCHIVE</span>
-        <span>EDITION 001</span>
-      </header>
-
       {/* Center Stage — Minimal, Sculptural, Empty Canvas */}
-      <main className="relative z-10 my-auto py-16 flex flex-col items-center text-center max-w-2xl mx-auto">
+      <main className="relative z-10 my-auto py-16 sm:py-24 flex flex-col items-center text-center max-w-2xl mx-auto">
         {/* Brand Logo: 02 — Royal Gold Serif */}
         <div className="mb-10 sm:mb-14 relative flex items-center justify-center">
           <div className="relative group">
