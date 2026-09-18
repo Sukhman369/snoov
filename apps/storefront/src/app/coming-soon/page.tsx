@@ -17,15 +17,15 @@ export default function ComingSoonPage() {
         <div className="absolute inset-0 w-full h-full bg-[#09090B]">
           <Image
             src="/brand/coming-soon-hero.webp"
-            alt="SNOOV Streetwear Editorial"
+            alt="SNOOV Concept Board & Streetwear Design"
             fill
             priority
-            className="object-cover object-top sm:object-center"
+            className="object-cover object-center"
           />
         </div>
 
         {/* Batman Dark bottom shade gradient */}
-        <div className="absolute inset-x-0 bottom-0 h-64 sm:h-96 bg-gradient-to-t from-[#09090B] via-[#09090B]/85 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-48 sm:h-72 bg-gradient-to-t from-[#09090B] via-[#09090B]/80 to-transparent pointer-events-none" />
 
         {/* Scroll Indicator at bottom */}
         <a
