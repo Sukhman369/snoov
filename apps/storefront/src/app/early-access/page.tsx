@@ -93,9 +93,6 @@ export default function EarlyAccessPage() {
 
         {/* Section Header */}
         <div className="text-center mb-8">
-          <span className="text-[9px] font-mono uppercase tracking-[0.25em] text-red-500 font-semibold block mb-1">
-            DROP 001 · PRIVATE ACCESS
-          </span>
           <h1 className="font-serif text-2xl sm:text-3xl text-white font-normal tracking-tight">
             Reserve Your Allocation
           </h1>
