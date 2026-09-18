@@ -1,44 +1,27 @@
-"use client"
-
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Image from "next/image"
 import { clx } from "@medusajs/ui"
-import { LOGO_VARIANTS, DEFAULT_LOGO_ID } from "@lib/data/logo-variants"
 
 interface BrandLogoProps {
-  variant?: "auto" | "icon" | "gold" | "script" | "custom"
+  variant?: "auto" | "icon" | "gold"
   className?: string
   priority?: boolean
   width?: number
   height?: number
   dark?: boolean
-  logoId?: string
   showSubtitle?: boolean
   subtitleText?: string
 }
 
 export default function BrandLogo({
-  variant = "auto",
+  variant = "gold",
   className,
   priority = true,
   width,
   height,
-  dark = false,
-  logoId: explicitLogoId,
   showSubtitle = false,
   subtitleText = "Streetwear",
 }: BrandLogoProps) {
-  const [activeLogoId, setActiveLogoId] = useState<string>(explicitLogoId || DEFAULT_LOGO_ID)
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-    if (explicitLogoId) {
-      setActiveLogoId(explicitLogoId)
-    }
-  }, [explicitLogoId])
-
-  // If explicit fixed variant requested
   if (variant === "icon") {
     return (
       <div className={clx("relative inline-flex items-center justify-center", className)}>
@@ -54,32 +37,9 @@ export default function BrandLogo({
     )
   }
 
-  if (variant === "gold") {
-    return (
-      <div className={clx("relative inline-flex items-center justify-center", className)}>
-        <Image
-          src="/brand/snoov-logo-gold.webp"
-          alt="SNOOV"
-          width={width || 140}
-          height={height || 54}
-          priority={priority}
-          className="object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
-        />
-      </div>
-    )
-  }
-
-  // Dynamic active logo
-  const logo = LOGO_VARIANTS.find((l) => l.id === activeLogoId) || LOGO_VARIANTS[0]
-
-  // If "No Logo" is active, render nothing (clean minimal space)
-  if (!logo.src || logo.id === "no-logo-clean") {
-    return null
-  }
-
-  const imageSrc = dark && logo.srcDark ? logo.srcDark : logo.src
-  const finalWidth = width || logo.width
-  const finalHeight = height || logo.height
+  // Chosen Brand Logo: 02 — Royal Gold Serif
+  const finalWidth = width || 145
+  const finalHeight = height || 52
 
   return (
     <div
@@ -88,15 +48,13 @@ export default function BrandLogo({
         className
       )}
     >
-      <img
-        src={imageSrc}
-        alt={logo.name}
+      <Image
+        src="/brand/snoov-logo-gold.webp"
+        alt="SNOOV"
         width={finalWidth}
         height={finalHeight}
-        className={clx(
-          "object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-105",
-          mounted ? "opacity-100 scale-100" : "opacity-90"
-        )}
+        priority={priority}
+        className="object-contain filter drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
         style={{
           maxHeight: height ? `${height}px` : "58px",
           width: "auto",
