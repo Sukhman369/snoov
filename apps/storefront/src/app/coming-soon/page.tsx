@@ -63,18 +63,13 @@ export default function ComingSoonPage() {
             </div>
           </div>
 
-          {/* Minimal Editorial Title */}
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl text-[#2B2B2B] font-light tracking-tight leading-[1.1] mb-6">
-            Conscious Luxury Streetwear.
-          </h1>
-
           {/* Editorial Subtitle — Inverted Pyramid Structure */}
           <div className="font-sans text-xs sm:text-sm text-[#7A6B6E] leading-relaxed max-w-xl mx-auto mb-10 font-normal text-center flex flex-col items-center gap-1 sm:gap-1.5">
             <p className="max-w-xl text-center">
-              SNOOV measures the distance between fitting in and becoming unforgettable.
+              SNOOV measures the distance between fitting in and becoming unforgettable. It lives,
             </p>
             <p className="max-w-lg text-center">
-              It lives in the choices nobody asked you to make, the places nobody told you to go,
+              In the choices nobody asked you to make, the places nobody told you to go,
             </p>
             <p className="max-w-md text-center">
               and the version of yourself you haven&apos;t met yet.
