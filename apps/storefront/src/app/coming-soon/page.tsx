@@ -68,10 +68,18 @@ export default function ComingSoonPage() {
             Conscious Luxury Streetwear.
           </h1>
 
-          {/* Editorial Subtitle */}
-          <p className="font-sans text-xs sm:text-sm text-[#7A6B6E] leading-relaxed max-w-lg mb-10 font-normal">
-            SNOOV measures nothing. It defines nothing. Because the moment you define yourself, you stop becoming. We create for the ones still moving, still changing, still becoming something the world hasn&apos;t named yet.
-          </p>
+          {/* Editorial Subtitle — Inverted Pyramid Structure */}
+          <div className="font-sans text-xs sm:text-sm text-[#7A6B6E] leading-relaxed max-w-xl mx-auto mb-10 font-normal text-center flex flex-col items-center gap-1 sm:gap-1.5">
+            <p className="max-w-xl">
+              SNOOV measures nothing. It defines nothing. Because the moment you define yourself, you stop becoming.
+            </p>
+            <p className="max-w-md text-center">
+              We create for the ones still moving, still changing,
+            </p>
+            <p className="max-w-xs sm:max-w-sm text-center">
+              still becoming something the world hasn&apos;t named yet.
+            </p>
+          </div>
 
           {/* Action Button: Register for Early Access */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
