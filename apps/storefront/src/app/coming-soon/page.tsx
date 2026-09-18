@@ -13,18 +13,15 @@ export default function ComingSoonPage() {
     <div className="w-full min-h-screen bg-[#FAF8F3] text-[#2B2B2B] select-none scroll-smooth">
       {/* ── Screen 01: Fullscreen Image with Greyish Bottom Shade & Scroll Indicator ── */}
       <section className="relative w-full h-screen flex flex-col justify-end items-center overflow-hidden bg-[#E8E6E1]">
-        {/* Fullscreen Image Container (Left empty for your custom image) */}
-        <div className="absolute inset-0 w-full h-full bg-[#E8E6E1]">
-          {/*
-            To add your image, place it in public folder and uncomment:
-            <Image
-              src="/brand/coming-soon-hero.webp"
-              alt="SNOOV Campaign"
-              fill
-              priority
-              className="object-cover object-center"
-            />
-          */}
+        {/* Fullscreen Image Container */}
+        <div className="absolute inset-0 w-full h-full bg-[#B0B0B0]">
+          <Image
+            src="/brand/coming-soon-hero.jpg"
+            alt="SNOOV Streetwear Editorial"
+            fill
+            priority
+            className="object-cover object-top sm:object-center"
+          />
         </div>
 
         {/* Greyish bottom shade gradient */}
