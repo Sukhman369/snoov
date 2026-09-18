@@ -5,7 +5,7 @@ import Image from "next/image"
 export const metadata: Metadata = {
   title: "SNOOV | Drop 001 Coming Soon — Conscious Luxury Streetwear",
   description:
-    "SNOOV Studio & Atelier, Mohali. Private archive formulation in progress. Register for VIP early access.",
+    "SNOOV Streetwear Studio, Mohali. Private archive formulation in progress. Register for VIP early access.",
 }
 
 export default function ComingSoonPage() {
@@ -25,7 +25,7 @@ export default function ComingSoonPage() {
       <header className="relative z-10 w-full flex items-center justify-between text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-[#7A6B6E] border-b border-[#E4DDD0]/60 pb-5">
         <span className="font-semibold text-[#2B2B2B] flex items-center gap-2">
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#6B1F3C]" />
-          SNOOV ATELIER
+          SNOOV STREETWEAR
         </span>
         <span className="hidden sm:inline-block">MOHALI, PUNJAB — STUDIO ARCHIVE</span>
         <span>EDITION 001</span>
@@ -89,7 +89,7 @@ export default function ComingSoonPage() {
           <span className="uppercase text-[#2B2B2B]">SIGNAL 01 · REGISTRY OPEN</span>
         </div>
         <div className="text-center sm:text-right">
-          <span className="text-[#A49598]">SNOOV STUDIO & ATELIER &copy; 2026. ALL RIGHTS RESERVED.</span>
+          <span className="text-[#A49598]">SNOOV STUDIO &copy; 2026. ALL RIGHTS RESERVED.</span>
         </div>
       </footer>
     </div>

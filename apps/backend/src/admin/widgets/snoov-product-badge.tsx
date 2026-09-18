@@ -7,7 +7,7 @@ const SnoovProductWidget = () => {
       <div className="flex items-center justify-between">
         <div className="space-y-0.5">
           <Text size="small" weight="plus" className="text-[#1C3F32] uppercase tracking-wider font-mono text-[11px]">
-            ✦ SNOOV ATELIER · STOREFRONT SYNC
+            ✦ SNOOV STUDIO · STOREFRONT SYNC
           </Text>
           <Text size="small" className="text-ui-fg-subtle text-xs">
             Product inventory, pricing, and media are actively synced to the SNOOV Storefront.

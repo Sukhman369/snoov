@@ -28,7 +28,7 @@ module.exports = defineConfig({
               .replace(
                 "<head>",
                 `<head>
-                  <title>SNOOV Atelier · Merchant Admin Console</title>
+                  <title>SNOOV · Merchant Admin Console</title>
                   <link rel="icon" type="image/webp" href="/static/brand/snoov-icon.webp" />
                   <style>
                     /* ── SNOOV Luxury Admin Branding & Typography ── */
@@ -86,7 +86,7 @@ module.exports = defineConfig({
 
                     /* ── Top Header Brand Badge in Sidebar / Navbar ── */
                     header [data-testid="nav-user-button"]::before {
-                      content: "✦ SNOOV ATELIER";
+                      content: "✦ SNOOV STUDIO";
                       display: inline-block;
                       font-size: 10px;
                       font-family: 'JetBrains Mono', monospace;

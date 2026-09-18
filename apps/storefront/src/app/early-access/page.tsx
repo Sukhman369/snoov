@@ -192,7 +192,7 @@ export default function EarlyAccessPage() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="sahib@atelier.com"
+              placeholder="sahib@snoov.com"
               className="w-full px-4 py-3.5 bg-white border border-[#E4DDD0] rounded-[2px] text-xs font-sans text-[#2B2B2B] placeholder:text-[#A49598] focus:outline-none focus:border-[#6B1F3C] focus:ring-1 focus:ring-[#6B1F3C] transition-all shadow-xs"
             />
           </div>
@@ -224,7 +224,7 @@ export default function EarlyAccessPage() {
 
       {/* Bottom Bar */}
       <footer className="relative z-10 w-full flex items-center justify-between text-[10px] font-mono tracking-[0.2em] text-[#7A6B6E] border-t border-[#E4DDD0]/60 pt-5">
-        <span>SNOOV ATELIER &copy; 2026</span>
+        <span>SNOOV STUDIO &copy; 2026</span>
         <span className="text-[#A49598]">ALL RIGHTS RESERVED</span>
       </footer>
 

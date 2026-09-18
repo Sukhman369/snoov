@@ -1,4 +1,4 @@
-# SNOOV — Studio & Atelier
+# SNOOV — Streetwear Studio
 
 <p align="left">
   <a href="https://gitlegacy.co/tools/github-badges"><img src="https://gitlegacy.co/api/badge/shield?name=SNOOV%20Luxury&color=008000&style=flat" alt="Snoov Luxury" /></a>
