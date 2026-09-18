@@ -59,16 +59,16 @@ export default function ComingSoonPage() {
       >
         {/* Center Stage — Minimal, Sculptural, Obsidian Canvas */}
         <main className="relative z-10 my-auto py-8 sm:py-16 flex flex-col items-center text-center max-w-2xl mx-auto w-full">
-          {/* Brand Logo: Crimson Calligraphic Script */}
-          <div className="mb-7 sm:mb-12 relative flex items-center justify-center">
+          {/* Brand Logo: SNOOV Bold Serif Wordmark */}
+          <div className="mb-8 sm:mb-12 relative flex items-center justify-center">
             <div className="relative group">
               <Image
-                src="/brand/snoov-logo-crimson-script.webp"
+                src="/brand/snoov-logo-red.webp"
                 alt="SNOOV"
-                width={220}
-                height={95}
+                width={260}
+                height={62}
                 priority
-                className="w-[160px] sm:w-[220px] h-auto object-contain filter drop-shadow-[0_0_25px_rgba(220,38,38,0.25)] transition-transform duration-700 hover:scale-[1.03]"
+                className="w-[200px] sm:w-[260px] h-auto object-contain filter drop-shadow-[0_0_25px_rgba(238,27,36,0.25)] transition-transform duration-700 hover:scale-[1.03]"
               />
             </div>
           </div>

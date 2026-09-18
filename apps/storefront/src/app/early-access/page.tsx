@@ -78,16 +78,16 @@ export default function EarlyAccessPage() {
     <div className="min-h-[100dvh] w-full bg-[#09090B] text-[#EDEDED] flex flex-col justify-between px-4 py-8 sm:px-12 sm:py-16 relative overflow-hidden select-none">
       {/* Center Stage — Minimalist Dark Form */}
       <main className="relative z-10 my-auto py-8 sm:py-12 flex flex-col items-center justify-center max-w-md w-full mx-auto">
-        {/* Brand Logo: Crimson Calligraphic Script */}
+        {/* Brand Logo: SNOOV Bold Serif Wordmark */}
         <div className="mb-6 sm:mb-8 flex justify-center">
           <div className="relative group">
             <Image
-              src="/brand/snoov-logo-crimson-script.webp"
+              src="/brand/snoov-logo-red.webp"
               alt="SNOOV"
-              width={220}
-              height={95}
+              width={240}
+              height={58}
               priority
-              className="w-[160px] sm:w-[200px] h-auto object-contain filter drop-shadow-[0_0_25px_rgba(220,38,38,0.25)] transition-transform duration-700 hover:scale-[1.03]"
+              className="w-[180px] sm:w-[220px] h-auto object-contain filter drop-shadow-[0_0_25px_rgba(238,27,36,0.25)] transition-transform duration-700 hover:scale-[1.03]"
             />
           </div>
         </div>
