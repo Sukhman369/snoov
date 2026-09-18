@@ -75,9 +75,9 @@ export default function EarlyAccessPage() {
   }
 
   return (
-    <div className="min-h-screen w-full bg-[#09090B] text-[#EDEDED] flex flex-col justify-between px-6 py-8 sm:px-12 sm:py-12 relative overflow-hidden select-none">
+    <div className="min-h-[100dvh] w-full bg-[#09090B] text-[#EDEDED] flex flex-col justify-between px-4 py-6 sm:px-12 sm:py-12 relative overflow-hidden select-none">
       {/* Top Header — Minimal Nav Bar */}
-      <header className="relative z-10 w-full flex items-center justify-between border-b border-zinc-800/60 pb-5">
+      <header className="relative z-10 w-full flex items-center justify-between border-b border-zinc-800/60 pb-4 sm:pb-5">
         <Link
           href="/coming-soon"
           className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors"
@@ -85,22 +85,22 @@ export default function EarlyAccessPage() {
           <span>←</span>
           <span>RETURN TO OVERVIEW</span>
         </Link>
-        <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-600">
+        <span className="text-[9px] sm:text-[11px] font-mono uppercase tracking-[0.25em] text-zinc-600">
           INVITATION REGISTRY
         </span>
       </header>
 
       {/* Center Stage — Minimalist Dark Form */}
-      <main className="relative z-10 my-auto py-12 flex flex-col items-center justify-center max-w-md w-full mx-auto">
+      <main className="relative z-10 my-auto py-8 sm:py-12 flex flex-col items-center justify-center max-w-md w-full mx-auto">
         {/* Logo */}
-        <div className="mb-6 flex justify-center">
+        <div className="mb-5 sm:mb-6 flex justify-center">
           <Image
-            src="/brand/snoov-logo-gold.webp"
+            src="/brand/snoov-logo-crimson-script.webp"
             alt="SNOOV"
-            width={160}
-            height={55}
+            width={180}
+            height={78}
             priority
-            className="object-contain filter drop-shadow-[0_0_20px_rgba(212,175,55,0.2)]"
+            className="w-[135px] sm:w-[165px] h-auto object-contain filter drop-shadow-[0_0_20px_rgba(220,38,38,0.25)]"
           />
         </div>
 
@@ -221,7 +221,7 @@ export default function EarlyAccessPage() {
       {/* Slide-Up Congrats / Success Modal Sheet */}
       {successData && (
         <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 backdrop-blur-md transition-opacity duration-300">
-          <div className="w-full max-w-lg bg-[#121214] border-t sm:border border-zinc-800 sm:rounded-[2px] p-6 sm:p-10 shadow-2xl relative transform transition-transform duration-500 animate-slide-in">
+          <div className="w-full max-w-lg bg-[#121214] border-t sm:border border-zinc-800 sm:rounded-[2px] p-5 sm:p-10 shadow-2xl relative transform transition-transform duration-500 animate-slide-in max-h-[92dvh] overflow-y-auto">
             {/* Header emblem */}
             <div className="flex flex-col items-center text-center">
               <div className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center text-[#D4AF37] font-serif text-lg mb-4 shadow-sm">
