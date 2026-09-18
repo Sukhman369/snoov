@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function EarlyAccessPage() {
   const [name, setName] = useState("")
-  const [countryCode, setCountryCode] = useState("+91")
+  const countryCode = "+91"
   const [phone, setPhone] = useState("")
   const [email, setEmail] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -32,8 +32,9 @@ export default function EarlyAccessPage() {
       return
     }
 
-    if (!phone.trim() || phone.replace(/\D/g, "").length < 7) {
-      setError("Please enter a valid mobile number.")
+    const cleanPhone = phone.replace(/\D/g, "")
+    if (!cleanPhone || cleanPhone.length !== 10) {
+      setError("Please enter a valid 10-digit Indian mobile number.")
       return
     }
 
@@ -124,34 +125,24 @@ export default function EarlyAccessPage() {
             />
           </div>
 
-          {/* Phone Number with Country Code */}
+          {/* Phone Number with India Code */}
           <div className="flex flex-col gap-1.5">
             <label className="text-[10px] font-mono uppercase tracking-[0.2em] text-zinc-400">
               Phone / WhatsApp Number
             </label>
             <div className="flex gap-2">
-              <select
-                value={countryCode}
-                onChange={(e) => setCountryCode(e.target.value)}
-                aria-label="Country Dial Code"
-                className="px-2.5 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-mono text-zinc-200 focus:outline-none focus:border-red-600 transition-all cursor-pointer shadow-xs"
-              >
-                <option value="+91">🇮🇳 +91 (IN)</option>
-                <option value="+1">🇺🇸 +1 (US/CA)</option>
-                <option value="+44">🇬🇧 +44 (UK)</option>
-                <option value="+971">🇦🇪 +971 (UAE)</option>
-                <option value="+61">🇦🇺 +61 (AU)</option>
-                <option value="+49">🇩🇪 +49 (DE)</option>
-                <option value="+33">🇫🇷 +33 (FR)</option>
-                <option value="+65">🇸🇬 +65 (SG)</option>
-              </select>
+              <div className="flex items-center justify-center gap-1.5 px-3.5 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-mono text-zinc-200 select-none shadow-xs">
+                <span>🇮🇳</span>
+                <span className="font-semibold tracking-wider text-zinc-300">+91</span>
+              </div>
               <input
                 type="tel"
                 required
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))}
                 placeholder="98765 43210"
-                className="flex-1 px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all shadow-xs"
+                maxLength={10}
+                className="flex-1 px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all shadow-xs tracking-wider"
               />
             </div>
           </div>
