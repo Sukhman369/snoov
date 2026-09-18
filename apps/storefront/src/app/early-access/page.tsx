@@ -77,21 +77,23 @@ export default function EarlyAccessPage() {
     <div className="min-h-[100dvh] w-full bg-[#09090B] text-[#EDEDED] flex flex-col justify-between px-4 py-8 sm:px-12 sm:py-16 relative overflow-hidden select-none">
       {/* Center Stage — Minimalist Dark Form */}
       <main className="relative z-10 my-auto py-8 sm:py-12 flex flex-col items-center justify-center max-w-md w-full mx-auto">
-        {/* Logo */}
-        <div className="mb-5 sm:mb-6 flex justify-center">
-          <Image
-            src="/brand/snoov-logo-crimson-script.webp"
-            alt="SNOOV"
-            width={180}
-            height={78}
-            priority
-            className="w-[135px] sm:w-[165px] h-auto object-contain filter drop-shadow-[0_0_20px_rgba(220,38,38,0.25)]"
-          />
+        {/* Brand Logo: Crimson Calligraphic Script */}
+        <div className="mb-6 sm:mb-8 flex justify-center">
+          <div className="relative group">
+            <Image
+              src="/brand/snoov-logo-crimson-script.webp"
+              alt="SNOOV"
+              width={220}
+              height={95}
+              priority
+              className="w-[160px] sm:w-[200px] h-auto object-contain filter drop-shadow-[0_0_25px_rgba(220,38,38,0.25)] transition-transform duration-700 hover:scale-[1.03]"
+            />
+          </div>
         </div>
 
         {/* Section Header */}
         <div className="text-center mb-8">
-          <span className="text-[9px] font-mono uppercase tracking-[0.25em] text-[#D4AF37] font-semibold block mb-1">
+          <span className="text-[9px] font-mono uppercase tracking-[0.25em] text-red-500 font-semibold block mb-1">
             DROP 001 · PRIVATE ACCESS
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl text-white font-normal tracking-tight">
@@ -121,7 +123,7 @@ export default function EarlyAccessPage() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. Sahib Singh"
-              className="w-full px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all shadow-xs"
+              className="w-full px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all shadow-xs"
             />
           </div>
 
@@ -135,7 +137,7 @@ export default function EarlyAccessPage() {
                 value={countryCode}
                 onChange={(e) => setCountryCode(e.target.value)}
                 aria-label="Country Dial Code"
-                className="px-2.5 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-mono text-zinc-200 focus:outline-none focus:border-[#D4AF37] transition-all cursor-pointer shadow-xs"
+                className="px-2.5 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-mono text-zinc-200 focus:outline-none focus:border-red-600 transition-all cursor-pointer shadow-xs"
               >
                 <option value="+91">🇮🇳 +91 (IN)</option>
                 <option value="+1">🇺🇸 +1 (US/CA)</option>
@@ -152,7 +154,7 @@ export default function EarlyAccessPage() {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="98765 43210"
-                className="flex-1 px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all shadow-xs"
+                className="flex-1 px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all shadow-xs"
               />
             </div>
           </div>
@@ -168,7 +170,7 @@ export default function EarlyAccessPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="sahib@snoov.com"
-              className="w-full px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all shadow-xs"
+              className="w-full px-4 py-3.5 bg-[#121214] border border-zinc-800 rounded-[2px] text-xs font-sans text-white placeholder:text-zinc-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all shadow-xs"
             />
           </div>
 
@@ -176,7 +178,7 @@ export default function EarlyAccessPage() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full mt-2 inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black text-[11px] font-mono uppercase tracking-[0.25em] font-semibold border border-white rounded-[2px] transition-all duration-300 hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-black hover:shadow-[0_0_25px_rgba(212,175,55,0.35)] disabled:opacity-50 active:scale-[0.98] shadow-sm"
+            className="w-full mt-2 inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black text-[11px] font-mono uppercase tracking-[0.25em] font-semibold border border-white rounded-[2px] transition-all duration-300 hover:bg-red-600 hover:border-red-600 hover:text-white hover:shadow-[0_0_25px_rgba(220,38,38,0.35)] disabled:opacity-50 active:scale-[0.98] shadow-sm"
           >
             {isSubmitting ? (
               <span className="flex items-center gap-2">
@@ -209,11 +211,11 @@ export default function EarlyAccessPage() {
           <div className="w-full max-w-lg bg-[#121214] border-t sm:border border-zinc-800 sm:rounded-[2px] p-5 sm:p-10 shadow-2xl relative transform transition-transform duration-500 animate-slide-in max-h-[92dvh] overflow-y-auto">
             {/* Header emblem */}
             <div className="flex flex-col items-center text-center">
-              <div className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center text-[#D4AF37] font-serif text-lg mb-4 shadow-sm">
+              <div className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-700 flex items-center justify-center text-red-500 font-serif text-lg mb-4 shadow-sm">
                 ✦
               </div>
 
-              <span className="text-[9px] font-mono uppercase tracking-[0.3em] text-[#D4AF37] font-bold">
+              <span className="text-[9px] font-mono uppercase tracking-[0.3em] text-red-500 font-bold">
                 {successData.alreadyRegistered ? "ALREADY ON VIP LIST" : "ALLOCATION CONFIRMED"}
               </span>
 
@@ -250,7 +252,7 @@ export default function EarlyAccessPage() {
               <div className="w-full pt-2">
                 <button
                   onClick={() => setSuccessData(null)}
-                  className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white text-black text-[11px] font-mono uppercase tracking-[0.2em] font-semibold rounded-[2px] transition-all hover:bg-[#D4AF37] hover:text-black active:scale-[0.98]"
+                  className="w-full inline-flex items-center justify-center px-6 py-3.5 bg-white text-black text-[11px] font-mono uppercase tracking-[0.2em] font-semibold rounded-[2px] transition-all hover:bg-red-600 hover:text-white active:scale-[0.98]"
                 >
                   DISMISS
                 </button>
