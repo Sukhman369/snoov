@@ -97,14 +97,39 @@ async function getCountryCode(
   return countryCode
 }
 
+const IS_PRELAUNCH_MODE = process.env.NEXT_PUBLIC_PRELAUNCH_MODE === "true"
+
 /**
- * Middleware to handle region selection and onboarding status.
+ * Middleware to handle region selection, onboarding status, and pre-launch gating.
  */
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
   if (pathname.includes(".")) {
     return NextResponse.next()
+  }
+
+  // Pre-launch gating (Locks live production visitors to /coming-soon for the 18-day teaser)
+  if (IS_PRELAUNCH_MODE) {
+    const previewParam = request.nextUrl.searchParams.get("preview")
+    const hasPreviewCookie = request.cookies.get("snoov_preview")?.value === "1"
+    const isPreviewAuthorized = previewParam === "snoov_atelier" || hasPreviewCookie
+
+    if (!isPreviewAuthorized) {
+      if (
+        pathname.startsWith("/coming-soon") ||
+        pathname.startsWith("/early-access")
+      ) {
+        return NextResponse.next()
+      }
+      return NextResponse.redirect(new URL("/coming-soon", request.url))
+    }
+
+    if (previewParam === "snoov_atelier" && !hasPreviewCookie) {
+      const response = NextResponse.redirect(new URL("/", request.url))
+      response.cookies.set("snoov_preview", "1", { maxAge: 60 * 60 * 24 * 30, path: "/" })
+      return response
+    }
   }
 
   // Standalone pre-launch routes without country prefix

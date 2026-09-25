@@ -89,8 +89,39 @@ export async function POST(req: NextRequest) {
       userAgent: req.headers.get("user-agent") || "unknown",
     }
 
-    subscribers.push(newEntry)
-    await saveSubscribers(subscribers)
+    // 1. Local persistence (with graceful catch for serverless/read-only filesystems like Vercel)
+    try {
+      subscribers.push(newEntry)
+      await saveSubscribers(subscribers)
+    } catch (fsErr) {
+      console.warn("Local JSON save skipped (expected on read-only serverless filesystems):", fsErr)
+    }
+
+    // 2. Forward to Google Sheets Webhook if configured
+    const webhookUrl =
+      process.env.GOOGLE_SHEET_WEBHOOK_URL ||
+      "https://script.google.com/macros/s/AKfycbxNynLOUBes6inmJBRSmxMf6fNg029allmKWpJiLj2Toq_4Xh7TrB6MYn0RGF_Ik0DJ/exec"
+
+    if (webhookUrl) {
+      try {
+        await fetch(webhookUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            id: newEntry.id,
+            name: newEntry.name,
+            phone: newEntry.phone,
+            email: newEntry.email,
+            registeredAt: newEntry.registeredAt,
+            ip: newEntry.ip,
+          }),
+        })
+      } catch (webhookErr) {
+        console.error("Google Sheets webhook forwarding error:", webhookErr)
+      }
+    }
 
     return NextResponse.json({
       success: true,
